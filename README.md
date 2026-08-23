@@ -1,8 +1,9 @@
 # Raak!
 
 Een zeeslagspel voor kinderen, in dezelfde speelgoedstijl als
-[Dobbel](https://github.com/PIVO7/Yathzee),
-[Vier op een rij](https://github.com/PIVO7/VierOpEenRij) en Memo.
+[Dobbel](https://github.com/PIVO7/Dobbel),
+[Vier op een rij](https://github.com/PIVO7/VierOpEenRij) en
+[Memo](https://github.com/PIVO7/Memo).
 
 Hussel je vloot, leg hem geheim klaar en schiet om de beurt op de zee
 van de ander. Raak? Dan mag je meteen nog een keer! Speel met z'n
