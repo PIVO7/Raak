@@ -54,6 +54,20 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.pivo7.raak.tests
         GENERATE_INFOPLIST_FILE: YES
 
+  Raak UITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: '17.0'
+    sources:
+      - path: Raak UITests
+    dependencies:
+      - target: Raak
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.pivo7.raak.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: Raak
+
 schemes:
   Raak:
     build:
@@ -72,3 +86,15 @@ schemes:
       storeKitConfiguration: Raak.storekit
     archive:
       config: Release
+
+  # Apart schema: de doorklik-test bedient de echte app en is daardoor
+  # traag; zo blijft de gewone testrun snel.
+  Raak UITests:
+    build:
+      targets:
+        Raak UITests: [test]
+    test:
+      targets:
+        - Raak UITests
+      language: nl
+      region: BE

@@ -27,6 +27,7 @@
 		3CD3DFAD87DC1DB8EBC5E230 /* HomeHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA6C5227423BB3045CE02F /* HomeHeroView.swift */; };
 		4609257C38330A343DB4B224 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7998F0D9F3A6EF213EBB0 /* PaywallView.swift */; };
 		50AF96ACECA9ECB800E42EAC /* ProfilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880475A7539D5AB93383EC2 /* ProfilesView.swift */; };
+		5185C060E4DBB4265E948BFF /* ProfileEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1526E6B841E923BC3C0A31 /* ProfileEditorUITests.swift */; };
 		527C8529C31639DCF1B75E2C /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556949D5C6CEDD9869C4F7FE /* PlacementView.swift */; };
 		569325D454BB48E91AE38C62 /* GameScreenRenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490EE094960B143D55825943 /* GameScreenRenderTests.swift */; };
 		584AF3BD54CD9D0688788C00 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406064DA69F3FC0D74D69B35 /* RulesView.swift */; };
@@ -85,6 +86,13 @@
 			remoteGlobalIDString = 400657DE80836D564C261468;
 			remoteInfo = Raak;
 		};
+		FFC89D63866B6672A3A2EA62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A0EB8758951306276E87BAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 400657DE80836D564C261468;
+			remoteInfo = Raak;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +110,7 @@
 		348F865A8C761360D63A951B /* AvatarBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarBadge.swift; sourceTree = "<group>"; };
 		34D6DBA27474AAAA7C16297B /* RaakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaakApp.swift; sourceTree = "<group>"; };
 		386ACD0F1D20619E935A8698 /* ProfileStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStatsView.swift; sourceTree = "<group>"; };
+		3A1526E6B841E923BC3C0A31 /* ProfileEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorUITests.swift; sourceTree = "<group>"; };
 		3AA66898C86527E7DDD176A6 /* ToyDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyDialog.swift; sourceTree = "<group>"; };
 		406064DA69F3FC0D74D69B35 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
 		4278481B5686C0869C59246B /* SplitMix64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitMix64.swift; sourceTree = "<group>"; };
@@ -145,6 +154,7 @@
 		C774FE3256885BC403D160A5 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		C8EC97B7701A0850F0ADC57C /* GamePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayer.swift; sourceTree = "<group>"; };
 		CA80C71DDE4BC49BAB33A3B1 /* PlayerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProfile.swift; sourceTree = "<group>"; };
+		CB6DE4276801FCAD03D2CE1C /* Raak UITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "Raak UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB2DE9976A2520EA591F6DB /* GameResultOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultOverlay.swift; sourceTree = "<group>"; };
 		D0EB131EF7077DCE8FBD235D /* ToyBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyBlock.swift; sourceTree = "<group>"; };
 		D29C02F623D5EB62F191E50D /* GameSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSnapshot.swift; sourceTree = "<group>"; };
@@ -167,6 +177,14 @@
 				1CC81923A8C2A90BA48B67B4 /* GameSetupView.swift */,
 			);
 			path = Setup;
+			sourceTree = "<group>";
+		};
+		1E6C331C2A92920945DE512A /* Raak UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A1526E6B841E923BC3C0A31 /* ProfileEditorUITests.swift */,
+			);
+			path = "Raak UITests";
 			sourceTree = "<group>";
 		};
 		271CC3F0D2FDC900E7A9D8C7 /* Store */ = {
@@ -256,6 +274,7 @@
 			children = (
 				C0B5F06C4FB559BD74B55B28 /* Raak */,
 				34364A94D5ABAF41CFA60E12 /* Raak Tests */,
+				1E6C331C2A92920945DE512A /* Raak UITests */,
 				C1EA205C9C9823B10672D2CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -322,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				0B35F4435B651BE91075CFFF /* Raak Tests.xctest */,
+				CB6DE4276801FCAD03D2CE1C /* Raak UITests.xctest */,
 				C5EE98FCF7DFF53077D0D553 /* Raak.app */,
 			);
 			name = Products;
@@ -418,6 +438,24 @@
 			productReference = C5EE98FCF7DFF53077D0D553 /* Raak.app */;
 			productType = "com.apple.product-type.application";
 		};
+		892B52E66CA5104A0F783F70 /* Raak UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB461A8FD54D8A800D6FAF6 /* Build configuration list for PBXNativeTarget "Raak UITests" */;
+			buildPhases = (
+				B2069B38AF1C12515E5B61E5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B109259E5E7C2963E23F4FFF /* PBXTargetDependency */,
+			);
+			name = "Raak UITests";
+			packageProductDependencies = (
+			);
+			productName = "Raak UITests";
+			productReference = CB6DE4276801FCAD03D2CE1C /* Raak UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		FAC0C891E88BC348F86EAC80 /* Raak Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2765EB138F65A669AE27B29 /* Build configuration list for PBXNativeTarget "Raak Tests" */;
@@ -449,6 +487,11 @@
 						DevelopmentTeam = VB6FS3N78T;
 						ProvisioningStyle = Automatic;
 					};
+					892B52E66CA5104A0F783F70 = {
+						DevelopmentTeam = VB6FS3N78T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 400657DE80836D564C261468;
+					};
 					FAC0C891E88BC348F86EAC80 = {
 						DevelopmentTeam = VB6FS3N78T;
 						ProvisioningStyle = Automatic;
@@ -473,6 +516,7 @@
 			targets = (
 				400657DE80836D564C261468 /* Raak */,
 				FAC0C891E88BC348F86EAC80 /* Raak Tests */,
+				892B52E66CA5104A0F783F70 /* Raak UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -570,6 +614,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2069B38AF1C12515E5B61E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5185C060E4DBB4265E948BFF /* ProfileEditorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -578,9 +630,32 @@
 			target = 400657DE80836D564C261468 /* Raak */;
 			targetProxy = 1489D922AE4A11BDBE560658 /* PBXContainerItemProxy */;
 		};
+		B109259E5E7C2963E23F4FFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 400657DE80836D564C261468 /* Raak */;
+			targetProxy = FFC89D63866B6672A3A2EA62 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0AC6E2690DE03D83AED25056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pivo7.raak.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Raak;
+			};
+			name = Release;
+		};
 		3C2F5E502509DCF240796886 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -659,6 +734,24 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raak.app/Raak";
+			};
+			name = Debug;
+		};
+		9D9BE3792650D3AD7BD6F5A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pivo7.raak.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Raak;
 			};
 			name = Debug;
 		};
@@ -819,6 +912,15 @@
 			buildConfigurations = (
 				EE55067EF67D104691C60A3B /* Debug */,
 				3C2F5E502509DCF240796886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7FB461A8FD54D8A800D6FAF6 /* Build configuration list for PBXNativeTarget "Raak UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D9BE3792650D3AD7BD6F5A9 /* Debug */,
+				0AC6E2690DE03D83AED25056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
