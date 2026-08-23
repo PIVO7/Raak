@@ -2588,6 +2588,22 @@
         }
       }
     },
+    "Roze": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pink"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rose"
+          }
+        }
+      }
+    },
     "SLIMME TRUCJES": {
       "localizations": {
         "en": {

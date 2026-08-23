@@ -104,7 +104,8 @@ struct ProfileEditorFormView: View {
 
     private static let colorNames = [
         String(localized: "Koraal"), String(localized: "Blauw"), String(localized: "Geel"),
-        String(localized: "Mint"), String(localized: "Paars"), String(localized: "Oranje")
+        String(localized: "Mint"), String(localized: "Paars"), String(localized: "Oranje"),
+        String(localized: "Roze")
     ]
 
     var body: some View {
@@ -143,7 +144,9 @@ struct ProfileEditorFormView: View {
             .toyBlock(fill: AppTheme.card, radius: m.cellCorner + 2, depth: 3, border: m.thinBorder + 0.5)
 
             sectionTitle("KLEUR")
-            HStack(spacing: m.gutter * 0.7) {
+            // Kleine vaste tussenruimte en flexibele cellen: zo passen ook
+            // zeven bolletjes naast elkaar op een iPhone.
+            HStack(spacing: 6) {
                 ForEach(Array(AvatarBadge.palette.enumerated()), id: \.offset) { index, color in
                     colorCell(index: index, color: color)
                 }
@@ -186,9 +189,9 @@ struct ProfileEditorFormView: View {
                 }
                 .frame(width: m.tapTarget * 0.8, height: m.tapTarget * 0.8)
                 .scaleEffect(colorIndex == index ? 1.12 : 1)
-                // Het bolletje blijft visueel klein, maar het tikvlak haalt
-                // de 44-puntsgrens.
-                .frame(minWidth: m.tapTarget, minHeight: m.tapTarget)
+                // Het bolletje blijft visueel klein, maar het tikvlak vult
+                // de hele beschikbare celbreedte.
+                .frame(maxWidth: .infinity, minHeight: m.tapTarget)
                 .contentShape(.rect)
         }
         .buttonStyle(.plain)

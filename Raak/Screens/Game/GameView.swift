@@ -20,11 +20,9 @@ struct GameView: View {
     @State private var didRecordResult = false
     @State private var isNewRecord = false
     @State private var showResult = false
-    @State private var showTurnBanner = false
     /// Het overgavescherm aan één toestel; dekt de geheime zeeën af.
     @State private var showHandover = false
     @State private var showExitConfirm = false
-    @State private var bannerDismissal: Task<Void, Never>?
     @State private var resultReveal: Task<Void, Never>?
     /// Geeft na een misser de beurt door zodra het kind de plons zag; de
     /// computerlus regelt zijn eigen missers.
@@ -67,16 +65,6 @@ struct GameView: View {
             // iPad uit over het volle scherm.
             .frame(maxWidth: m.contentMaxWidth)
             .frame(maxWidth: .infinity)
-
-            if showTurnBanner {
-                TurnBannerView(player: engine.currentPlayer, title: bannerTitle)
-                    .transition(
-                        reduceMotion
-                            ? .opacity
-                            : .move(edge: .top).combined(with: .opacity)
-                    )
-                    .zIndex(2)
-            }
 
             if showHandover {
                 HandoverView(
@@ -214,7 +202,10 @@ struct GameView: View {
             BoardGridView(
                 board: engine.boards[viewerIndex],
                 showsShips: true,
-                isEnabled: false
+                isEnabled: false,
+                // Ook hier de highlight: zo zie je meteen wáár de ander
+                // net op jouw zee schoot.
+                lastShot: engine.lastShotBoardIndex == viewerIndex ? engine.lastShot : nil
             )
             .frame(height: m.discSize * 2.6)
         }
@@ -229,7 +220,7 @@ struct GameView: View {
             .lineLimit(1)
             .minimumScaleFactor(0.7)
             .frame(maxWidth: .infinity)
-            .opacity(showResult || showTurnBanner ? 0 : 1)
+            .opacity(showResult ? 0 : 1)
     }
 
     /// De dunne bovenrand: schot- en botenteller (passieve meta-info) met
@@ -280,15 +271,6 @@ struct GameView: View {
 
     // MARK: - Reacties op het spel
 
-    /// Solo spreekt de banner je aan; met z'n tweeën aan één toestel neemt
-    /// het overgavescherm het over.
-    private var bannerTitle: String? {
-        if engine.mode == .versusComputer, !engine.currentPlayer.isComputer {
-            return String(localized: "Jij bent aan de beurt")
-        }
-        return nil
-    }
-
     /// Wie het toestel moet krijgen: tijdens het vlootleggen de schikker,
     /// daarna wie er mag schieten.
     private var handoverPlayer: GamePlayer {
@@ -304,6 +286,8 @@ struct GameView: View {
             : String(localized: "Jouw beurt om te schieten. De zeeën blijven geheim!")
     }
 
+    /// Aan één toestel dekt het overgavescherm de zeeën af; solo volstaat de
+    /// statusregel — een banner erbovenop was een dubbele melding.
     private func presentTurnChange() {
         guard !engine.isFinished else { return }
         turnPulse += 1
@@ -317,7 +301,11 @@ struct GameView: View {
             }
             return
         }
-        presentTurnBanner()
+        AccessibilityNotification.Announcement(
+            engine.currentPlayer.isComputer
+                ? engine.turnMessage
+                : String(localized: "Jij bent aan de beurt")
+        ).post()
     }
 
     private func gameDidFinish() {
@@ -356,27 +344,6 @@ struct GameView: View {
             winnerProfileIDs: engine.winnerProfileIDs,
             hitCounts: hitCounts
         )
-    }
-
-    private func presentTurnBanner() {
-        turnPulse += 1
-        AccessibilityNotification.Announcement(
-            bannerTitle ?? String(localized: "\(engine.currentPlayer.name) is aan de beurt")
-        ).post()
-
-        withAnimation(reduceMotion ? .easeOut(duration: 0.15) : .spring(response: 0.35, dampingFraction: 0.8)) {
-            showTurnBanner = true
-        }
-        // Bij twee snelle beurtwissels zou de timer van de eerste de banner
-        // van de tweede verbergen; annuleren voorkomt dat.
-        bannerDismissal?.cancel()
-        bannerDismissal = Task {
-            try? await Task.sleep(for: .milliseconds(reduceMotion ? 700 : 1100))
-            guard !Task.isCancelled else { return }
-            withAnimation(.easeOut(duration: 0.2)) {
-                showTurnBanner = false
-            }
-        }
     }
 
     private func persistProgress() {
