@@ -1,22 +1,6 @@
 {
   "sourceLanguage": "nl",
   "strings": {
-    "%@ hernoemen": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rename %@"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Renommer %@"
-          }
-        }
-      }
-    },
     "%@ is aan de beurt": {
       "localizations": {
         "en": {
@@ -157,6 +141,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ gagne !"
+          }
+        }
+      }
+    },
+    "%@ · %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ · %2$@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ · %2$@"
           }
         }
       }
@@ -722,38 +722,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Annuler"
-          }
-        }
-      }
-    },
-    "Avatar van %@ aanpassen": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Edit %@’s avatar"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Modifier l’avatar de %@"
-          }
-        }
-      }
-    },
-    "Bewaar": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Save"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Enregistrer"
           }
         }
       }
@@ -2092,34 +2060,18 @@
         }
       }
     },
-    "NIEUW PROFIEL": {
+    "NAAM": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "NEW PROFILE"
+            "value": "NAME"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "NOUVEAU PROFIL"
-          }
-        }
-      }
-    },
-    "Naam": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Name"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prénom"
+            "value": "PRÉNOM"
           }
         }
       }
@@ -2136,22 +2088,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Le prénom de ton enfant"
-          }
-        }
-      }
-    },
-    "Naam wijzigen": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Change name"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Modifier le prénom"
           }
         }
       }
@@ -2184,6 +2120,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nuit"
+          }
+        }
+      }
+    },
+    "Nieuw profiel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New profile"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouveau profil"
           }
         }
       }
@@ -2492,6 +2444,22 @@
         }
       }
     },
+    "Profiel van %@ aanpassen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit %@’s profile"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier le profil de %@"
+          }
+        }
+      }
+    },
     "Profielen": {
       "localizations": {
         "en": {
@@ -2561,13 +2529,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Got it! %@ gets another turn"
+            "value": "Hit! %@ goes again"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Trouvé ! %@ rejoue"
+            "value": "Touché ! %@ rejoue"
           }
         }
       }
@@ -3496,22 +3464,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Préparer la flotte"
-          }
-        }
-      }
-    },
-    "Voeg toe": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Add"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ajouter"
           }
         }
       }

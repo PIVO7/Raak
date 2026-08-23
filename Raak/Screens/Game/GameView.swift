@@ -200,6 +200,9 @@ struct GameView: View {
                 lastShot: engine.lastShotBoardIndex == targetIndex ? engine.lastShot : nil,
                 onFire: { engine.fire(at: $0) }
             )
+            // Vierkant in plaats van gulzig: zo sluit de vlootlegende aan op
+            // het bord en valt er op een lang scherm geen gat middenin.
+            .aspectRatio(1, contentMode: .fit)
 
             FleetLegendView(ships: engine.boards[targetIndex].ships)
 
@@ -233,9 +236,9 @@ struct GameView: View {
     /// de sluitknop ernaast.
     private var topBar: some View {
         HStack(spacing: 8) {
-            (Text("Schot \(engine.attempts + (engine.isFinished ? 0 : 1))")
-                + Text(verbatim: " · ")
-                + Text("Nog \(engine.boards[targetIndex].shipsAfloat) boten"))
+            let shot = Text("Schot \(engine.attempts + (engine.isFinished ? 0 : 1))")
+            let boats = Text("Nog \(engine.boards[targetIndex].shipsAfloat) boten")
+            Text("\(shot) · \(boats)")
                 .textCase(.uppercase)
                 .font(AppTheme.rounded(m.captionSize * 0.92))
                 .kerning(1.6)
