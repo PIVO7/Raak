@@ -1,12 +1,15 @@
 # TestFlight — Raak!
 
-Dit document bevat de teksten die TestFlight vraagt en het stappenplan om de
-eerste build bij testers te krijgen. Anders dan bij Dobbel staat er nog géén
-archive klaar: archiveer eerst in Xcode (Product → Archive, scheme Raak,
-Any iOS Device) — het project bouwt en de tests slagen.
+De archive staat klaar; dit document bevat de teksten die TestFlight vraagt en
+het stappenplan om de eerste build bij testers te krijgen.
 
 ## Wat al klaarstaat
 
+- **Archive "Raak 1.0 (1)"** (2026-08-23) — zichtbaar in Xcode → Window →
+  **Organizer**. Bevat Raak.app (nl/en/fr) en de dSYM-symbolen, versie
+  1.0 (1), minimum iOS 17.0, bundle-id com.pivo7.raak, team VB6FS3N78T.
+  Het uploaden zelf (stap 3) vraagt je Apple-account in Xcode; dat is de
+  enige stap die niet vooraf kon.
 - `ITSAppUsesNonExemptEncryption` staat op NO in het project, dus TestFlight
   slaat de export-compliance-vraag bij elke build over.
 - Eén universeel 1024-appicoon (vereist voor de upload) zit in de asset catalog.
@@ -22,9 +25,9 @@ Any iOS Device) — het project bouwt en de tests slagen.
 2. **In-app-aankoop aanmaken** (mag ook later, maar vóór het testen van de
    Gezinsversie): niet-verbruiksartikel `com.pivo7.raak.gezin`,
    gezinsdeling aan — alle waarden staan in [appstore-tekst.md](appstore-tekst.md).
-3. **Archiveren en uploaden**: Xcode → Product → Archive, daarna Window →
-   Organizer → **Distribute App → TestFlight & App Store → Upload**.
-   Automatische ondertekening regelt het distributiecertificaat.
+3. **Uploaden**: Xcode → Window → Organizer → archive "Raak 1.0 (1)" →
+   **Distribute App → TestFlight & App Store → Upload**. Automatische
+   ondertekening regelt het distributiecertificaat.
 4. Na 5–15 minuten verwerken verschijnt de build onder het tabblad
    **TestFlight**. Vul daar de testinformatie in (teksten hieronder).
 5. **Interne testers** (meteen, geen review): voeg jezelf en gezinsleden toe
@@ -65,7 +68,8 @@ Any iOS Device) — het project bouwt en de tests slagen.
   gekocht? Zet terug" werkt daar ook. Het product moet wél eerst in App Store
   Connect bestaan (stap 2), anders blijft de prijs op "…" staan.
 - **Volgende build uploaden**: verhoog `CURRENT_PROJECT_VERSION` in
-  project.yml, draai `xcodegen generate`, archiveer en upload opnieuw.
+  project.yml (1 → 2), draai `xcodegen generate`, archiveer en upload
+  opnieuw.
   Testers krijgen de update automatisch.
 - De **privacyverklaring-URL** is voor TestFlight nog niet verplicht, wel voor
   de echte review — regel die dus ergens tijdens de testronde
