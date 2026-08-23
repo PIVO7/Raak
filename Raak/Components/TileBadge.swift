@@ -1,0 +1,37 @@
+import SwiftUI
+
+/// Een speelgoedtegeltje met een symbool: wit kaartje, dikke inktrand en
+/// een kleur uit het avatarpalet. De Raak!-tegenhanger van het memokaartje —
+/// het startscherm en de held gebruiken hem als blikvanger.
+struct TileBadge: View {
+    var symbol: String
+    /// Index in `AvatarBadge.palette`.
+    var colorIndex: Int = 0
+    var size: CGFloat = 44
+
+    private var corner: CGFloat { size * 0.18 }
+
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: corner, style: .continuous)
+                .fill(AppTheme.card)
+            Image(systemName: symbol)
+                .font(.system(size: size * 0.44, weight: .black))
+                .foregroundStyle(AvatarBadge.palette[colorIndex % AvatarBadge.palette.count])
+            RoundedRectangle(cornerRadius: corner, style: .continuous)
+                .strokeBorder(AppTheme.ink, lineWidth: max(size * 0.045, 1.5))
+        }
+        .frame(width: size, height: size)
+        .accessibilityHidden(true)
+    }
+}
+
+#Preview {
+    HStack(spacing: 16) {
+        TileBadge(symbol: "sailboat.fill", colorIndex: 1, size: 80)
+        TileBadge(symbol: "burst.fill", colorIndex: 2, size: 80)
+        TileBadge(symbol: "target", colorIndex: 0, size: 80)
+    }
+    .padding()
+    .background(AppTheme.cream)
+}
