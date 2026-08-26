@@ -1,7 +1,7 @@
 import SwiftUI
 
-/// De vloot klaarleggen: het eigen bord groot in beeld, met husselen tot
-/// het bevalt. Slepen hoeft niet — één tik op de dobbelknop legt alles
+/// De vloot klaarleggen: het eigen bord groot in beeld, met schudden tot
+/// het bevalt. Slepen hoeft niet — één tik op de schudknop legt alles
 /// opnieuw, precies genoeg controle voor kleine handen.
 struct PlacementView: View {
     let engine: GameEngine
@@ -44,7 +44,7 @@ struct PlacementView: View {
                         .minimumScaleFactor(0.7)
                         .lineLimit(1)
                 }
-                Text("Hussel tot je zee je bevalt — de ander mag niet kijken!")
+                Text("Schud tot je zee je bevalt — de ander mag niet kijken!")
                     .font(AppTheme.rounded(m.captionSize, .bold))
                     .foregroundStyle(AppTheme.soft)
                     .multilineTextAlignment(.center)
@@ -65,7 +65,7 @@ struct PlacementView: View {
                         SoundPlayer.shared.play(.drop)
                     }
                 } label: {
-                    Label("Hussel", systemImage: "dice.fill")
+                    Label("Schud", systemImage: "dice.fill")
                         .font(AppTheme.rounded(m.buttonTextSize * 0.75))
                         .foregroundStyle(AppTheme.ink)
                         .frame(maxWidth: .infinity)

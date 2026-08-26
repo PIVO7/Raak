@@ -57,7 +57,7 @@ het stappenplan om de eerste build bij testers te krijgen.
 > - **Taal**: zet het toestel eens op Engels of Frans — is álles vertaald?
 > - **Onderbreken**: sluit de app midden in een potje af (ook tijdens het
 >   vloot leggen) en open opnieuw — gaat het spel verder waar het was?
-> - **De drie bordgroottes**, husselen, en de trofeeënkast na een paar potjes.
+> - **De drie bordgroottes**, schudden, en de trofeeënkast na een paar potjes.
 >
 > Feedback graag via de TestFlight-app (schermafbeelding + opmerking) of
 > naar jelle@pivo7.be.

@@ -207,7 +207,7 @@ struct GameView: View {
                 // net op jouw zee schoot.
                 lastShot: engine.lastShotBoardIndex == viewerIndex ? engine.lastShot : nil
             )
-            .frame(height: m.discSize * 2.6)
+            .frame(height: m.discSize * 3.0)
         }
     }
 

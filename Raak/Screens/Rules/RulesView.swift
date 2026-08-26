@@ -32,7 +32,7 @@ struct RulesView: View {
 
                     section("ZO SPEEL JE") {
                         card {
-                            bullet("dice.fill", String(localized: "Hussel je vloot en leg hem geheim klaar — de ander mag niet kijken!"))
+                            bullet("dice.fill", String(localized: "Schud je vloot en leg hem geheim klaar — de ander mag niet kijken!"))
                             bullet("hand.tap.fill", String(localized: "Tik een vakje op de zee van de ander om te schieten."))
                             bullet("arrow.clockwise", String(localized: "Raak? Dan mag je meteen nog een keer. Mis? Dan mag de ander."))
                         }

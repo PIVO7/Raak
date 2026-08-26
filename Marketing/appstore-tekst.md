@@ -28,7 +28,7 @@ French (France) als extra lokalisaties toe.
 
 ## Beschrijving (max 4000 tekens)
 
-> Raak! is het klassieke zeeslagspel, gemaakt voor kinderen en het hele gezin. Hussel je vloot, leg hem geheim klaar en schiet om de beurt op de zee van de ander. Raak? Dan mag je meteen nog een keer!
+> Raak! is het klassieke zeeslagspel, gemaakt voor kinderen en het hele gezin. Schud je vloot, leg hem geheim klaar en schiet om de beurt op de zee van de ander. Raak? Dan mag je meteen nog een keer!
 >
 > SAMEN AAN ÉÉN TOESTEL
 > Speel tegen elkaar op één iPhone of iPad. Het toestel gaat van hand tot hand, met een vriendelijk doorgeefscherm dat de zeeën geheim houdt — niemand kan stiekem spieken.
@@ -37,7 +37,7 @@ French (France) als extra lokalisaties toe.
 > Drie tegenstanders met elk hun eigen karakter: Dommel schiet maar wat, Robbie mikt best goed en Professor Punt mist bijna nooit. En ze spelen eerlijk: de computer kent jouw vloot niet en zoekt écht, net als een mens. Zo groeit het spel mee met je kind.
 >
 > EEN VLOOT MET KARAKTER
-> Vijf boten met een eigen naam en kleur, van de kleine Sloep tot het grote Kapiteinsschip. Drie zeeën om uit te kiezen: klein voor de jongsten, groot voor de echte kapiteins. Vloot leggen is één tik op de husselknop — slepen hoeft niet.
+> Vijf boten met een eigen naam en kleur, van de kleine Sloep tot het grote Kapiteinsschip. Drie zeeën om uit te kiezen: klein voor de jongsten, groot voor de echte kapiteins. Vloot leggen is één tik op de schudknop — slepen hoeft niet.
 >
 > GEMAAKT VOOR KINDERHANDEN
 > Grote vakjes, vrolijke kleuren, een eigen avatar voor elke speler, een knal bij elke voltreffer en confetti voor de winnaar. Ondertussen wordt er heel wat gemikt, geteld en logisch geredeneerd — maar dat noemen we gewoon spelen.
@@ -54,11 +54,9 @@ French (France) als extra lokalisaties toe.
 
 ## Trefwoorden (max 100 tekens, gescheiden door komma's, geen spaties)
 
-> zeeslagje,bootjes,schepen,kinderen,kinderspel,familie,gezelschapsspel,bordspel,samen,battleship
+> zeeslagje,bootjes,schepen,kinderen,kinderspel,familie,gezelschapsspel,bordspel,samen,zeeslagspel
 
-*(97 tekens)*
-
-⚠️ **Let op "battleship":** dat is een Hasbro-merk. Als trefwoord (onzichtbaar voor gebruikers) wordt het vaak toegelaten, maar Apple kán erover vallen bij review. Wordt de app daarop afgekeurd, vervang het dan door `zeeslagspel` (dan blijf je ook onder de 100).
+*(96 tekens)*
 
 ## In-app-aankoop
 

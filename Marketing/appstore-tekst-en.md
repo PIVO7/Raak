@@ -50,6 +50,6 @@ gelijk: Dommel, Robbie en Professor Punt, en de app heet overal **Raak!**.
 
 ## Keywords (max 100 tekens, komma's, geen spaties)
 
-> sea battle,battleships,boats,kids,children,family,board game,together,naval,ships
+> sea battle,warships,boats,kids,children,family,board game,together,naval,ships
 
-*(80 tekens — "battleship" enkelvoud is een Hasbro-merk; het meervoud als generiek trefwoord wordt doorgaans toegelaten, maar vervang het bij een afkeuring door `warships`)*
+*(78 tekens)*

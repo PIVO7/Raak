@@ -97,6 +97,7 @@ struct ProfileEditorFormView: View {
         ("bird.fill", String(localized: "Vogel")), ("fish.fill", String(localized: "Vis")),
         ("ladybug.fill", String(localized: "Lieveheersbeestje")), ("pawprint.fill", String(localized: "Pootafdruk")),
         ("star.fill", String(localized: "Ster")), ("heart.fill", String(localized: "Hart")),
+        ("basketball.fill", String(localized: "Basketbal")),
         ("bolt.fill", String(localized: "Bliksem")), ("crown.fill", String(localized: "Kroon")),
         ("sun.max.fill", String(localized: "Zon")), ("moon.stars.fill", String(localized: "Maan")),
         ("flame.fill", String(localized: "Vlam")), ("leaf.fill", String(localized: "Blad"))

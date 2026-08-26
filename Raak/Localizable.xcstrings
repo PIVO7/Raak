@@ -726,6 +726,22 @@
         }
       }
     },
+    "Basketbal": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basketball"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ballon de basket"
+          }
+        }
+      }
+    },
     "Blad": {
       "localizations": {
         "en": {
@@ -1384,54 +1400,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Chien"
-          }
-        }
-      }
-    },
-    "Hussel": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Shuffle"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mélanger"
-          }
-        }
-      }
-    },
-    "Hussel je vloot en leg hem geheim klaar — de ander mag niet kijken!": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Shuffle your fleet and set it up in secret — no peeking allowed!"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mélange ta flotte et place-la en secret — interdit de regarder !"
-          }
-        }
-      }
-    },
-    "Hussel tot je zee je bevalt — de ander mag niet kijken!": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Shuffle until you like your sea — no peeking allowed!"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mélange jusqu'à ce que ta mer te plaise — interdit de regarder !"
           }
         }
       }
@@ -2760,6 +2728,54 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tir %lld"
+          }
+        }
+      }
+    },
+    "Schud": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shuffle"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mélanger"
+          }
+        }
+      }
+    },
+    "Schud je vloot en leg hem geheim klaar — de ander mag niet kijken!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shuffle your fleet and set it up in secret — no peeking allowed!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mélange ta flotte et place-la en secret — interdit de regarder !"
+          }
+        }
+      }
+    },
+    "Schud tot je zee je bevalt — de ander mag niet kijken!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shuffle until you like your sea — no peeking allowed!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mélange jusqu'à ce que ta mer te plaise — interdit de regarder !"
           }
         }
       }

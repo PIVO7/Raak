@@ -130,10 +130,15 @@ private struct SeaCellView: View {
                     .font(.system(size: side * 0.62, weight: .black))
                     .foregroundStyle(AppTheme.amber)
             } else if isShot {
-                // Een plons: klein wit bubbeltje in het water.
+                // Een plons: flinke witte bel met een kring eromheen, zodat
+                // ook op het kleine bord meteen te zien is wáár al geschoten
+                // is.
                 Circle()
-                    .fill(.white.opacity(0.9))
-                    .frame(width: side * 0.28, height: side * 0.28)
+                    .fill(.white)
+                    .frame(width: side * 0.4, height: side * 0.4)
+                Circle()
+                    .strokeBorder(.white.opacity(0.7), lineWidth: max(side * 0.06, 1.5))
+                    .frame(width: side * 0.68, height: side * 0.68)
             }
 
             RoundedRectangle(cornerRadius: corner, style: .continuous)
