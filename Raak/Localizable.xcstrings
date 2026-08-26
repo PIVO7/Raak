@@ -3036,18 +3036,18 @@
         }
       }
     },
-    "Statistieken per speler, met winreeks en beste vangst": {
+    "Statistieken per speler, met trofeeën en gezinsrecords": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Stats per player, with win streak and best haul"
+            "value": "Per-player statistics, with trophies and family records"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Statistiques par joueur, avec série de victoires et meilleure récolte"
+            "value": "Statistiques par joueur, avec trophées et records de famille"
           }
         }
       }

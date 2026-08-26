@@ -71,7 +71,6 @@
 		E87C94BD036E988B96B4C6B7 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64982FC187EC866034EB29E5 /* AppTheme.swift */; };
 		E9271411357AA38B057A53F0 /* plop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CA1EDD24203EB20E55AA609 /* plop.wav */; };
 		EF744CD57728D53DEC70D182 /* ComputerLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CF86E84E27C73C24AB3DC /* ComputerLevel.swift */; };
-		F3449A6F15F1A16BC3C4DCF2 /* PaywallVariantsRenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7881CE01AC41CEDDD26DACF0 /* PaywallVariantsRenderTests.swift */; };
 		F3551EF264643EDB5F87BC14 /* GameResultOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2DE9976A2520EA591F6DB /* GameResultOverlay.swift */; };
 		F36BBBB25638551506FDC5F8 /* ActiveGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917C46EE0BF6424BB4096468 /* ActiveGame.swift */; };
 		F6346C141A4CB18FAB2DD287 /* BoardGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4074A43C2E61457211840D /* BoardGridView.swift */; };
@@ -124,7 +123,6 @@
 		697F58A84988E785A8AA76F9 /* ThemePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePalette.swift; sourceTree = "<group>"; };
 		6C1BCBDF775BA97358363E31 /* ComputerAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerAI.swift; sourceTree = "<group>"; };
 		74869AE21A734D9B0C1109EC /* RenderSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderSmokeTests.swift; sourceTree = "<group>"; };
-		7881CE01AC41CEDDD26DACF0 /* PaywallVariantsRenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallVariantsRenderTests.swift; sourceTree = "<group>"; };
 		7E5B04B6789C64AF72F58EEB /* ProfileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRowView.swift; sourceTree = "<group>"; };
 		88ADC38AC53B76D41EEC4C28 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		8EF2B3A04D2596701DF13BE1 /* SeaBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaBoard.swift; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 				490EE094960B143D55825943 /* GameScreenRenderTests.swift */,
 				5A8326E476C260EB197DCBCE /* GameStoreTests.swift */,
 				A6B352D7BAA6C3627A3CB4A1 /* ParentalGateTests.swift */,
-				7881CE01AC41CEDDD26DACF0 /* PaywallVariantsRenderTests.swift */,
 				E809DDC6DE6AAD88F96A318F /* ProfileEditorRenderTests.swift */,
 				E00176BF12C1CE97B1FF6201 /* ProfileStoreTests.swift */,
 				74869AE21A734D9B0C1109EC /* RenderSmokeTests.swift */,
@@ -606,7 +603,6 @@
 				569325D454BB48E91AE38C62 /* GameScreenRenderTests.swift in Sources */,
 				70C7D32B6253D60014FA2946 /* GameStoreTests.swift in Sources */,
 				E8317B573038B1F9A7D295EF /* ParentalGateTests.swift in Sources */,
-				F3449A6F15F1A16BC3C4DCF2 /* PaywallVariantsRenderTests.swift in Sources */,
 				83AE82BAB44FF8C8BE33849E /* ProfileEditorRenderTests.swift in Sources */,
 				1A69368B9D2DB3E7AE8C0284 /* ProfileStoreTests.swift in Sources */,
 				DDEEB698E11CB543A0A1847F /* RenderSmokeTests.swift in Sources */,
