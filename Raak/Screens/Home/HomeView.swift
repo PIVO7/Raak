@@ -119,6 +119,35 @@ struct HomeView: View {
             }
         }
         .tint(AppTheme.coral)
+        .onAppear(perform: startDemoResultIfRequested)
+    }
+
+    /// DEBUG-hulp voor demo's en screenshots: start de app met `-demoResult`
+    /// om meteen een uitgespeeld potje te openen, inclusief de volledige
+    /// eindstand-choreografie. Losse profielen, dus echte spelersdata blijft
+    /// onaangeroerd.
+    private func startDemoResultIfRequested() {
+        #if DEBUG
+        guard ProcessInfo.processInfo.arguments.contains("-demoResult"),
+              activeGame == nil else { return }
+        let engine = GameEngine(
+            mode: .versusFriends,
+            profiles: [
+                PlayerProfile(name: "Lene"),
+                PlayerProfile(name: "Ellis", avatarColorIndex: 1)
+            ],
+            boardSize: .medium,
+            seed: 7
+        )
+        engine.confirmFleet()
+        engine.confirmFleet()
+        for ship in engine.boards[1].ships {
+            for cell in ship.cells {
+                engine.fire(at: cell)
+            }
+        }
+        activeGame = ActiveGame(engine: engine)
+        #endif
     }
 
     private var winsSubtitle: String {
