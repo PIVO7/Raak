@@ -66,6 +66,7 @@ final class RenderSmokeTests: XCTestCase {
                 hitCounts: [12, 7],
                 shipsSunk: [4, 2],
                 isNewRecord: true,
+                animatesIn: false,
                 onRematch: {},
                 onClose: {}
             )
