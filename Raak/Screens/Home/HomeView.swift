@@ -13,65 +13,102 @@ struct HomeView: View {
             ZStack {
                 ThemedBackground()
 
-                ScrollView {
-                    VStack(spacing: 0) {
-                        VStack(spacing: 8) {
-                            HomeHeroView()
-                                .padding(.bottom, m.gutter)
+                // De zee onder aan het scherm; decor achter de inhoud, tot
+                // voorbij de veilige zone zodat hij de rand raakt.
+                VStack(spacing: 0) {
+                    Spacer(minLength: 0)
+                    SeaBandView(amplitude: m.gutter * 0.65, lineWidth: m.border, height: m.gutter * 6)
+                }
+                .ignoresSafeArea(edges: .bottom)
 
-                            // De merknaam vertaalt niet mee; de uitroep
-                            // "Raak!" in het spel wél.
-                            Text(verbatim: "Raak!")
-                                .font(AppTheme.rounded(m.brandSize * 0.82))
-                                .foregroundStyle(AppTheme.headline)
-                                .minimumScaleFactor(0.6)
-                                .lineLimit(1)
+                // De inhoud vult minstens het scherm, zodat de menupillen
+                // net boven de zee eindigen in plaats van halverwege.
+                GeometryReader { geo in
+                    ScrollView {
+                        VStack(spacing: 0) {
+                            // De held zakt een stukje in de golfband: het
+                            // bootje vaart óp de zee in plaats van erboven.
+                            VStack(spacing: -m.gutter * 0.9) {
+                                HomeHeroView()
+                                    .zIndex(1)
 
-                            Text("Zink de vloot en roep: Raak!")
-                                .font(AppTheme.rounded(m.bodySize, .bold))
-                                .foregroundStyle(AppTheme.soft)
-                        }
-                        .padding(.top, m.gutter * 1.6)
-                        .padding(.bottom, m.gutter * 2)
+                                WavyBandView(amplitude: m.gutter * 0.8, lineWidth: m.border) {
+                                    VStack(spacing: 8) {
+                                        // De merknaam vertaalt niet mee; de
+                                        // uitroep "Raak!" in het spel wél.
+                                        Text(verbatim: "Raak!")
+                                            .font(AppTheme.rounded(m.brandSize * 0.82))
+                                            .foregroundStyle(AppTheme.ink)
+                                            .minimumScaleFactor(0.6)
+                                            .lineLimit(1)
 
-                        VStack(spacing: m.gutter) {
-                            if let saved = gameStore.savedGame {
-                                Button {
-                                    activeGame = ActiveGame(engine: GameEngine(snapshot: saved))
-                                } label: {
-                                    menuLabel(
-                                        String(localized: "Verder spelen"),
-                                        subtitle: saved.summaryTitle,
-                                        tint: AppTheme.coral,
-                                        symbol: "sailboat.fill",
-                                        symbolColorIndex: 1
-                                    )
+                                        Text("Zink de vloot en roep: Raak!")
+                                            .font(AppTheme.rounded(m.bodySize, .bold))
+                                            .foregroundStyle(AppTheme.cardSoft)
+                                    }
                                 }
                             }
+                            .padding(.top, m.gutter * 1.6)
+                            .padding(.bottom, m.gutter * 1.5)
 
-                            NavigationLink(value: Destination.setup(.versusFriends)) {
-                                menuLabel(GameMode.versusFriends.title,
-                                          subtitle: String(localized: "2 spelers, één toestel"),
-                                          tint: AppTheme.amber, symbol: "person.2.fill", symbolColorIndex: 0)
+                            VStack(spacing: m.gutter) {
+                                if let saved = gameStore.savedGame {
+                                    Button {
+                                        activeGame = ActiveGame(engine: GameEngine(snapshot: saved))
+                                    } label: {
+                                        menuLabel(
+                                            String(localized: "Verder spelen"),
+                                            subtitle: saved.summaryTitle,
+                                            tint: AppTheme.coral,
+                                            cardFill: AppTheme.tintCoral,
+                                            symbol: "sailboat.fill",
+                                            symbolColorIndex: 1,
+                                            badge: String(localized: "Lopend spel")
+                                        )
+                                    }
+                                }
+
+                                NavigationLink(value: Destination.setup(.versusFriends)) {
+                                    menuLabel(GameMode.versusFriends.title,
+                                              subtitle: String(localized: "2 spelers, één toestel"),
+                                              tint: AppTheme.amber, cardFill: AppTheme.tintAmber,
+                                              symbol: "person.2.fill", symbolColorIndex: 0)
+                                }
+                                NavigationLink(value: Destination.setup(.versusComputer)) {
+                                    menuLabel(GameMode.versusComputer.title,
+                                              subtitle: String(localized: "Solo uitdaging"),
+                                              tint: AppTheme.sky, cardFill: AppTheme.tintSky,
+                                              symbol: "target", symbolColorIndex: 2)
+                                }
                             }
-                            NavigationLink(value: Destination.setup(.versusComputer)) {
-                                menuLabel(GameMode.versusComputer.title,
-                                          subtitle: String(localized: "Solo uitdaging"),
-                                          tint: AppTheme.sky, symbol: "target", symbolColorIndex: 2)
+                            .padding(.horizontal, m.gutter * 1.5)
+
+                            // Beheer hoort niet tussen de spelmodi: twee
+                            // rustige pillen onder de speelkaarten.
+                            HStack(spacing: m.gutter * 0.85) {
+                                NavigationLink(value: Destination.profiles) {
+                                    pillLabel(String(localized: "Profielen"),
+                                              symbol: "person.crop.circle.fill",
+                                              color: AvatarBadge.palette[4])
+                                }
+                                .accessibilityLabel(Text(verbatim: "\(String(localized: "Profielen")), \(winsSubtitle)"))
+
+                                NavigationLink(value: Destination.statistics) {
+                                    pillLabel(String(localized: "Statistieken"),
+                                              symbol: "trophy.fill",
+                                              color: AvatarBadge.palette[5])
+                                }
+                                .accessibilityLabel(Text(verbatim: "\(String(localized: "Statistieken")), \(String(localized: "Trofeeën en records"))"))
                             }
-                            NavigationLink(value: Destination.profiles) {
-                                menuLabel(String(localized: "Profielen"), subtitle: winsSubtitle,
-                                          tint: AppTheme.mint, symbol: "person.crop.circle.fill", symbolColorIndex: 4)
-                            }
-                            NavigationLink(value: Destination.statistics) {
-                                statsMenuLabel
-                            }
+                            .padding(.horizontal, m.gutter * 1.5)
+                            .padding(.top, m.gutter * 1.2)
+
+                            // De zee blijft vrij van knoppen.
+                            Spacer(minLength: m.gutter * 7)
                         }
-                        .padding(.bottom, m.gutter * 2)
+                        .frame(maxWidth: m.contentMaxWidth)
+                        .frame(maxWidth: .infinity, minHeight: geo.size.height)
                     }
-                    .padding(.horizontal, m.gutter * 1.5)
-                    .frame(maxWidth: m.contentMaxWidth)
-                    .frame(maxWidth: .infinity)
                 }
             }
             .navigationDestination(for: Destination.self) { destination in
@@ -158,41 +195,25 @@ struct HomeView: View {
         return String(localized: "\(profileStore.humanProfiles.count) spelers · \(total) overwinningen")
     }
 
-    /// Zelfde tegel als het spelmenu, maar met een trofee: statistieken
-    /// zijn geen spelmodus.
-    private var statsMenuLabel: some View {
-        HStack(spacing: m.gutter) {
-            Image(systemName: "trophy.fill")
-                .font(.system(size: m.avatarSize * 0.52, weight: .black))
-                .foregroundStyle(AppTheme.ink)
-                .frame(width: m.avatarSize + 2, height: m.avatarSize + 2)
-                .toyBlock(fill: AppTheme.tintAmber, radius: m.cellCorner + 2, depth: 0, border: m.thinBorder + 0.5)
-
-            VStack(alignment: .leading, spacing: 3) {
-                Text("Statistieken")
-                    .font(AppTheme.rounded(m.bodySize + 3))
-                    .foregroundStyle(AppTheme.ink)
-                Text("Trofeeën en records")
-                    .font(AppTheme.rounded(m.captionSize, .bold))
-                    .foregroundStyle(AppTheme.cardSoft)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-
-            Image(systemName: "chevron.right")
-                .font(.system(size: m.bodySize * 0.9, weight: .black))
-                .foregroundStyle(AppTheme.cardDim)
-        }
-        .padding(m.gutter * 1.15)
-        .toyBlock(fill: AppTheme.card, radius: m.cardCorner, depth: m.depth, border: m.border)
-    }
-
-    private func menuLabel(_ title: String, subtitle: String, tint: Color, symbol: String, symbolColorIndex: Int) -> some View {
+    private func menuLabel(_ title: String, subtitle: String, tint: Color, cardFill: Color, symbol: String, symbolColorIndex: Int, badge: String? = nil) -> some View {
         HStack(spacing: m.gutter) {
             TileBadge(symbol: symbol, colorIndex: symbolColorIndex, size: m.avatarSize * 0.66)
                 .frame(width: m.avatarSize + 2, height: m.avatarSize + 2)
                 .toyBlock(fill: tint, radius: m.cellCorner + 2, depth: 0, border: m.thinBorder + 0.5)
 
             VStack(alignment: .leading, spacing: 3) {
+                if let badge {
+                    Text(badge)
+                        .textCase(.uppercase)
+                        .font(AppTheme.rounded(m.captionSize - 2))
+                        .kerning(0.6)
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 2)
+                        .background(Capsule().fill(tint))
+                        .overlay(Capsule().strokeBorder(AppTheme.ink, lineWidth: m.thinBorder))
+                        .padding(.bottom, 2)
+                }
                 Text(title)
                     .font(AppTheme.rounded(m.bodySize + 3))
                     .foregroundStyle(AppTheme.ink)
@@ -207,7 +228,27 @@ struct HomeView: View {
                 .foregroundStyle(AppTheme.cardDim)
         }
         .padding(m.gutter * 1.15)
-        .toyBlock(fill: AppTheme.card, radius: m.cardCorner, depth: m.depth, border: m.border)
+        .toyBlock(fill: cardFill, radius: m.cardCorner, depth: m.depth, border: m.border)
+    }
+
+    /// Beheer als capsule in plaats van kaart: bewust kleiner dan de
+    /// spelmodi, want spelen gaat voor.
+    private func pillLabel(_ title: String, symbol: String, color: Color) -> some View {
+        HStack(spacing: 8) {
+            Image(systemName: symbol)
+                .font(.system(size: m.bodySize * 0.95, weight: .black))
+                .foregroundStyle(color)
+            Text(title)
+                .font(AppTheme.rounded(m.bodySize - 2, .heavy))
+                .foregroundStyle(AppTheme.ink)
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
+        }
+        .frame(maxWidth: .infinity)
+        .frame(minHeight: m.tapTarget)
+        .background(Capsule().fill(AppTheme.card))
+        .overlay(Capsule().strokeBorder(AppTheme.ink, lineWidth: m.thinBorder + 0.5))
+        .background(Capsule().fill(AppTheme.ink).offset(y: 3))
     }
 }
 

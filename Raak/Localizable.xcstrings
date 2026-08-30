@@ -1853,6 +1853,22 @@
         }
       }
     },
+    "Lopend spel" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Game in progress"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partie en cours"
+          }
+        }
+      }
+    },
     "Lopend spel vervangen?" : {
       "localizations" : {
         "en" : {

@@ -67,6 +67,7 @@
 		DCF2F9B2D1E081A43357D7AA /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774FE3256885BC403D160A5 /* SoundPlayer.swift */; };
 		DDEEB698E11CB543A0A1847F /* RenderSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74869AE21A734D9B0C1109EC /* RenderSmokeTests.swift */; };
 		E35C81F2811BA5798F6037C1 /* SeaBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF2B3A04D2596701DF13BE1 /* SeaBoard.swift */; };
+		E35FD54FA36306A8676E0417 /* SeaWaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341A196F4DD8861EDBB3DDB3 /* SeaWaves.swift */; };
 		E8317B573038B1F9A7D295EF /* ParentalGateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B352D7BAA6C3627A3CB4A1 /* ParentalGateTests.swift */; };
 		E87C94BD036E988B96B4C6B7 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64982FC187EC866034EB29E5 /* AppTheme.swift */; };
 		E9271411357AA38B057A53F0 /* plop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CA1EDD24203EB20E55AA609 /* plop.wav */; };
@@ -106,6 +107,7 @@
 		2087DD102209E2EE18613EB2 /* ThemedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemedBackground.swift; sourceTree = "<group>"; };
 		28ACA3B6668D3C98F08F3F11 /* GameStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
 		2C8D4B66E64A211E48B0E90F /* GameEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngineTests.swift; sourceTree = "<group>"; };
+		341A196F4DD8861EDBB3DDB3 /* SeaWaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaWaves.swift; sourceTree = "<group>"; };
 		348F865A8C761360D63A951B /* AvatarBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarBadge.swift; sourceTree = "<group>"; };
 		34D6DBA27474AAAA7C16297B /* RaakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaakApp.swift; sourceTree = "<group>"; };
 		386ACD0F1D20619E935A8698 /* ProfileStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStatsView.swift; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 				88ADC38AC53B76D41EEC4C28 /* Destination.swift */,
 				B8CA6C5227423BB3045CE02F /* HomeHeroView.swift */,
 				FED50963B3515B2D09735946 /* HomeView.swift */,
+				341A196F4DD8861EDBB3DDB3 /* SeaWaves.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				ACB447B58FB2BA724182E209 /* RaakApp.swift in Sources */,
 				584AF3BD54CD9D0688788C00 /* RulesView.swift in Sources */,
 				E35C81F2811BA5798F6037C1 /* SeaBoard.swift in Sources */,
+				E35FD54FA36306A8676E0417 /* SeaWaves.swift in Sources */,
 				2198669D14C3A0606B5145EE /* SettingsView.swift in Sources */,
 				DCF2F9B2D1E081A43357D7AA /* SoundPlayer.swift in Sources */,
 				28E0734105FC9E298B5027E9 /* SplitMix64.swift in Sources */,
