@@ -51,6 +51,12 @@ struct HomeView: View {
                             .padding(.top, m.gutter * 1.6)
                             .padding(.bottom, m.gutter * 1.5)
 
+                            // Restruimte verdeelt zich vóór en na de kaarten,
+                            // zodat het menu tussen golfband en zee zweeft in
+                            // plaats van bovenaan te klitten met een leeg gat
+                            // eronder.
+                            Spacer(minLength: 0)
+
                             VStack(spacing: m.gutter) {
                                 if let saved = gameStore.savedGame {
                                     Button {
@@ -103,8 +109,12 @@ struct HomeView: View {
                             .padding(.horizontal, m.gutter * 1.5)
                             .padding(.top, m.gutter * 1.2)
 
-                            // De zee blijft vrij van knoppen.
-                            Spacer(minLength: m.gutter * 7)
+                            Spacer(minLength: 0)
+
+                            // De zee blijft vrij van knoppen: vaste marge ter
+                            // hoogte van de golfband, ook als de spacers
+                            // dichtklappen op kleine schermen.
+                            Color.clear.frame(height: m.gutter * 7)
                         }
                         .frame(maxWidth: m.contentMaxWidth)
                         .frame(maxWidth: .infinity, minHeight: geo.size.height)

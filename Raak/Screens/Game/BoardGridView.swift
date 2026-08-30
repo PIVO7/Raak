@@ -104,9 +104,9 @@ struct BoardGridView: View {
     }
 }
 
-/// Eén vakje zee: golfjes zolang er niets gebeurde, een bubbel bij een
-/// misser, een ster bij een voltreffer en de bootkleur zodra die te zien
-/// mag zijn.
+/// Eén vakje zee: licht zolang er niets gebeurde, donker water met een
+/// kruis bij een misser, een ster bij een voltreffer en de bootkleur zodra
+/// die te zien mag zijn.
 private struct SeaCellView: View {
     let side: CGFloat
     let shipKind: ShipKind?
@@ -130,15 +130,12 @@ private struct SeaCellView: View {
                     .font(.system(size: side * 0.62, weight: .black))
                     .foregroundStyle(AppTheme.amber)
             } else if isShot {
-                // Een plons: flinke witte bel met een kring eromheen, zodat
-                // ook op het kleine bord meteen te zien is wáár al geschoten
-                // is.
-                Circle()
-                    .fill(.white)
-                    .frame(width: side * 0.4, height: side * 0.4)
-                Circle()
-                    .strokeBorder(.white.opacity(0.7), lineWidth: max(side * 0.06, 1.5))
-                    .frame(width: side * 0.68, height: side * 0.68)
+                // De misser: het vakje kleurt donker water en krijgt een dik
+                // wit kruis — "hier zit niets, al geprobeerd" leest zo ook op
+                // het kleine bord in één oogopslag.
+                Image(systemName: "xmark")
+                    .font(.system(size: side * 0.42, weight: .black))
+                    .foregroundStyle(.white)
             }
 
             RoundedRectangle(cornerRadius: corner, style: .continuous)
@@ -158,6 +155,12 @@ private struct SeaCellView: View {
     private var fillColor: Color {
         if let shipKind {
             return AvatarBadge.palette[shipKind.colorIndex % AvatarBadge.palette.count]
+        }
+        // Beschoten leeg water wordt donker: het contrast tussen "nog open"
+        // (licht) en "al geprobeerd" (donker) draagt de leesbaarheid, het
+        // kruis bevestigt alleen nog.
+        if isShot && !isHit {
+            return AppTheme.sky
         }
         return AppTheme.tintSky
     }
