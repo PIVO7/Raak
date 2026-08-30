@@ -12,14 +12,17 @@ struct WaveLine: Shape {
     }
 
     /// Tekent de golf verder vanaf het huidige punt; met `reversed` van
-    /// rechts naar links, voor de onderrand van een gesloten vlak.
+    /// rechts naar links, voor de onderrand van een gesloten vlak. De fase
+    /// spiegelt dan mee: op het scherm ligt elke top op dezelfde plek als
+    /// bij de heenweg, zodat de inktlijn-overlay er precies op valt.
     static func addWave(to path: inout Path, across rect: CGRect, midY: CGFloat, amplitude: CGFloat, reversed: Bool = false) {
         let humps = 4
         let step = rect.width / CGFloat(humps) * (reversed ? -1 : 1)
         let startX = reversed ? rect.maxX : rect.minX
         for hump in 0..<humps {
             let from = startX + CGFloat(hump) * step
-            let crest = midY + (hump.isMultiple(of: 2) ? -amplitude : amplitude)
+            let up = hump.isMultiple(of: 2) != reversed
+            let crest = midY + (up ? -amplitude : amplitude)
             path.addCurve(
                 to: CGPoint(x: from + step, y: midY),
                 control1: CGPoint(x: from + step / 3, y: crest),
