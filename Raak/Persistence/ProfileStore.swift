@@ -86,6 +86,18 @@ final class ProfileStore {
             profiles[index].gamesPlayed += 1
             let hits = hitCounts.indices.contains(playerIndex) ? hitCounts[playerIndex] : 0
             profiles[index].mostHits = max(profiles[index].mostHits, hits)
+            // De winnaar zinkt altijd de hele vloot; het récord is dus met
+            // hoeveel treffers verschil je de tegenstander achterliet.
+            if winnerProfileIDs.contains(player.profileID) {
+                let bestOpponent = players.indices
+                    .filter { $0 != playerIndex }
+                    .map { hitCounts.indices.contains($0) ? hitCounts[$0] : 0 }
+                    .max() ?? 0
+                let margin = hits - bestOpponent
+                if margin > 0 {
+                    profiles[index].bestWinMargin = max(profiles[index].bestWinMargin, margin)
+                }
+            }
             if winnerProfileIDs.isEmpty {
                 profiles[index].draws += 1
                 profiles[index].currentStreak = 0

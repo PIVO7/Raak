@@ -95,6 +95,26 @@ final class ProfileStoreTests: XCTestCase {
         XCTAssertEqual(store.humanProfiles[0].mostHits, 8)
     }
 
+    func testWinMarginRecordTracksBiggestGap() {
+        let store = ProfileStore(fileURL: fileURL)
+        store.addProfile(name: "Lene")
+        store.addProfile(name: "Ellis")
+        let lene = store.humanProfiles[0]
+        let ellis = store.humanProfiles[1]
+        let players = [GamePlayer(profile: lene), GamePlayer(profile: ellis)]
+
+        store.recordGameResult(players: players, winnerProfileIDs: [lene.id], hitCounts: [17, 9])
+        store.recordGameResult(players: players, winnerProfileIDs: [lene.id], hitCounts: [17, 14])
+
+        // Het grootste verschil blijft staan; een krappere winst haalt het
+        // record niet omlaag, en de verliezer heeft geen record.
+        XCTAssertEqual(store.humanProfiles[0].bestWinMargin, 8)
+        XCTAssertEqual(store.humanProfiles[1].bestWinMargin, 0)
+
+        store.recordGameResult(players: players, winnerProfileIDs: [ellis.id], hitCounts: [5, 17])
+        XCTAssertEqual(store.humanProfiles[1].bestWinMargin, 12)
+    }
+
     func testDrawCountsAndBreaksStreak() {
         let store = ProfileStore(fileURL: fileURL)
         store.addProfile(name: "Lene")

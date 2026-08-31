@@ -53,11 +53,14 @@ struct FamilyRecordsView: View {
                             value: { $0.bestStreak },
                             format: { String(localized: "\($0) op rij") }
                         )
+                        // Niet "meeste treffers": de winnaar zinkt altijd de
+                        // hele vloot, dus iedereen zou gelijk eindigen. Het
+                        // verschil met de tegenstander maakt het record.
                         recordRow(
-                            title: String(localized: "Meeste treffers in één potje"),
+                            title: String(localized: "Grootste overwinning"),
                             icon: "target",
-                            value: { $0.mostHits },
-                            format: { String(localized: "\($0) treffers") }
+                            value: { $0.bestWinMargin },
+                            format: { String(localized: "\($0) treffers verschil") }
                         )
                         recordRow(
                             title: String(localized: "Meeste potjes"),

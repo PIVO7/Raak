@@ -576,6 +576,22 @@
         }
       }
     },
+    "%lld treffers verschil" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Won by %lld hits"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld touches d'écart"
+          }
+        }
+      }
+    },
     "%lld× gewonnen · %lld gespeeld" : {
       "localizations" : {
         "en" : {
@@ -1287,6 +1303,22 @@
         }
       }
     },
+    "Grootste overwinning" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biggest win"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus grande victoire"
+          }
+        }
+      }
+    },
     "Haas" : {
       "localizations" : {
         "en" : {
@@ -1961,22 +1993,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le plus de parties"
-          }
-        }
-      }
-    },
-    "Meeste treffers in één potje" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Most hits in one game"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Le plus de touches en une partie"
           }
         }
       }

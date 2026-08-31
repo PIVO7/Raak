@@ -18,6 +18,9 @@ struct PlayerProfile: Identifiable, Equatable, Codable, Hashable {
     var bestStreak: Int
     /// Meeste treffers ooit in één potje; 0 betekent nog niet gespeeld.
     var mostHits: Int
+    /// Grootste verschil in treffers waarmee ooit gewonnen werd; de winnaar
+    /// zinkt altijd de hele vloot, dus het vérschil maakt het record.
+    var bestWinMargin: Int
     /// De laatste potjes, voor het grafiekje op de statistiekenpagina.
     var history: [GameRecord]
 
@@ -34,6 +37,7 @@ struct PlayerProfile: Identifiable, Equatable, Codable, Hashable {
         currentStreak: Int = 0,
         bestStreak: Int = 0,
         mostHits: Int = 0,
+        bestWinMargin: Int = 0,
         history: [GameRecord] = []
     ) {
         self.id = id
@@ -48,6 +52,7 @@ struct PlayerProfile: Identifiable, Equatable, Codable, Hashable {
         self.currentStreak = currentStreak
         self.bestStreak = bestStreak
         self.mostHits = mostHits
+        self.bestWinMargin = bestWinMargin
         self.history = history
     }
 
@@ -67,6 +72,7 @@ struct PlayerProfile: Identifiable, Equatable, Codable, Hashable {
         currentStreak = try container.decodeIfPresent(Int.self, forKey: .currentStreak) ?? 0
         bestStreak = try container.decodeIfPresent(Int.self, forKey: .bestStreak) ?? 0
         mostHits = try container.decodeIfPresent(Int.self, forKey: .mostHits) ?? 0
+        bestWinMargin = try container.decodeIfPresent(Int.self, forKey: .bestWinMargin) ?? 0
         history = try container.decodeIfPresent([GameRecord].self, forKey: .history) ?? []
     }
 

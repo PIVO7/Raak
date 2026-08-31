@@ -26,11 +26,12 @@ struct HomeView: View {
                 GeometryReader { geo in
                     ScrollView {
                         VStack(spacing: 0) {
-                            // De held raakt de golfband net aan: het bootje
-                            // vaart óp de golfrand, zonder diep in de band
-                            // te zakken.
+                            // De held zakt een stuk in de golfband: het
+                            // bootje ligt ín het water en de golflijn loopt
+                            // er achter door in plaats van eronder langs.
                             VStack(spacing: -m.gutter * 0.5) {
                                 HomeHeroView()
+                                    .offset(y: m.gutter * 1.1)
                                     .zIndex(1)
 
                                 WavyBandView(amplitude: m.gutter * 0.8, lineWidth: m.border) {
