@@ -26,9 +26,10 @@ struct HomeView: View {
                 GeometryReader { geo in
                     ScrollView {
                         VStack(spacing: 0) {
-                            // De held zakt een stukje in de golfband: het
-                            // bootje vaart óp de zee in plaats van erboven.
-                            VStack(spacing: -m.gutter * 0.9) {
+                            // De held raakt de golfband net aan: het bootje
+                            // vaart óp de golfrand, zonder diep in de band
+                            // te zakken.
+                            VStack(spacing: -m.gutter * 0.5) {
                                 HomeHeroView()
                                     .zIndex(1)
 
@@ -51,11 +52,12 @@ struct HomeView: View {
                             .padding(.top, m.gutter * 1.6)
                             .padding(.bottom, m.gutter * 1.5)
 
-                            // Restruimte verdeelt zich vóór en na de kaarten,
-                            // zodat het menu tussen golfband en zee zweeft in
-                            // plaats van bovenaan te klitten met een leeg gat
-                            // eronder.
+                            // Beperkte ademruimte onder de band: de kaarten
+                            // sluiten aan bij de titel, en de resterende
+                            // lucht valt onder de pillen — open zee in
+                            // plaats van een gat midden in het scherm.
                             Spacer(minLength: 0)
+                                .frame(maxHeight: m.gutter * 2.5)
 
                             VStack(spacing: m.gutter) {
                                 if let saved = gameStore.savedGame {
