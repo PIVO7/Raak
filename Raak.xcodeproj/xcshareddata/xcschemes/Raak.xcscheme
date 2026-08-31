@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1430"
-   version = "1.7">
+   LastUpgradeVersion = "2700"
+   version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES"
-      runPostActionsOnFailure = "NO">
+      buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -41,10 +40,9 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = "nl"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      region = "BE"
-      onlyGenerateCoverageForSpecifiedTargets = "NO">
+      language = "nl"
+      region = "BE">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -67,8 +65,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <CommandLineArguments>
-      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -90,8 +86,6 @@
             ReferencedContainer = "container:Raak.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-      </CommandLineArguments>
       <StoreKitConfigurationFileReference
          identifier = "../../Raak.storekit">
       </StoreKitConfigurationFileReference>
