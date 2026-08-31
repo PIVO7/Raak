@@ -86,9 +86,13 @@ struct ProfileStatsView: View {
                     : String(localized: "beste \(profile.bestStreak)"),
                 icon: "flame.fill"
             )
+            // Niet "meeste treffers": de winnaar zinkt altijd de hele
+            // vloot. Het verschil met de tegenstander is het echte record.
             statRow(
-                String(localized: "Meeste treffers in één potje"),
-                "\(profile.mostHits)",
+                String(localized: "Grootste overwinning"),
+                profile.bestWinMargin > 0
+                    ? String(localized: "\(profile.bestWinMargin) treffers verschil")
+                    : "—",
                 icon: "target"
             )
         }
