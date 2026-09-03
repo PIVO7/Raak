@@ -8,6 +8,9 @@ struct TileBadge: View {
     /// Index in `AvatarBadge.palette`.
     var colorIndex: Int = 0
     var size: CGFloat = 44
+    /// Losstaande tegels (de hero) krijgen dikte; tegels óp een gekleurd
+    /// blok blijven plat.
+    var depth: CGFloat = 0
 
     private var corner: CGFloat { size * 0.18 }
 
@@ -22,6 +25,11 @@ struct TileBadge: View {
                 .strokeBorder(AppTheme.ink, lineWidth: max(size * 0.045, 1.5))
         }
         .frame(width: size, height: size)
+        .background(
+            RoundedRectangle(cornerRadius: corner, style: .continuous)
+                .fill(AppTheme.ink)
+                .offset(y: depth)
+        )
         .accessibilityHidden(true)
     }
 }

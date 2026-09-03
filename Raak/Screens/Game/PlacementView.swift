@@ -32,7 +32,7 @@ struct PlacementView: View {
                         .foregroundStyle(AppTheme.ink)
                         .frame(width: m.tapTarget, height: m.tapTarget)
                 }
-                .buttonStyle(ToyButtonStyle(fill: AppTheme.card, radius: m.cellCorner, depth: 3, border: m.thinBorder))
+                .buttonStyle(ToyButtonStyle(fill: AppTheme.card, radius: m.cellCorner, depth: m.shallowDepth, border: m.thinBorder))
             }
 
             VStack(spacing: 4) {
@@ -66,14 +66,14 @@ struct PlacementView: View {
                     }
                 } label: {
                     Label("Schud", systemImage: "dice.fill")
-                        .font(AppTheme.rounded(m.buttonTextSize * 0.75))
+                        .font(AppTheme.rounded(m.defaultButton.textSize))
                         .foregroundStyle(AppTheme.ink)
                         .frame(maxWidth: .infinity)
-                        .frame(height: m.buttonHeight * 0.9)
+                        .frame(height: m.defaultButton.height)
                 }
                 .buttonStyle(ToyButtonStyle(
                     fill: AppTheme.amber,
-                    radius: m.cardCorner * 0.8,
+                    radius: m.buttonCorner,
                     depth: m.depth,
                     border: m.border
                 ))
@@ -83,14 +83,14 @@ struct PlacementView: View {
                     engine.confirmFleet()
                 } label: {
                     Label("Klaar!", systemImage: "checkmark")
-                        .font(AppTheme.rounded(m.buttonTextSize * 0.75))
+                        .font(AppTheme.rounded(m.defaultButton.textSize))
                         .foregroundStyle(AppTheme.ink)
                         .frame(maxWidth: .infinity)
-                        .frame(height: m.buttonHeight * 0.9)
+                        .frame(height: m.defaultButton.height)
                 }
                 .buttonStyle(ToyButtonStyle(
                     fill: AppTheme.mint,
-                    radius: m.cardCorner * 0.8,
+                    radius: m.buttonCorner,
                     depth: m.depth,
                     border: m.border
                 ))

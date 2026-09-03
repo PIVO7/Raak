@@ -36,7 +36,7 @@ struct BoardGridView: View {
                 }
             }
             .padding(padding)
-            .toyBlock(fill: AppTheme.sky, radius: m.cardCorner * 0.9, depth: m.depth, border: m.border)
+            .toyBlock(fill: AppTheme.sky, radius: m.cardCorner, depth: m.depth, border: m.border)
             .frame(width: gridWidth)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }
@@ -133,8 +133,8 @@ private struct SeaCellView: View {
                 // De misser: het vakje kleurt donker water en krijgt een dik
                 // wit kruis — "hier zit niets, al geprobeerd" leest zo ook op
                 // het kleine bord in één oogopslag.
-                Image(systemName: "xmark")
-                    .font(.system(size: side * 0.42, weight: .black))
+                Image(systemName: "xmark.circle.fill")
+                    .font(.system(size: side * 0.5, weight: .black))
                     .foregroundStyle(.white)
             }
 

@@ -16,10 +16,10 @@ struct HomeHeroView: View {
             // mildere kanteling, zodat de tegels netjes naast elkaar op de
             // golfrand liggen in plaats van rommelig over elkaar te buitelen.
             HStack(spacing: -m.discSize * 0.08) {
-                TileBadge(symbol: "sailboat.fill", colorIndex: 1, size: m.discSize * 1.15)
+                TileBadge(symbol: "sailboat.fill", colorIndex: 1, size: m.discSize * 1.15, depth: m.shallowDepth)
                     .rotationEffect(.degrees(hit ? -11 : -6))
                     .zIndex(1)
-                TileBadge(symbol: hit ? "burst.fill" : "target", colorIndex: hit ? 2 : 0, size: m.discSize * 1.15)
+                TileBadge(symbol: hit ? "burst.fill" : "target", colorIndex: hit ? 2 : 0, size: m.discSize * 1.15, depth: m.shallowDepth)
                     .rotationEffect(.degrees(5))
                     .offset(y: m.discSize * 0.1)
             }

@@ -30,6 +30,11 @@ struct GameView: View {
     @State private var shotPulse = 0
     @State private var turnPulse = 0
     @State private var winPulse = 0
+    /// De laatste uitkomst kleurt de statuschip: amber bij raak, sky bij
+    /// mis, coral bij gezonken. Neutraal zodra de beurt wisselt.
+    @State private var lastOutcome: ShotOutcome?
+
+    private enum ShotOutcome { case hit, miss, sunk }
 
     /// Wie er naar het scherm hoort te kijken: solo altijd de mens, aan één
     /// toestel wie er schikt of aan de beurt is.
@@ -128,16 +133,19 @@ struct GameView: View {
             persistProgress()
         }
         .onChange(of: engine.hitPulse) { _, _ in
+            lastOutcome = .hit
             winPulse += 1
             SoundPlayer.shared.play(.score)
             AccessibilityNotification.Announcement(String(localized: "Raak!")).post()
         }
         .onChange(of: engine.missPulse) { _, _ in
+            lastOutcome = .miss
             shotPulse += 1
             SoundPlayer.shared.play(.drop)
             AccessibilityNotification.Announcement(String(localized: "Mis, plons in het water")).post()
         }
         .onChange(of: engine.sunkPulse) { _, _ in
+            lastOutcome = .sunk
             winPulse += 1
             SoundPlayer.shared.play(.score)
             AccessibilityNotification.Announcement(engine.turnMessage).post()
@@ -157,6 +165,7 @@ struct GameView: View {
         }
         .onChange(of: engine.turnJustChanged) { _, changed in
             guard changed else { return }
+            lastOutcome = nil
             presentTurnChange()
             engine.acknowledgeTurnChange()
         }
@@ -211,16 +220,30 @@ struct GameView: View {
         }
     }
 
-    /// De spelstand onder de kop: wie er mag, raak of mis. Tijdens de banner
-    /// en het eindscherm wijkt hij.
+    /// De spelstand als toy-chip onder de kop: wie er mag, raak of mis.
+    /// Het kleuraccent volgt de uitkomst, zodat een kind één duidelijk
+    /// "ding" heeft om naar te kijken. Tijdens het eindscherm wijkt hij.
     private var statusLine: some View {
         Text(engine.turnMessage)
             .font(AppTheme.rounded(m.bodySize, .bold))
-            .foregroundStyle(AppTheme.soft)
+            .foregroundStyle(AppTheme.ink)
             .lineLimit(1)
             .minimumScaleFactor(0.7)
+            .padding(.horizontal, m.gutter)
+            .padding(.vertical, m.gutter * 0.45)
             .frame(maxWidth: .infinity)
+            .toyBlock(fill: statusFill, radius: m.cellCorner, depth: m.shallowDepth, border: m.thinBorder + 0.5)
+            .animation(.easeOut(duration: 0.15), value: engine.turnMessage)
             .opacity(showResult ? 0 : 1)
+    }
+
+    private var statusFill: Color {
+        switch lastOutcome {
+        case .hit: AppTheme.tintAmber
+        case .miss: AppTheme.tintSky
+        case .sunk: AppTheme.tintCoral
+        case nil: AppTheme.card
+        }
     }
 
     /// De dunne bovenrand: schot- en botenteller (passieve meta-info) met
@@ -246,7 +269,7 @@ struct GameView: View {
                     .foregroundStyle(AppTheme.ink)
                     .frame(width: m.tapTarget, height: m.tapTarget)
             }
-            .buttonStyle(ToyButtonStyle(fill: AppTheme.card, radius: m.cellCorner, depth: 3, border: m.thinBorder))
+            .buttonStyle(ToyButtonStyle(fill: AppTheme.card, radius: m.cellCorner, depth: m.shallowDepth, border: m.thinBorder))
         }
     }
 

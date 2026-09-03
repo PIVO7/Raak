@@ -31,15 +31,15 @@ struct HandoverView: View {
 
                 Button(action: onReady) {
                     Text(buttonTitle)
-                        .font(AppTheme.rounded(m.buttonTextSize * 0.85))
+                        .font(AppTheme.rounded(m.heroButton.textSize))
                         .foregroundStyle(AppTheme.ink)
                         .frame(maxWidth: .infinity)
-                        .frame(height: m.buttonHeight * 0.95)
+                        .frame(height: m.heroButton.height)
                 }
                 .buttonStyle(ToyButtonStyle(
                     fill: AppTheme.mint,
-                    radius: m.cardCorner * 0.9,
-                    depth: m.depth + 1,
+                    radius: m.buttonCorner,
+                    depth: m.heroDepth,
                     border: m.border
                 ))
                 .padding(.top, m.gutter)
