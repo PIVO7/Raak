@@ -40,6 +40,10 @@ struct RaakApp: App {
                     }
                 }
                 .onChange(of: entitlements.isFamilyUnlocked) { _, unlocked in
+                    // Gekocht tijdens een proefpotje: dat thema blijft gewoon aan.
+                    if unlocked {
+                        ThemeStore.shared.adoptTrial()
+                    }
                     if !unlocked, demoThema == nil {
                         ThemeStore.shared.enforceFreeTheme()
                     }
