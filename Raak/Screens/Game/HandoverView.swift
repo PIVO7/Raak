@@ -39,7 +39,7 @@ struct HandoverView: View {
                 .buttonStyle(ToyButtonStyle(
                     fill: AppTheme.mint,
                     radius: m.buttonCorner,
-                    depth: m.heroDepth,
+                    depth: m.heroButton.depth,
                     border: m.border
                 ))
                 .padding(.top, m.gutter)

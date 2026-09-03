@@ -25,11 +25,13 @@ struct TileBadge: View {
                 .strokeBorder(AppTheme.ink, lineWidth: max(size * 0.045, 1.5))
         }
         .frame(width: size, height: size)
-        .background(
-            RoundedRectangle(cornerRadius: corner, style: .continuous)
-                .fill(AppTheme.ink)
-                .offset(y: depth)
-        )
+        .background {
+            if depth > 0 {
+                RoundedRectangle(cornerRadius: corner)
+                    .fill(AppTheme.ink)
+                    .offset(y: depth)
+            }
+        }
         .accessibilityHidden(true)
     }
 }

@@ -62,6 +62,7 @@
 		CCE35C99DE40162AF54E3711 /* ParentalGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E8C71D34D14852F21C0DD /* ParentalGate.swift */; };
 		D068B995C28DECB5E2C56E0E /* wissel.wav in Resources */ = {isa = PBXBuildFile; fileRef = B9BFD4F71ACC35D22E290A2A /* wissel.wav */; };
 		D33325188CDFAC13C7A082F9 /* ToyButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAFD0209642A2A60FF07B4 /* ToyButtonStyle.swift */; };
+		959A52BE164E4C000031206A /* ToyToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF1E00BB5878EBA270F5B /* ToyToggleStyle.swift */; };
 		D41B609C84CA7C63A73A41BB /* HandoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69CEC38C5B000D5D5EFA2AE /* HandoverView.swift */; };
 		D53B6D248A0B6C9ECD139721 /* TileBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BED0D45872532206F0D56CD /* TileBadge.swift */; };
 		DCF2F9B2D1E081A43357D7AA /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774FE3256885BC403D160A5 /* SoundPlayer.swift */; };
@@ -164,6 +165,7 @@
 		E3AFC3D1E695FF6DAE6F4632 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
 		E6A7998F0D9F3A6EF213EBB0 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		E6CAFD0209642A2A60FF07B4 /* ToyButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyButtonStyle.swift; sourceTree = "<group>"; };
+		AD6CF1E00BB5878EBA270F5B /* ToyToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyToggleStyle.swift; sourceTree = "<group>"; };
 		E809DDC6DE6AAD88F96A318F /* ProfileEditorRenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorRenderTests.swift; sourceTree = "<group>"; };
 		F67C6B3728C016D4FB572B28 /* ProfileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorView.swift; sourceTree = "<group>"; };
 		FED50963B3515B2D09735946 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				BEA9EEA75D135998352BD8FE /* ThemeStore.swift */,
 				D0EB131EF7077DCE8FBD235D /* ToyBlock.swift */,
 				E6CAFD0209642A2A60FF07B4 /* ToyButtonStyle.swift */,
+				AD6CF1E00BB5878EBA270F5B /* ToyToggleStyle.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				D53B6D248A0B6C9ECD139721 /* TileBadge.swift in Sources */,
 				36DE4C24B173EA8879233125 /* ToyBlock.swift in Sources */,
 				D33325188CDFAC13C7A082F9 /* ToyButtonStyle.swift in Sources */,
+				959A52BE164E4C000031206A /* ToyToggleStyle.swift in Sources */,
 				0150C92AFC4E02C2B5E1F6D4 /* ToyDialog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

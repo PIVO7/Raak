@@ -240,7 +240,7 @@ struct GameResultOverlay: View {
             .buttonStyle(ToyButtonStyle(
                 fill: AppTheme.mint,
                 radius: m.buttonCorner,
-                depth: m.depth,
+                depth: m.defaultButton.depth,
                 border: m.border
             ))
 
@@ -254,7 +254,7 @@ struct GameResultOverlay: View {
             .buttonStyle(ToyButtonStyle(
                 fill: AppTheme.card,
                 radius: m.buttonCorner,
-                depth: m.depth,
+                depth: m.defaultButton.depth,
                 border: m.border
             ))
         }
