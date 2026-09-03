@@ -7,6 +7,9 @@ struct PaywallView: View {
 
     @Environment(\.dismiss) private var dismiss
     @Environment(\.metrics) private var m
+    /// Optioneel: het scherm hangt ook in previews en rendertests, waar geen
+    /// profielen bestaan.
+    @Environment(ProfileStore.self) private var profileStore: ProfileStore?
 
     @State private var gateQuestion: ParentalGateQuestion?
     /// De poort staat vóór het hele scherm: ook de prijzen en de koopknoppen
@@ -19,6 +22,17 @@ struct PaywallView: View {
 
     private var priceText: String {
         entitlements.familyProduct?.displayPrice ?? "…"
+    }
+
+    /// De namen die al in de app staan: het scherm gaat over dít gezin, niet
+    /// over "gebruikers". Geen profielen? Dan blijft de regel weg.
+    private var familyLine: String? {
+        let names = (profileStore?.humanProfiles ?? []).map(\.name)
+        switch names.count {
+        case 0: return nil
+        case 1: return String(localized: "Voor \(names[0])")
+        default: return String(localized: "Voor \(names.dropLast().joined(separator: ", ")) en \(names[names.count - 1])")
+        }
     }
 
     var body: some View {
@@ -84,94 +98,158 @@ struct PaywallView: View {
     }
 
     private var paywallContent: some View {
-        ScrollView {
-            VStack(spacing: m.gutter) {
-                // Dezelfde speelgoedtegels als het startscherm: de paywall
-                // hoort bij de familie, niet bij een winkel.
-                HStack(spacing: -m.discSize * 0.15) {
-                    TileBadge(symbol: "sailboat.fill", colorIndex: 1, size: m.discSize * 0.95)
-                        .rotationEffect(.degrees(-8))
-                        .zIndex(1)
-                    TileBadge(symbol: "figure.2.and.child.holdinghands", colorIndex: 0, size: m.discSize * 1.1)
-                        .zIndex(2)
-                    TileBadge(symbol: "burst.fill", colorIndex: 2, size: m.discSize * 0.95)
-                        .rotationEffect(.degrees(8))
-                        .offset(y: m.discSize * 0.1)
+        // De ScrollView vult altijd het venster; op een iPad past alles ruim
+        // en hoort het midden op het scherm te staan in plaats van tegen de
+        // bovenrand met een halve lege pagina eronder.
+        GeometryReader { proxy in
+            ScrollView {
+                VStack(spacing: m.gutter) {
+                    // Dezelfde speelgoedtegels als het startscherm: de paywall
+                    // hoort bij de familie, niet bij een winkel.
+                    HStack(spacing: -m.discSize * 0.15) {
+                        TileBadge(symbol: "sailboat.fill", colorIndex: 1, size: m.discSize * 0.95)
+                            .rotationEffect(.degrees(-8))
+                            .zIndex(1)
+                        TileBadge(symbol: "figure.2.and.child.holdinghands", colorIndex: 0, size: m.discSize * 1.1)
+                            .zIndex(2)
+                        TileBadge(symbol: "burst.fill", colorIndex: 2, size: m.discSize * 0.95)
+                            .rotationEffect(.degrees(8))
+                            .offset(y: m.discSize * 0.1)
+                    }
+                    .accessibilityHidden(true)
+                    .padding(.top, m.gutter)
+
+                    if let familyLine {
+                        Text(familyLine)
+                            .font(AppTheme.rounded(m.captionSize + 2, .bold))
+                            .foregroundStyle(AppTheme.soft)
+                            .multilineTextAlignment(.center)
+                    }
+
+                    Text("Gezinsversie")
+                        .font(AppTheme.rounded(m.titleSize * 0.7))
+                        .foregroundStyle(AppTheme.headline)
+
+                    Text("Eén keer kopen, voor het hele gezin — ook via Delen met gezin.")
+                        .font(AppTheme.rounded(m.captionSize + 2, .bold))
+                        .foregroundStyle(AppTheme.soft)
+                        .multilineTextAlignment(.center)
+
+                    VStack(spacing: m.gutter * 0.7) {
+                        feature("graduationcap.fill", tint: AppTheme.tintSky, symbolColorIndex: 1,
+                                "Drie tegenstanders", "Dommel, Robbie en Professor Punt")
+                        feature("paintpalette.fill", tint: AppTheme.tintCoral, symbolColorIndex: 0,
+                                "Alle kleurenthema's", "Snoep, Oceaan en Nacht")
+                        feature("trophy.fill", tint: AppTheme.tintAmber, symbolColorIndex: 2,
+                                "Statistieken en trofeeën", "Per speler, met gezinsrecords")
+                    }
+
+                    reassurance
                 }
-                .accessibilityHidden(true)
+                .padding(.horizontal, m.gutter * 1.4)
                 .padding(.top, m.gutter)
+                .padding(.bottom, m.gutter)
+                .frame(maxWidth: m.overlayMaxWidth)
+                .frame(maxWidth: .infinity)
+                .frame(minHeight: visibleHeight(proxy), alignment: .center)
+            }
+        }
+        .safeAreaInset(edge: .bottom) { purchaseBar }
+    }
 
-                Text("Gezinsversie")
-                    .font(AppTheme.rounded(m.titleSize * 0.7))
-                    .foregroundStyle(AppTheme.headline)
+    private func visibleHeight(_ proxy: GeometryProxy) -> CGFloat {
+        max(proxy.size.height - proxy.safeAreaInsets.top - proxy.safeAreaInsets.bottom, 0)
+    }
 
-                Text("Eén keer kopen, voor het hele gezin — ook via Delen met gezin.")
-                    .font(AppTheme.rounded(m.captionSize + 2, .bold))
-                    .foregroundStyle(AppTheme.soft)
+    /// Wat een ouder op dit moment wil weten: wat het niet is. Geen abonnement,
+    /// geen advertenties, en gratis blijft gewoon spelen.
+    private var reassurance: some View {
+        VStack(spacing: m.gutter * 0.3) {
+            Text("Zonder Gezinsversie blijven jullie gewoon samen spelen, met z'n tweeën.")
+            Text("Gemaakt voor gezinnen, niet voor advertenties: niets dat meekijkt en geen abonnement.")
+        }
+        .font(AppTheme.rounded(m.captionSize, .bold))
+        .foregroundStyle(AppTheme.soft)
+        .multilineTextAlignment(.center)
+        .frame(maxWidth: .infinity)
+    }
+
+    /// De kassa staat vast onderaan: met grote letters schoof de knop anders
+    /// onder de vouw en leek het scherm een folder zonder kassa.
+    private var purchaseBar: some View {
+        VStack(spacing: m.gutter * 0.4) {
+            if entitlements.isFamilyUnlocked {
+                Label("Ontgrendeld — veel plezier!", systemImage: "checkmark.seal.fill")
+                    .font(AppTheme.rounded(m.bodySize))
+                    .foregroundStyle(AppTheme.mint)
+                    .frame(minHeight: m.tapTarget)
+            } else {
+                Text("Eenmalig · geen abonnement")
+                    .font(AppTheme.rounded(m.captionSize, .bold))
+                    .foregroundStyle(AppTheme.cardSoft)
                     .multilineTextAlignment(.center)
 
-                VStack(spacing: m.gutter * 0.7) {
-                    feature("graduationcap.fill", tint: AppTheme.tintSky, symbolColorIndex: 1,
-                            "Alle drie de tegenstanders: Dommel, Robbie en Professor Punt")
-                    feature("paintpalette.fill", tint: AppTheme.tintCoral, symbolColorIndex: 0,
-                            "Alle kleurenthema's: Snoep, Oceaan en Nacht")
-                    feature("trophy.fill", tint: AppTheme.tintAmber, symbolColorIndex: 2,
-                            "Statistieken per speler, met trofeeën en gezinsrecords")
+                Button(action: startPurchase) {
+                    Text("Ontgrendel voor \(priceText)")
+                        .font(AppTheme.rounded(m.defaultButton.textSize))
+                        .foregroundStyle(AppTheme.ink)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: m.defaultButton.height)
                 }
+                .buttonStyle(ToyButtonStyle(
+                    fill: AppTheme.mint,
+                    radius: m.buttonCorner,
+                    depth: m.defaultButton.depth,
+                    border: m.border
+                ))
+                .disabled(isBusy)
 
-                if entitlements.isFamilyUnlocked {
-                    Label("Ontgrendeld — veel plezier!", systemImage: "checkmark.seal.fill")
-                        .font(AppTheme.rounded(m.bodySize))
-                        .foregroundStyle(AppTheme.mint)
-                        .padding(.top, m.gutter)
-                } else {
-                    Button(action: startPurchase) {
-                        Text("Ontgrendel voor \(priceText)")
-                            .font(AppTheme.rounded(m.defaultButton.textSize))
-                            .foregroundStyle(AppTheme.ink)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: m.defaultButton.height)
-                    }
-                    .buttonStyle(ToyButtonStyle(
-                        fill: AppTheme.mint,
-                        radius: m.buttonCorner,
-                        depth: m.defaultButton.depth,
-                        border: m.border
-                    ))
-                    .disabled(isBusy)
-
-                    Button(action: startRestore) {
-                        Text("Eerder gekocht? Zet terug")
-                            .font(AppTheme.rounded(m.captionSize, .bold))
-                            .foregroundStyle(AppTheme.soft)
-                            .frame(minHeight: m.tapTarget)
-                            .contentShape(.rect)
-                    }
-                    .buttonStyle(.plain)
-                    .disabled(isBusy)
+                Button(action: startRestore) {
+                    Text("Eerder gekocht? Zet terug")
+                        .font(AppTheme.rounded(m.captionSize, .bold))
+                        .foregroundStyle(AppTheme.cardSoft)
+                        .frame(minHeight: m.tapTarget)
+                        .contentShape(.rect)
                 }
+                .buttonStyle(.plain)
+                .disabled(isBusy)
             }
-            .padding(.horizontal, m.gutter * 1.4)
-            .padding(.top, m.gutter)
-            .padding(.bottom, m.gutter * 2)
-            .frame(maxWidth: m.overlayMaxWidth)
-            .frame(maxWidth: .infinity)
         }
+        .padding(.horizontal, m.gutter)
+        .padding(.vertical, m.gutter * 0.7)
+        .toyBlock(fill: AppTheme.card, radius: m.cardCorner, depth: m.depth, border: m.border)
+        .frame(maxWidth: m.overlayMaxWidth)
+        .frame(maxWidth: .infinity)
+        .padding(.horizontal, m.gutter * 1.4)
+        .padding(.bottom, m.gutter * 0.6)
     }
 
     /// Eén feature op een eigen kaart, met het icoon op een gekleurd
-    /// tegeltje — dezelfde taal als de menutegels op het startscherm.
-    private func feature(_ icon: String, tint: Color, symbolColorIndex: Int, _ text: LocalizedStringKey) -> some View {
+    /// tegeltje — dezelfde taal als de menutegels op het startscherm. Kop plus
+    /// uitleg in plaats van één lange zin: zo scan je de lijst in twee
+    /// seconden.
+    private func feature(
+        _ icon: String,
+        tint: Color,
+        symbolColorIndex: Int,
+        _ title: LocalizedStringKey,
+        _ detail: LocalizedStringKey
+    ) -> some View {
         HStack(spacing: m.gutter * 0.8) {
             TileBadge(symbol: icon, colorIndex: symbolColorIndex, size: m.avatarSize * 0.6)
                 .frame(width: m.avatarSize * 0.9, height: m.avatarSize * 0.9)
                 .toyBlock(fill: tint, radius: m.cellCorner, depth: 0, border: m.thinBorder + 0.5)
 
-            Text(text)
-                .font(AppTheme.rounded(m.captionSize + 2, .bold))
-                .foregroundStyle(AppTheme.ink)
-                .fixedSize(horizontal: false, vertical: true)
-                .frame(maxWidth: .infinity, alignment: .leading)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(AppTheme.rounded(m.captionSize + 2))
+                    .foregroundStyle(AppTheme.ink)
+                Text(detail)
+                    .font(AppTheme.rounded(m.captionSize, .bold))
+                    .foregroundStyle(AppTheme.cardSoft)
+            }
+            .fixedSize(horizontal: false, vertical: true)
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding(m.gutter * 0.8)
         .toyBlock(fill: AppTheme.card, radius: m.cardCorner, depth: m.shallowDepth, border: m.thinBorder + 0.5)
