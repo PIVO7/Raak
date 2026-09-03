@@ -33,6 +33,9 @@ struct GameView: View {
     /// De laatste uitkomst kleurt de statuschip: amber bij raak, sky bij
     /// mis, coral bij gezonken. Neutraal zodra de beurt wisselt.
     @State private var lastOutcome: ShotOutcome?
+    /// De korte knal bij een gezonken boot; verdwijnt vanzelf weer.
+    @State private var showSinkCallout = false
+    @State private var sinkCallout: Task<Void, Never>?
 
     private enum ShotOutcome { case hit, miss, sunk }
 
@@ -70,6 +73,11 @@ struct GameView: View {
             // iPad uit over het volle scherm.
             .frame(maxWidth: m.contentMaxWidth)
             .frame(maxWidth: .infinity)
+
+            if showSinkCallout {
+                SinkCalloutView()
+                    .zIndex(2)
+            }
 
             if showHandover {
                 HandoverView(
@@ -149,6 +157,7 @@ struct GameView: View {
             winPulse += 1
             SoundPlayer.shared.play(.score)
             AccessibilityNotification.Announcement(engine.turnMessage).post()
+            presentSinkCallout()
         }
         .onChange(of: engine.isResolving) { _, resolving in
             resolveDelay?.cancel()
@@ -329,6 +338,22 @@ struct GameView: View {
                 ? engine.turnMessage
                 : String(localized: "Jij bent aan de beurt")
         ).post()
+    }
+
+    /// De knal even laten staan en dan vanzelf laten gaan. Een nieuwe
+    /// treffer onderbreekt de vorige, zodat er nooit twee overlappen.
+    private func presentSinkCallout() {
+        sinkCallout?.cancel()
+        sinkCallout = Task {
+            withAnimation(reduceMotion ? .easeOut(duration: 0.15) : .spring(response: 0.3, dampingFraction: 0.6)) {
+                showSinkCallout = true
+            }
+            try? await Task.sleep(for: .milliseconds(1100))
+            guard !Task.isCancelled else { return }
+            withAnimation(.easeOut(duration: 0.2)) {
+                showSinkCallout = false
+            }
+        }
     }
 
     private func gameDidFinish() {

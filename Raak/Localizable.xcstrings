@@ -1303,6 +1303,22 @@
         }
       }
     },
+    "Gezonken!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunk!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coulé !"
+          }
+        }
+      }
+    },
     "Groot" : {
       "localizations" : {
         "en" : {

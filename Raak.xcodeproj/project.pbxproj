@@ -74,6 +74,7 @@
 		E9271411357AA38B057A53F0 /* plop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CA1EDD24203EB20E55AA609 /* plop.wav */; };
 		EF744CD57728D53DEC70D182 /* ComputerLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CF86E84E27C73C24AB3DC /* ComputerLevel.swift */; };
 		F3551EF264643EDB5F87BC14 /* GameResultOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2DE9976A2520EA591F6DB /* GameResultOverlay.swift */; };
+		4698EE394F69F0406CFC41C4 /* SinkCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7B9C0DBC21497EF95468F8 /* SinkCalloutView.swift */; };
 		F36BBBB25638551506FDC5F8 /* ActiveGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917C46EE0BF6424BB4096468 /* ActiveGame.swift */; };
 		F6346C141A4CB18FAB2DD287 /* BoardGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4074A43C2E61457211840D /* BoardGridView.swift */; };
 		F7C7D09E0C611232CEE84A91 /* GameCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2099D18A4F41E1FE5E16A34 /* GameCoverView.swift */; };
@@ -157,6 +158,7 @@
 		CA80C71DDE4BC49BAB33A3B1 /* PlayerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProfile.swift; sourceTree = "<group>"; };
 		CB6DE4276801FCAD03D2CE1C /* Raak UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Raak UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB2DE9976A2520EA591F6DB /* GameResultOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultOverlay.swift; sourceTree = "<group>"; };
+		6B7B9C0DBC21497EF95468F8 /* SinkCalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinkCalloutView.swift; sourceTree = "<group>"; };
 		D0EB131EF7077DCE8FBD235D /* ToyBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyBlock.swift; sourceTree = "<group>"; };
 		D29C02F623D5EB62F191E50D /* GameSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSnapshot.swift; sourceTree = "<group>"; };
 		DB6F104429389851573F045A /* StatsOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsOverviewView.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				C2099D18A4F41E1FE5E16A34 /* GameCoverView.swift */,
 				97729781BE54389907B6A11C /* GameHeaderView.swift */,
 				CBB2DE9976A2520EA591F6DB /* GameResultOverlay.swift */,
+				6B7B9C0DBC21497EF95468F8 /* SinkCalloutView.swift */,
 				0B5A9558F18821CF79540BC8 /* GameView.swift */,
 				B69CEC38C5B000D5D5EFA2AE /* HandoverView.swift */,
 				556949D5C6CEDD9869C4F7FE /* PlacementView.swift */,
@@ -565,6 +568,7 @@
 				86223BD5DFA5FDF07FDA02E8 /* GamePlayer.swift in Sources */,
 				08004F041FFE820EB4965CC6 /* GameRecord.swift in Sources */,
 				F3551EF264643EDB5F87BC14 /* GameResultOverlay.swift in Sources */,
+				4698EE394F69F0406CFC41C4 /* SinkCalloutView.swift in Sources */,
 				B9046C7B6DC5083D80CBDACE /* GameSetupView.swift in Sources */,
 				7C5E13012C83CFEAB89DBCC9 /* GameSnapshot.swift in Sources */,
 				2F3C7DFEEEB5F3477EB96F4E /* GameStore.swift in Sources */,
