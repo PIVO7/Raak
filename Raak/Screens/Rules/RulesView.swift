@@ -45,6 +45,15 @@ struct RulesView: View {
                         }
                     }
 
+                    section("SALVO") {
+                        card {
+                            bullet("burst.fill", String(localized: "In deze spelvorm schiet je per beurt zoveel keer als je nog boten hebt: vier boten, vier schoten."))
+                            bullet("arrow.uturn.right", String(localized: "Raak of mis maakt niet uit — je schiet je hele salvo af en dan is de ander."))
+                            bullet("exclamationmark.triangle.fill", String(localized: "Zinkt er een boot van jou, dan wordt jouw salvo korter. Pas dus op je vloot!"))
+                            bullet("figure.2.and.child.holdinghands", String(localized: "Hoort bij de Gezinsversie."))
+                        }
+                    }
+
                     section("SLIMME TRUCJES") {
                         card {
                             bullet("brain.head.profile", String(localized: "Kijk goed naar je schoten: een bubbel is water, een knal is boot."))

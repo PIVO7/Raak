@@ -13,6 +13,7 @@ enum GamePhase: String, Codable {
 @Observable
 final class GameEngine {
     let mode: GameMode
+    let variant: GameVariant
     let boardSize: BoardSize
     private(set) var players: [GamePlayer]
     let startingPlayerIndex: Int
@@ -43,6 +44,9 @@ final class GameEngine {
     private(set) var attempts = 0
     /// Schoten per speler, in spelersvolgorde.
     private(set) var shotsFired: [Int]
+    /// Schoten die deze beurt nog over zijn. Bij Salvo telt dit af van het
+    /// aantal boten dat je nog hebt; klassiek staat het altijd op 1.
+    private(set) var shotsRemaining: Int = 1
     /// Het laatste schot, voor een korte highlight op het bord.
     private(set) var lastShot: Coord?
     /// De zee waarop dat schot viel; de highlight hoort alleen daar.
@@ -82,9 +86,17 @@ final class GameEngine {
         return boards[other].ships.count(where: \.isSunk)
     }
 
+    /// Het salvo van deze speler: één schot per boot die nog vaart. Nooit
+    /// nul — een speler zonder boten heeft het potje al verloren.
+    private func salvoSize(for playerIndex: Int) -> Int {
+        guard variant == .salvo, boards.indices.contains(playerIndex) else { return 1 }
+        return max(boards[playerIndex].shipsAfloat, 1)
+    }
+
     var snapshot: GameSnapshot {
         GameSnapshot(
             mode: mode,
+            variant: variant,
             boardSize: boardSize,
             players: players,
             startingPlayerIndex: startingPlayerIndex,
@@ -93,6 +105,7 @@ final class GameEngine {
             boards: boards,
             placementReady: placementReady,
             shotsFired: shotsFired,
+            shotsRemaining: shotsRemaining,
             turnMessage: turnMessage,
             savedAt: .now
         )
@@ -100,12 +113,14 @@ final class GameEngine {
 
     init(
         mode: GameMode,
+        variant: GameVariant = .classic,
         profiles: [PlayerProfile],
         boardSize: BoardSize = .medium,
         startingPlayerIndex: Int = 0,
         seed: UInt64? = nil
     ) {
         self.mode = mode
+        self.variant = variant
         self.boardSize = boardSize
         self.players = profiles.map(GamePlayer.init)
         self.startingPlayerIndex = min(max(startingPlayerIndex, 0), max(profiles.count - 1, 0))
@@ -121,12 +136,17 @@ final class GameEngine {
             self.turnMessage = String(localized: "\(players[first].name) legt de vloot klaar")
         } else {
             self.phase = .playing
-            self.turnMessage = String(localized: "\(currentPlayer.name) mag beginnen")
+            self.shotsRemaining = self.salvoSize(for: self.currentPlayerIndex)
+            self.turnMessage = variant == .salvo
+                ? String(localized: "\(currentPlayer.name) mag \(self.shotsRemaining) keer schieten")
+                : String(localized: "\(currentPlayer.name) mag beginnen")
         }
     }
 
     init(snapshot: GameSnapshot, seed: UInt64? = nil) {
         self.mode = snapshot.mode
+        // Bewaarde spellen van vóór de spelvormen zijn klassiek.
+        self.variant = snapshot.variant ?? .classic
         self.boardSize = snapshot.boardSize
         self.players = snapshot.players
         self.startingPlayerIndex = min(max(snapshot.startingPlayerIndex, 0), max(snapshot.players.count - 1, 0))
@@ -138,6 +158,9 @@ final class GameEngine {
         self.attempts = snapshot.shotsFired.reduce(0, +)
         self.rng = SplitMix64(seed: seed ?? UInt64.random(in: .min ... .max))
         self.turnMessage = snapshot.turnMessage
+        // Een half geschoten salvo hoort ook na een hervatting door te
+        // lopen; ontbreekt het getal, dan begint de beurt gewoon opnieuw.
+        self.shotsRemaining = snapshot.shotsRemaining ?? self.salvoSize(for: self.currentPlayerIndex)
 
         // De computer kent na een hervatting zijn vizier niet meer; hij
         // leert zijn rake schoten opnieuw uit het bord van de tegenstander.
@@ -175,7 +198,10 @@ final class GameEngine {
             turnJustChanged = true
         } else {
             phase = .playing
-            turnMessage = String(localized: "\(currentPlayer.name) mag beginnen")
+            shotsRemaining = salvoSize(for: currentPlayerIndex)
+            turnMessage = variant == .salvo
+                ? String(localized: "\(currentPlayer.name) mag \(shotsRemaining) keer schieten")
+                : String(localized: "\(currentPlayer.name) mag beginnen")
             turnJustChanged = true
         }
         markDirty()
@@ -191,12 +217,18 @@ final class GameEngine {
         return shoot(at: coord)
     }
 
-    /// Rondt een misser af en geeft de beurt door. De UI (of de
-    /// computerlus) roept dit aan nadat de speler de plons even zag.
+    /// Rondt een schot af dat even bleef staan — een plons, of het laatste
+    /// schot van een salvo. De UI (of de computerlus) roept dit aan nadat de
+    /// speler het resultaat zag. Zijn er nog schoten over, dan blijft de
+    /// speler aan zet.
     func finishMiss() {
         guard isResolving else { return }
         isResolving = false
-        advanceTurn()
+        if variant == .salvo, shotsRemaining > 0 {
+            turnMessage = shotsLeftMessage()
+        } else {
+            advanceTurn()
+        }
         markDirty()
     }
 
@@ -265,6 +297,9 @@ final class GameEngine {
 
         attempts += 1
         shotsFired[currentPlayerIndex] += 1
+        if variant == .salvo {
+            shotsRemaining = max(shotsRemaining - 1, 0)
+        }
         lastShot = coord
         lastShotBoardIndex = targetIndex
         // De computer leert van elk eigen schot — nooit van de vloot zelf,
@@ -280,11 +315,22 @@ final class GameEngine {
             turnMessage = String(localized: "Mis — plons in het water…")
         case .hit:
             hitPulse += 1
-            turnMessage = String(localized: "Raak! \(currentPlayer.name) mag nog een keer")
+            turnMessage = variant == .salvo
+                ? String(localized: "Raak! \(shotsLeftMessage())")
+                : String(localized: "Raak! \(currentPlayer.name) mag nog een keer")
+            // Laatste schot van het salvo: even laten staan, dan is de ander.
+            if variant == .salvo, shotsRemaining == 0 {
+                isResolving = true
+            }
         case .sunk(let kind):
             sunkPulse += 1
             if boards[targetIndex].allSunk {
                 finishGame()
+            } else if variant == .salvo {
+                turnMessage = String(localized: "De \(kind.title) is gezonken! \(shotsLeftMessage())")
+                if shotsRemaining == 0 {
+                    isResolving = true
+                }
             } else {
                 turnMessage = String(localized: "De \(kind.title) is gezonken! Nog een keer!")
             }
@@ -293,9 +339,21 @@ final class GameEngine {
         return true
     }
 
+    /// Hoeveel schoten dit salvo nog telt, in woorden.
+    private func shotsLeftMessage() -> String {
+        switch shotsRemaining {
+        case 0: String(localized: "Je salvo is op")
+        case 1: String(localized: "Nog 1 schot")
+        default: String(localized: "Nog \(shotsRemaining) schoten")
+        }
+    }
+
     private func advanceTurn() {
         currentPlayerIndex = opponentIndex
-        turnMessage = String(localized: "\(currentPlayer.name) is aan de beurt")
+        shotsRemaining = salvoSize(for: currentPlayerIndex)
+        turnMessage = variant == .salvo
+            ? String(localized: "\(currentPlayer.name) mag \(shotsRemaining) keer schieten")
+            : String(localized: "\(currentPlayer.name) is aan de beurt")
         turnJustChanged = true
     }
 

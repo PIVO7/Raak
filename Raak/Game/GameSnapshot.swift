@@ -3,6 +3,8 @@ import Foundation
 /// Serialiseerbare snapshot van een lopend spel, zodat kids kunnen hervatten.
 struct GameSnapshot: Codable, Equatable {
     var mode: GameMode
+    /// Optioneel: spellen die vóór de spelvormen bewaard zijn, zijn klassiek.
+    var variant: GameVariant?
     var boardSize: BoardSize
     var players: [GamePlayer]
     var startingPlayerIndex: Int
@@ -11,6 +13,8 @@ struct GameSnapshot: Codable, Equatable {
     var boards: [PlayerBoard]
     var placementReady: [Bool]
     var shotsFired: [Int]
+    /// Schoten die deze beurt nog over zijn; alleen zinvol bij Salvo.
+    var shotsRemaining: Int?
     var turnMessage: String
     var savedAt: Date
 
@@ -45,11 +49,16 @@ struct GameSnapshot: Codable, Equatable {
 
     var summaryTitle: String {
         let names = players.filter { !$0.isComputer }.map(\.name)
+        let base: String
         switch mode {
         case .versusComputer:
-            return names.first.map { String(localized: "\($0) vs Computer") } ?? mode.title
+            base = names.first.map { String(localized: "\($0) vs Computer") } ?? mode.title
         case .versusFriends:
-            return names.joined(separator: " · ")
+            base = names.joined(separator: " · ")
         }
+        // De spelvorm hoort erbij: anders lijkt een bewaard salvopotje op
+        // een gewoon potje tot je het opent.
+        guard let variant, variant != .classic else { return base }
+        return "\(base) · \(variant.title)"
     }
 }

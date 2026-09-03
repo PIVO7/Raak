@@ -136,6 +136,8 @@ struct PaywallView: View {
                         .multilineTextAlignment(.center)
 
                     VStack(spacing: m.gutter * 0.7) {
+                        feature("burst.fill", tint: AppTheme.tintAmber, symbolColorIndex: 3,
+                                "Spelvorm Salvo", "Zoveel schoten per beurt als je boten hebt")
                         feature("graduationcap.fill", tint: AppTheme.tintSky, symbolColorIndex: 1,
                                 "Drie tegenstanders", "Dommel, Robbie en Professor Punt")
                         feature("paintpalette.fill", tint: AppTheme.tintCoral, symbolColorIndex: 0,
