@@ -64,10 +64,11 @@ struct GameResultOverlay: View {
             if aWins != bWins { return aWins }
             return (hitCounts[safe: a.offset] ?? 0) > (hitCounts[safe: b.offset] ?? 0)
         }
+        // Zonder winnaar is het gelijkspel: dan deelt iedereen plek één.
         let entries = ranked.enumerated().map { rank, item in
             (
                 player: item.element,
-                rank: rank,
+                rank: winnerProfileIDs.isEmpty ? 0 : rank,
                 hits: hitCounts[safe: item.offset] ?? 0,
                 sunk: shipsSunk[safe: item.offset] ?? 0
             )
@@ -170,10 +171,13 @@ struct GameResultOverlay: View {
 
     private func podiumColumn(_ entry: (player: GamePlayer, rank: Int, hits: Int, sunk: Int)) -> some View {
         let isFirst = entry.rank == 0 && hasWinner
+        // Bij een gedeelde eerste plek (gelijkspel) staan beide spelers
+        // even groot bovenaan; alleen een echte winnaar krijgt de kroon.
+        let isTop = entry.rank == 0
         let blockHeights: [CGFloat] = [3.4, 2.3, 1.75, 1.3]
         let blockColors: [Color] = [AppTheme.card, AppTheme.sky, AppTheme.coral, AppTheme.mint]
         let height = m.avatarSize * blockHeights[min(entry.rank, 3)]
-        let avatarSize = isFirst ? m.avatarSize * 2.1 : m.avatarSize * 1.6
+        let avatarSize = isTop ? m.avatarSize * 2.1 : m.avatarSize * 1.6
 
         return VStack(spacing: m.gutter * 0.6) {
             AvatarBadge(player: entry.player, size: avatarSize)
@@ -201,7 +205,7 @@ struct GameResultOverlay: View {
                 .offset(y: avatarsDown ? 0 : -m.gutter * 2.5)
 
             Text(entry.player.name)
-                .font(AppTheme.rounded(isFirst ? m.bodySize + 5 : m.bodySize + 1))
+                .font(AppTheme.rounded(isTop ? m.bodySize + 5 : m.bodySize + 1))
                 .foregroundStyle(AppTheme.ink)
                 .lineLimit(1)
                 .minimumScaleFactor(0.6)

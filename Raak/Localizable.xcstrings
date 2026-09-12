@@ -1,4584 +1,4582 @@
 {
-  "sourceLanguage" : "nl",
-  "strings" : {
-    ", aan de beurt" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : ", their turn"
+  "sourceLanguage": "nl",
+  "strings": {
+    "%@ heeft al %lld trofeeën verdiend": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ has already earned %lld trophies"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : ", c’est son tour"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ a déjà gagné %lld trophées"
           }
         }
       }
     },
-    "%@ · %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@ · %2$@"
+    "%@ heeft al 1 trofee verdiend": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ has already earned 1 trophy"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@ · %2$@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ a déjà gagné 1 trophée"
           }
         }
       }
     },
-    "%@ heeft al %lld trofeeën verdiend" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ has already earned %lld trophies"
+    "%@ is aan de beurt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It’s %@’s turn"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ a déjà gagné %lld trophées"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Au tour de %@"
           }
         }
       }
     },
-    "%@ heeft al 1 trofee verdiend" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ has already earned 1 trophy"
+    "%@ legt de vloot klaar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ is setting up their fleet"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ a déjà gagné 1 trophée"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ prépare sa flotte"
           }
         }
       }
     },
-    "%@ is aan de beurt" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "It’s %@’s turn"
+    "%@ mag %lld keer schieten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gets %lld shots"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Au tour de %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ tire %lld fois"
           }
         }
       }
     },
-    "%@ legt de vloot klaar" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ is setting up their fleet"
+    "%@ mag beginnen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ goes first"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ prépare sa flotte"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ commence"
           }
         }
       }
     },
-    "%@ mag %lld keer schieten" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ gets %lld shots"
+    "%@ mikt…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ is taking aim…"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ tire %lld fois"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ vise…"
           }
         }
       }
     },
-    "%@ mag beginnen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ goes first"
+    "%@ proberen?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try %@?"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ commence"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essayer %@ ?"
           }
         }
       }
     },
-    "%@ mikt…" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ is taking aim…"
+    "%@ verwijderen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ vise…"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer %@"
           }
         }
       }
     },
-    "%@ proberen?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Try %@?"
+    "%@ verwijderen?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete %@?"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Essayer %@ ?"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer %@ ?"
           }
         }
       }
     },
-    "%@ verwijderen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete %@"
+    "%@ vs Computer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ vs computer"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Supprimer %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ contre l’ordinateur"
           }
         }
       }
     },
-    "%@ verwijderen?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete %@?"
+    "%@ wint — de hele vloot is gezonken!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ wins — the whole fleet has sunk!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Supprimer %@ ?"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gagne — toute la flotte a coulé !"
           }
         }
       }
     },
-    "%@ vs Computer" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ vs computer"
+    "%@ wint!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ wins!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ contre l’ordinateur"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gagne !"
           }
         }
       }
     },
-    "%@ wint — de hele vloot is gezonken!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ wins — the whole fleet has sunk!"
+    "%@ · %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ · %2$@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ gagne — toute la flotte a coulé !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ · %2$@"
           }
         }
       }
     },
-    "%@ wint!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ wins!"
+    "%@, %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ gagne !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@, %2$@"
           }
         }
       }
     },
-    "%@, %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %@"
+    "%@, %@ gezonken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %@ sunk"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %@"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@, %2$@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %@ coulé"
           }
         }
       }
     },
-    "%@, %@ gezonken" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %@ sunk"
+    "%@, %@, Gezinsversie nodig": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %@, Family Version required"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %@ coulé"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %@, Version Famille requise"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@, %2$@, Gezinsversie nodig"
           }
         }
       }
     },
-    "%@, %@, Gezinsversie nodig" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %@, Family Version required"
+    "%@, %lld treffers": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld hits"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %@, Version Famille requise"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@, %2$@, Gezinsversie nodig"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld touches"
           }
         }
       }
     },
-    "%@, %lld treffers" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %lld hits"
+    "%@, %lld treffers, %lld boten gezonken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld hits, %lld boats sunk"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %lld touches"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld touches, %lld bateaux coulés"
           }
         }
       }
     },
-    "%@, %lld treffers, %lld boten gezonken" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %lld hits, %lld boats sunk"
+    "%@, %lld treffers, %lld boten gezonken, winnaar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld hits, %lld boats sunk, winner"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %lld touches, %lld bateaux coulés"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld touches, %lld bateaux coulés, gagnant"
           }
         }
       }
     },
-    "%@, %lld treffers, %lld boten gezonken, winnaar" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %lld hits, %lld boats sunk, winner"
+    "%@, gezonken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, sunk"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, %lld touches, %lld bateaux coulés, gagnant"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, coulé"
           }
         }
       }
     },
-    "%@, gezonken" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, sunk"
+    "%@, jouw %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, your %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, coulé"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, ton %@"
           }
         }
       }
     },
-    "%@, jouw %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, your %@"
+    "%@, leg je vloot klaar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, set up your fleet"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, ton %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, prépare ta flotte"
           }
         }
       }
     },
-    "%@, leg je vloot klaar" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, set up your fleet"
+    "%@, mis": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, miss"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, prépare ta flotte"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, raté"
           }
         }
       }
     },
-    "%@, mis" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, miss"
+    "%@, open zee": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, open sea"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, raté"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, pleine mer"
           }
         }
       }
     },
-    "%@, open zee" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, open sea"
+    "%@, raak": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, hit"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, pleine mer"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, touché"
           }
         }
       }
     },
-    "%@, raak" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, hit"
+    "%@, vaart nog": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, still afloat"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, touché"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, flotte encore"
           }
         }
       }
     },
-    "%@, vaart nog" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, still afloat"
+    "%@: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@, flotte encore"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ : %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@: %2$@"
           }
         }
       }
     },
-    "%@: %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@: %@"
+    "%@: %@, %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: %@, %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ : %@"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@: %2$@"
-          }
-        }
-      }
-    },
-    "%@: %@, %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@: %@, %@"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ : %@, %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ : %@, %@"
           }
         }
       },
-      "shouldTranslate" : false
+      "shouldTranslate": false
     },
-    "Bekijk de Gezinsversie" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "See the Family Version"
+    "%lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Voir la Version Famille"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld"
           }
         }
       }
     },
-    "Dat was %@ op proef" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "That was %@ on trial"
+    "%lld keer gewonnen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Won %lld times"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "C'était %@ à l'essai"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld victoires"
           }
         }
       }
     },
-    "Het thema staat weer op Klassiek. Met de Gezinsversie blijft %@ gewoon aan — en de andere thema's ook." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The theme is back to Classic. With the Family Version %@ simply stays on — and so do the other themes."
+    "%lld op rij": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld in a row"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Le thème est revenu à Classique. Avec la Version Famille, %@ reste activé — et les autres thèmes aussi."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld d'affilée"
           }
         }
       }
     },
-    "%lld" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld"
+    "%lld op rij · beste %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld in a row · best %lld"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld d’affilée · record %lld"
           }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld op rij · beste %2$lld"
+          }
         }
       }
     },
-    "%lld keer gewonnen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Won %lld times"
+    "%lld overwinningen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld wins"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld victoires"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld victoires"
           }
         }
       }
     },
-    "%lld op rij" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld in a row"
+    "%lld potjes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld games"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld d'affilée"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld parties"
           }
         }
       }
     },
-    "%lld op rij · beste %lld" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld in a row · best %lld"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld d’affilée · record %lld"
+    "%lld raak · %lld boten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld hits · %lld boats"
           }
         },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld op rij · beste %2$lld"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld touches · %lld bateaux"
           }
         }
       }
     },
-    "%lld overwinningen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld wins"
+    "%lld spelers · %lld overwinningen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld players · %lld wins"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld joueurs · %lld victoires"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld victoires"
+        "nl": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld spelers · %2$lld overwinningen"
           }
         }
       }
     },
-    "%lld potjes" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld games"
+    "%lld treffers": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld hits"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld parties"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld touches"
           }
         }
       }
     },
-    "%lld raak · %lld boten" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld hits · %lld boats"
+    "%lld treffers verschil": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Won by %lld hits"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld touches · %lld bateaux"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld touches d'écart"
           }
         }
       }
     },
-    "%lld spelers · %lld overwinningen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld players · %lld wins"
+    "%lld× gewonnen · %lld gespeeld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Won %lld× · played %lld"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld joueurs · %lld victoires"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld victoires · %lld parties"
           }
         },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld spelers · %2$lld overwinningen"
+        "nl": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld× gewonnen · %2$lld gespeeld"
           }
         }
       }
     },
-    "%lld treffers" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld hits"
+    "%lld×%lld · %lld boten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld×%lld · %lld boats"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld touches"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld×%lld · %lld bateaux"
           }
         }
       }
     },
-    "%lld treffers verschil" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Won by %lld hits"
+    ", aan de beurt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ", their turn"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld touches d'écart"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ", c’est son tour"
           }
         }
       }
     },
-    "%lld× gewonnen · %lld gespeeld" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Won %lld× · played %lld"
+    "2 spelers, één toestel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 players, one device"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld victoires · %lld parties"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 joueurs, un seul appareil"
           }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld× gewonnen · %2$lld gespeeld"
-          }
         }
       }
     },
-    "%lld×%lld · %lld boten" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld×%lld · %lld boats"
+    "ABC": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ABC"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld×%lld · %lld bateaux"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ABC"
           }
         }
       }
     },
-    "2 spelers, één toestel" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "2 players, one device"
+    "Aan": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "2 joueurs, un seul appareil"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activé"
           }
         }
       }
     },
-    "Aan" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "On"
+    "Alle drie de tegenstanders: Dommel, Robbie en Professor Punt": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All three opponents: Dommel, Robbie and Professor Punt"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activé"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les trois adversaires : Dommel, Robbie et Professor Punt"
           }
         }
       }
     },
-    "ABC" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ABC"
+    "Alle kleurenthema's": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All color themes"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ABC"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tous les thèmes de couleurs"
           }
         }
       }
     },
-    "Alle drie de tegenstanders: Dommel, Robbie en Professor Punt" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All three opponents: Dommel, Robbie and Professor Punt"
+    "Alle kleurenthema's: Snoep, Oceaan en Nacht": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All color themes: Candy, Ocean and Night"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Les trois adversaires : Dommel, Robbie et Professor Punt"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tous les thèmes : Bonbon, Océan et Nuit"
           }
         }
       }
     },
-    "Alle kleurenthema's" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All color themes"
+    "Alles ontgrendelen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock everything"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tous les thèmes de couleurs"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tout débloquer"
           }
         }
       }
     },
-    "Alle kleurenthema's: Snoep, Oceaan en Nacht" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All color themes: Candy, Ocean and Night"
+    "Annuleer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tous les thèmes : Bonbon, Océan et Nuit"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuler"
           }
         }
       }
     },
-    "Alles ontgrendelen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unlock everything"
+    "Basketbal": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basketball"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tout débloquer"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ballon de basket"
           }
         }
       }
     },
-    "Annuleer" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cancel"
+    "Bekijk de Gezinsversie": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See the Family Version"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Annuler"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voir la Version Famille"
           }
         }
       }
     },
-    "Basketbal" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Basketball"
+    "Blad": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leaf"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ballon de basket"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feuille"
           }
         }
       }
     },
-    "beste %lld" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "best %lld"
+    "Blauw": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blue"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "record %lld"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bleu"
           }
         }
       }
     },
-    "Blad" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Leaf"
+    "Bliksem": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lightning"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Feuille"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éclair"
           }
         }
       }
     },
-    "Blauw" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Blue"
+    "CIJFERS": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NUMBERS"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bleu"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CHIFFRES"
           }
         }
       }
     },
-    "Bliksem" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lightning"
+    "Dat lukte niet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That didn’t work"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Éclair"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ça n’a pas marché"
           }
         }
       }
     },
-    "CIJFERS" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "NUMBERS"
+    "Dat was %@ op proef": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That was %@ on trial"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CHIFFRES"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "C'était %@ à l'essai"
           }
         }
       }
     },
-    "Dat lukte niet" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "That didn’t work"
+    "De %@ is gezonken! %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The %@ has sunk! %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ça n’a pas marché"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le %@ a coulé ! %@"
           }
         }
       }
     },
-    "De %@ is gezonken! %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The %@ has sunk! %@"
+    "De %@ is gezonken! Nog een keer!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The %@ has sunk! Go again!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Le %@ a coulé ! %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le %@ a coulé ! Encore un tir !"
           }
         }
       }
     },
-    "De %@ is gezonken! Nog een keer!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The %@ has sunk! Go again!"
+    "De aankoop wacht nog op goedkeuring van een ouder.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The purchase is waiting for a parent’s approval."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Le %@ a coulé ! Encore un tir !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’achat attend l’accord d’un parent."
           }
         }
       }
     },
-    "De aankoop wacht nog op goedkeuring van een ouder." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The purchase is waiting for a parent’s approval."
+    "De gezinsrecords horen bij de Gezinsversie.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family records are part of the Family Version."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "L’achat attend l’accord d’un parent."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les records de famille font partie de la Version Famille."
           }
         }
       }
     },
-    "De gezinsrecords horen bij de Gezinsversie." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Family records are part of the Family Version."
+    "De overwinningen van dit profiel gaan verloren.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This profile’s wins will be lost."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Les records de famille font partie de la Version Famille."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les victoires de ce profil seront perdues."
           }
         }
       }
     },
-    "De overwinningen van dit profiel gaan verloren." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This profile’s wins will be lost."
+    "Dommel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dommel"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Les victoires de ce profil seront perdues."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dommel"
           }
         }
       }
     },
-    "Dommel" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dommel"
+    "Dommel, Robbie en Professor Punt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dommel, Robbie and Professor Punt"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dommel"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dommel, Robbie et Professor Punt"
           }
         }
       }
     },
-    "Dommel, Robbie en Professor Punt" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dommel, Robbie and Professor Punt"
+    "Doorspelen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep playing"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dommel, Robbie et Professor Punt"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuer"
           }
         }
       }
     },
-    "Doorspelen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keep playing"
+    "Drie tegenstanders": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Three opponents"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continuer"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trois adversaires"
           }
         }
       }
     },
-    "Drie tegenstanders" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Three opponents"
+    "Een zeilbootje en een vizier": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A little sailboat and a target"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trois adversaires"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un petit voilier et une cible"
           }
         }
       }
     },
-    "Eén keer kopen, voor het hele gezin — ook via Delen met gezin." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Buy once, for the whole family — including Family Sharing."
+    "Eenmalig · geen abonnement": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One-time purchase · no subscription"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Un seul achat, pour toute la famille — aussi via le partage familial."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Achat unique · sans abonnement"
           }
         }
       }
     },
-    "Een zeilbootje en een vizier" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A little sailboat and a target"
+    "Eerder gekocht? Zet terug": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bought before? Restore"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Un petit voilier et une cible"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déjà acheté ? Restaurer"
           }
         }
       }
     },
-    "Eenmalig · geen abonnement" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "One-time purchase · no subscription"
+    "Eerste potje": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First game"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Achat unique · sans abonnement"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Première partie"
           }
         }
       }
     },
-    "Eerder gekocht? Zet terug" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bought before? Restore"
+    "Er is geen eerdere aankoop gevonden voor dit Apple-account.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No previous purchase was found for this Apple Account."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Déjà acheté ? Restaurer"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun achat antérieur trouvé pour ce compte Apple."
           }
         }
       }
     },
-    "Eerste potje" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "First game"
+    "Er staat nog een spel klaar om verder te spelen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "There’s still a saved game waiting to continue."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Première partie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une partie sauvegardée attend encore."
           }
         }
       }
     },
-    "Er is geen eerdere aankoop gevonden voor dit Apple-account." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No previous purchase was found for this Apple Account."
+    "Eén keer kopen, voor het hele gezin — ook via Delen met gezin.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buy once, for the whole family — including Family Sharing."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aucun achat antérieur trouvé pour ce compte Apple."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un seul achat, pour toute la famille — aussi via le partage familial."
           }
         }
       }
     },
-    "Er staat nog een spel klaar om verder te spelen." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "There’s still a saved game waiting to continue."
+    "GELUID": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOUND"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Une partie sauvegardée attend encore."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SON"
           }
         }
       }
     },
-    "Gast" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Guest"
+    "GEZIN": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAMILY"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invité"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAMILLE"
           }
         }
       }
     },
-    "Gast 1" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Guest 1"
+    "GEZINSVERSIE": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAMILY VERSION"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invité 1"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VERSION FAMILLE"
           }
         }
       }
     },
-    "Gast 2" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Guest 2"
+    "Gast": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guest"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invité 2"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invité"
           }
         }
       }
     },
-    "Geef het toestel aan %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hand the device to %@"
+    "Gast 1": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guest 1"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Passe l'appareil à %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invité 1"
           }
         }
       }
     },
-    "Geel" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yellow"
+    "Gast 2": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guest 2"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Jaune"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invité 2"
           }
         }
       }
     },
-    "Geen profielen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No profiles"
+    "Geef het toestel aan %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hand the device to %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aucun profil"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passe l'appareil à %@"
           }
         }
       }
     },
-    "Gelijkspel!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "It’s a draw!"
+    "Geel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yellow"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Égalité !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jaune"
           }
         }
       }
     },
-    "GELUID" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SOUND"
+    "Geen profielen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No profiles"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SON"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun profil"
           }
         }
       }
     },
-    "Geluidseffecten" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sound effects"
+    "Gelijkspel!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It’s a draw!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Effets sonores"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Égalité !"
           }
         }
       }
     },
-    "Gemaakt voor gezinnen, niet voor advertenties: niets dat meekijkt en geen abonnement." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Made for families, not for ads: nothing watching along, no subscription."
+    "Geluidseffecten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sound effects"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conçu pour les familles, pas pour la publicité : rien qui vous observe, aucun abonnement."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Effets sonores"
           }
         }
       }
     },
-    "Gespeeld" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Played"
+    "Gemaakt voor gezinnen, niet voor advertenties: niets dat meekijkt en geen abonnement.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Made for families, not for ads: nothing watching along, no subscription."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Parties jouées"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conçu pour les familles, pas pour la publicité : rien qui vous observe, aucun abonnement."
           }
         }
       }
     },
-    "Gewonnen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wins"
+    "Gespeeld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Played"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Victoires"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parties jouées"
           }
         }
       }
     },
-    "Gewonnen met %lld treffers!" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Won with %lld hits!"
+    "Gewonnen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wins"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gagné avec %lld touches !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Victoires"
           }
         }
       }
     },
-    "GEZIN" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "FAMILY"
+    "Gewonnen met %lld treffers!": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Won with %lld hits!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "FAMILLE"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gagné avec %lld touches !"
           }
         }
       }
     },
-    "Gezinsrecords" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Family records"
+    "Gezinsrecords": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family records"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Records de famille"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Records de famille"
           }
         }
       }
     },
-    "Gezinsversie" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Family Version"
+    "Gezinsversie": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family Version"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Version Famille"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version Famille"
           }
         }
       }
     },
-    "GEZINSVERSIE" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "FAMILY VERSION"
+    "Gezonken!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunk!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "VERSION FAMILLE"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coulé !"
           }
         }
       }
     },
-    "Gezonken!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunk!"
+    "Groot": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Large"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coulé !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grand"
           }
         }
       }
     },
-    "Groot" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Large"
+    "Grootste overwinning": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biggest win"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grand"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plus grande victoire"
           }
         }
       }
     },
-    "Grootste overwinning" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Biggest win"
+    "Haas": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hare"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Plus grande victoire"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lièvre"
           }
         }
       }
     },
-    "Haas" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hare"
+    "Hart": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heart"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lièvre"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cœur"
           }
         }
       }
     },
-    "Hart" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Heart"
+    "Hattrick": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hat trick"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cœur"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Triplé"
           }
         }
       }
     },
-    "Hattrick" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hat trick"
+    "Het thema staat weer op Klassiek. Met de Gezinsversie blijft %@ gewoon aan — en de andere thema's ook.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The theme is back to Classic. With the Family Version %@ simply stays on — and so do the other themes."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Triplé"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le thème est revenu à Classique. Avec la Version Famille, %@ reste activé — et les autres thèmes aussi."
           }
         }
       }
     },
-    "Hier komt de trofeeënkast van %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@'s trophy case starts here"
+    "Hier komt de trofeeënkast van %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@'s trophy case starts here"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La vitrine à trophées de %@ commence ici"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La vitrine à trophées de %@ commence ici"
           }
         }
       }
     },
-    "Hoe werkt het?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How does it work?"
+    "Hoe werkt Raak!?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How does Raak! work?"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Comment ça marche ?"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comment marche Raak! ?"
           }
         }
       }
     },
-    "Hoe werkt Raak!?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How does Raak! work?"
+    "Hoe werkt het?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How does it work?"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Comment marche Raak! ?"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comment ça marche ?"
           }
         }
       }
     },
-    "Hoeveel is %lld × %lld?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How much is %lld × %lld?"
+    "Hoeveel is %lld × %lld?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How much is %lld × %lld?"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Combien font %lld × %lld ?"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Combien font %lld × %lld ?"
           }
         },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Hoeveel is %1$lld × %2$lld?"
+        "nl": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Hoeveel is %1$lld × %2$lld?"
           }
         }
       }
     },
-    "Hond" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dog"
+    "Hond": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dog"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chien"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chien"
           }
         }
       }
     },
-    "Hoort bij de Gezinsversie." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Part of the Family Version."
+    "Hoort bij de Gezinsversie.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Part of the Family Version."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fait partie de la Version Famille."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fait partie de la Version Famille."
           }
         }
       }
     },
-    "Ik zit klaar!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "I'm ready!"
+    "Ik zit klaar!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I'm ready!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Je suis prêt !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je suis prêt !"
           }
         }
       }
     },
-    "In deze spelvorm schiet je per beurt zoveel keer als je nog boten hebt: vier boten, vier schoten." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "In this mode you shoot as many times per turn as you have ships left: four ships, four shots."
+    "In deze spelvorm schiet je per beurt zoveel keer als je nog boten hebt: vier boten, vier schoten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In this mode you shoot as many times per turn as you have ships left: four ships, four shots."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dans cette variante, tu tires autant de fois qu'il te reste de bateaux : quatre bateaux, quatre tirs."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans cette variante, tu tires autant de fois qu'il te reste de bateaux : quatre bateaux, quatre tirs."
           }
         }
       }
     },
-    "Initialen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Initials"
+    "Initialen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Initials"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Initiales"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Initiales"
           }
         }
       }
     },
-    "Instellingen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Settings"
+    "Instellingen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Réglages"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réglages"
           }
         }
       }
     },
-    "Je salvo is op" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your salvo is done"
+    "JOUW ZEE": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "YOUR SEA"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ta salve est terminée"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TA MER"
           }
         }
       }
     },
-    "Je voortgang wordt bewaard." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your progress will be saved."
+    "Je salvo is op": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your salvo is done"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ta progression sera sauvegardée."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta salve est terminée"
           }
         }
       }
     },
-    "Jij bent aan de beurt" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "It’s your turn"
+    "Je voortgang wordt bewaard.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your progress will be saved."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "À toi de jouer"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta progression sera sauvegardée."
           }
         }
       }
     },
-    "Jouw beurt om te schieten. De zeeën blijven geheim!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your turn to shoot. The seas stay secret!"
+    "Jij bent aan de beurt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It’s your turn"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "À toi de tirer. Les mers restent secrètes !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À toi de jouer"
           }
         }
       }
     },
-    "JOUW ZEE" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "YOUR SEA"
+    "Jouw beurt om te schieten. De zeeën blijven geheim!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your turn to shoot. The seas stay secret!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "TA MER"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À toi de tirer. Les mers restent secrètes !"
           }
         }
       }
     },
-    "Kampioen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Champion"
+    "KIES 2 SPELERS": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PICK 2 PLAYERS"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Champion"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CHOISIS 2 JOUEURS"
           }
         }
       }
     },
-    "Kanonskoning" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cannon King"
+    "KIES DE SPELVORM": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CHOOSE THE GAME MODE"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Roi du canon"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CHOISIS LA VARIANTE"
           }
         }
       }
     },
-    "Kapiteinsschip" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Captain's Ship"
+    "KIES HET BORD": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PICK THE BOARD"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Navire du capitaine"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CHOISIS LE PLATEAU"
           }
         }
       }
     },
-    "Kat" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cat"
+    "KIES JE TEGENSTANDER": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PICK YOUR OPPONENT"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chat"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CHOISIS TON ADVERSAIRE"
           }
         }
       }
     },
-    "KIES 2 SPELERS" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "PICK 2 PLAYERS"
+    "KIES JOUW PROFIEL": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PICK YOUR PROFILE"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CHOISIS 2 JOUEURS"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CHOISIS TON PROFIL"
           }
         }
       }
     },
-    "KIES DE SPELVORM" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CHOOSE THE GAME MODE"
+    "KLEUR": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "COLOR"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CHOISIS LA VARIANTE"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "COULEUR"
           }
         }
       }
     },
-    "KIES HET BORD" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "PICK THE BOARD"
+    "Kampioen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Champion"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CHOISIS LE PLATEAU"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Champion"
           }
         }
       }
     },
-    "KIES JE TEGENSTANDER" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "PICK YOUR OPPONENT"
+    "Kanonskoning": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cannon King"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CHOISIS TON ADVERSAIRE"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Roi du canon"
           }
         }
       }
     },
-    "KIES JOUW PROFIEL" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "PICK YOUR PROFILE"
+    "Kapiteinsschip": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Captain's Ship"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CHOISIS TON PROFIL"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navire du capitaine"
           }
         }
       }
     },
-    "Kijk goed naar je schoten: een bubbel is water, een knal is boot." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Look closely at your shots: a bubble is water, a burst is a boat."
+    "Kat": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cat"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regarde bien tes tirs : une bulle, c'est de l'eau ; une explosion, c'est un bateau."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chat"
           }
         }
       }
     },
-    "Klaar!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Done!"
+    "Kijk goed naar je schoten: een bubbel is water, een knal is boot.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look closely at your shots: a bubble is water, a burst is a boat."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "C’est fait !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regarde bien tes tirs : une bulle, c'est de l'eau ; une explosion, c'est un bateau."
           }
         }
       }
     },
-    "Klassiek" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Classic"
+    "Klaar!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Classique"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "C’est fait !"
           }
         }
       }
     },
-    "Klein" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Small"
+    "Klassiek": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Classic"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Petit"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Classique"
           }
         }
       }
     },
-    "KLEUR" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "COLOR"
+    "Klein": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Small"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "COULEUR"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Petit"
           }
         }
       }
     },
-    "Kleur %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Color %@"
+    "Kleur %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Color %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Couleur %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couleur %@"
           }
         }
       }
     },
-    "Kopen is niet gelukt. Controleer de internetverbinding en probeer het straks nog eens." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The purchase didn’t go through. Check the internet connection and try again later."
+    "Kopen is niet gelukt. Controleer de internetverbinding en probeer het straks nog eens.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The purchase didn’t go through. Check the internet connection and try again later."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "L’achat n’a pas abouti. Vérifie la connexion internet et réessaie plus tard."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’achat n’a pas abouti. Vérifie la connexion internet et réessaie plus tard."
           }
         }
       }
     },
-    "Koraal" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coral"
+    "Koraal": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coral"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Corail"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corail"
           }
         }
       }
     },
-    "Kroon" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Crown"
+    "Kroon": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crown"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Couronne"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couronne"
           }
         }
       }
     },
-    "LAATSTE POTJES" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "LATEST GAMES"
+    "LAATSTE POTJES": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LATEST GAMES"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "DERNIÈRES PARTIES"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DERNIÈRES PARTIES"
           }
         }
       }
     },
-    "Langste winreeks" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Longest winning streak"
+    "Langste winreeks": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longest winning streak"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Plus longue série de victoires"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plus longue série de victoires"
           }
         }
       }
     },
-    "Leg je vloot klaar — de ander mag niet spieken!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Set up your fleet — no peeking allowed!"
+    "Leg je vloot klaar — de ander mag niet spieken!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set up your fleet — no peeking allowed!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prépare ta flotte — interdit de tricher !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prépare ta flotte — interdit de tricher !"
           }
         }
       }
     },
-    "Lieveheersbeestje" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ladybug"
+    "Lieveheersbeestje": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ladybug"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coccinelle"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coccinelle"
           }
         }
       }
     },
-    "Lopend spel" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Game in progress"
+    "Lopend spel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Game in progress"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Partie en cours"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partie en cours"
           }
         }
       }
     },
-    "Lopend spel vervangen?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Replace the ongoing game?"
+    "Lopend spel vervangen?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Replace the ongoing game?"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Remplacer la partie en cours ?"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remplacer la partie en cours ?"
           }
         }
       }
     },
-    "Maak eerst een profiel aan om te spelen." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Create a profile first to play."
+    "Maak eerst een profiel aan om te spelen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create a profile first to play."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Crée d’abord un profil pour jouer."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crée d’abord un profil pour jouer."
           }
         }
       }
     },
-    "Maak eerst een speler aan" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Create a player first"
+    "Maak eerst een speler aan": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create a player first"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Crée d’abord un joueur"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crée d’abord un joueur"
           }
         }
       }
     },
-    "Maan" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Moon"
+    "Maan": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moon"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lune"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lune"
           }
         }
       }
     },
-    "Meeste overwinningen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Most wins"
+    "Meeste overwinningen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Most wins"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Le plus de victoires"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le plus de victoires"
           }
         }
       }
     },
-    "Meeste potjes" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Most games"
+    "Meeste potjes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Most games"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Le plus de parties"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le plus de parties"
           }
         }
       }
     },
-    "Middel" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Medium"
+    "Middel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medium"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Moyen"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moyen"
           }
         }
       }
     },
-    "mikt best goed" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "aims pretty well"
+    "Mint": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mint"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "vise plutôt bien"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menthe"
           }
         }
       }
     },
-    "Mint" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mint"
+    "Mis — plons in het water…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Miss — splash in the water…"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Menthe"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raté — plouf dans l'eau…"
           }
         }
       }
     },
-    "Mis — plons in het water…" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Miss — splash in the water…"
+    "Mis, plons in het water": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Miss, splash in the water"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Raté — plouf dans l'eau…"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raté, plouf dans l'eau"
           }
         }
       }
     },
-    "Mis, plons in het water" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Miss, splash in the water"
+    "NAAM": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NAME"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Raté, plouf dans l'eau"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PRÉNOM"
           }
         }
       }
     },
-    "mist bijna nooit" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "almost never misses"
+    "Naam van de speler": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Player's name"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ne rate presque jamais"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom du joueur"
           }
         }
       }
     },
-    "NAAM" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "NAME"
+    "Naar profielen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to profiles"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "PRÉNOM"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vers les profils"
           }
         }
       }
     },
-    "Naam van je kind" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your child’s name"
+    "Nacht": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Le prénom de ton enfant"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuit"
           }
         }
       }
     },
-    "Naar profielen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Go to profiles"
+    "Niet nu": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not now"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vers les profils"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas maintenant"
           }
         }
       }
     },
-    "Nacht" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Night"
+    "Nieuw profiel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New profile"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nuit"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouveau profil"
           }
         }
       }
     },
-    "Niet nu" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Not now"
+    "Nieuw record!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New record!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pas maintenant"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouveau record !"
           }
         }
       }
     },
-    "Nieuw profiel" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New profile"
+    "Nieuw spel starten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start a new game"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nouveau profil"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouvelle partie"
           }
         }
       }
     },
-    "Nieuw record!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New record!"
+    "Nog %lld boten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld boats left"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nouveau record !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encore %lld bateaux"
           }
         }
       }
     },
-    "Nieuw spel starten" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start a new game"
+    "Nog %lld schoten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld shots left"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nouvelle partie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encore %lld tirs"
           }
         }
       }
     },
-    "Nog %lld boten" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld boats left"
+    "Nog 1 schot": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 shot left"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Encore %lld bateaux"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encore 1 tir"
           }
         }
       }
     },
-    "Nog %lld schoten" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld shots left"
+    "Nog een keer!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One more time!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Encore %lld tirs"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encore une fois !"
           }
         }
       }
     },
-    "Nog 1 schot" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1 shot left"
+    "Nog geen profielen. Maak er een aan om te spelen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No profiles yet. Create one to play."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Encore 1 tir"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas encore de profil. Crées-en un pour jouer."
           }
         }
       }
     },
-    "Nog een keer!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "One more time!"
+    "Oceaan": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocean"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Encore une fois !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Océan"
           }
         }
       }
     },
-    "Nog geen profielen. Maak er een aan om te spelen." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No profiles yet. Create one to play."
+    "Of speel als gast": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Or play as a guest"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pas encore de profil. Crées-en un pour jouer."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ou joue en invité"
           }
         }
       }
     },
-    "Oceaan" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ocean"
+    "Of speel met twee gasten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Or play with two guests"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Océan"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ou jouez avec deux invités"
           }
         }
       }
     },
-    "Of speel als gast" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Or play as a guest"
+    "Oké": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ou joue en invité"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
           }
         }
       }
     },
-    "Of speel met twee gasten" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Or play with two guests"
+    "Ontgrendel de Gezinsversie": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock the Family Version"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ou jouez avec deux invités"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Débloquer la Version Famille"
           }
         }
       }
     },
-    "Oké" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OK"
+    "Ontgrendel voor %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock for %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OK"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Débloquer pour %@"
           }
         }
       }
     },
-    "Ontgrendel de Gezinsversie" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unlock the Family Version"
+    "Ontgrendeld — veel plezier!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlocked — have fun!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Débloquer la Version Famille"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Débloqué — amuse-toi bien !"
           }
         }
       }
     },
-    "Ontgrendel voor %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unlock for %@"
+    "Onverslaanbaar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unbeatable"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Débloquer pour %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Imbattable"
           }
         }
       }
     },
-    "Ontgrendeld — veel plezier!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unlocked — have fun!"
+    "Oranje": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orange"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Débloqué — amuse-toi bien !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orange"
           }
         }
       }
     },
-    "Onverslaanbaar" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unbeatable"
+    "Paars": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Purple"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Imbattable"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Violet"
           }
         }
       }
     },
-    "Oranje" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Orange"
+    "Per speler, met gezinsrecords": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per player, with family records"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Orange"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Par joueur, avec les records de famille"
           }
         }
       }
     },
-    "Paars" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Purple"
+    "Pootafdruk": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paw print"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Violet"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empreinte"
           }
         }
       }
     },
-    "Per speler, met gezinsrecords" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Per player, with family records"
+    "Potje %lld: %lld treffers": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Game %lld: %lld hits"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Par joueur, avec les records de famille"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partie %lld : %lld touches"
           }
         }
       }
     },
-    "Pootafdruk" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paw print"
+    "Potje %lld: %lld treffers, gewonnen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Game %lld: %lld hits, won"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Empreinte"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partie %lld : %lld touches, gagnée"
           }
         }
       }
     },
-    "Potje %lld: %lld treffers" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Game %lld: %lld hits"
+    "Probeer één potje": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try one game"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Partie %lld : %lld touches"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essayer une partie"
           }
         }
       }
     },
-    "Potje %lld: %lld treffers, gewonnen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Game %lld: %lld hits, won"
+    "Professor Punt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Professor Punt"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Partie %lld : %lld touches, gagnée"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Professor Punt"
           }
         }
       }
     },
-    "Probeer één potje" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Try one game"
+    "Profiel van %@ aanpassen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit %@’s profile"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Essayer une partie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier le profil de %@"
           }
         }
       }
     },
-    "Professor Punt" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Professor Punt"
+    "Profielen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profiles"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Professor Punt"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profils"
           }
         }
       }
     },
-    "Profiel van %@ aanpassen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Edit %@’s profile"
+    "Raak geschoten? Probeer de vakjes ernaast — daar ligt de rest van de boot.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scored a hit? Try the squares next to it — the rest of the boat is there."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Modifier le profil de %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touché ? Essaie les cases voisines — le reste du bateau s'y cache."
           }
         }
       }
     },
-    "Profielen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Profiles"
+    "Raak je alle vakjes van een boot, dan zinkt hij.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hit every square of a boat and it sinks."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Profils"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touche toutes les cases d'un bateau et il coule."
           }
         }
       }
     },
-    "Raak geschoten? Probeer de vakjes ernaast — daar ligt de rest van de boot." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Scored a hit? Try the squares next to it — the rest of the boat is there."
+    "Raak of mis maakt niet uit — je schiet je hele salvo af en dan is de ander.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hit or miss makes no difference — you fire your whole salvo and then it's the other player's turn."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Touché ? Essaie les cases voisines — le reste du bateau s'y cache."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touché ou raté, peu importe : tu tires toute ta salve, puis c'est à l'autre."
           }
         }
       }
     },
-    "Raak je alle vakjes van een boot, dan zinkt hij." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hit every square of a boat and it sinks."
+    "Raak!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hit!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Touche toutes les cases d'un bateau et il coule."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touché !"
           }
         }
       }
     },
-    "Raak of mis maakt niet uit — je schiet je hele salvo af en dan is de ander." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hit or miss makes no difference — you fire your whole salvo and then it's the other player's turn."
+    "Raak! %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hit! %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Touché ou raté, peu importe : tu tires toute ta salve, puis c'est à l'autre."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touché ! %@"
           }
         }
       }
     },
-    "Raak!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hit!"
+    "Raak! %@ mag nog een keer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hit! %@ goes again"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Touché !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touché ! %@ rejoue"
           }
         }
       }
     },
-    "Raak! %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hit! %@"
+    "Raak? Dan mag je meteen nog een keer. Mis? Dan mag de ander.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hit? Then you go again right away. Miss? Then it's the other player's turn."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Touché ! %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touché ? Tu rejoues aussitôt. Raté ? C'est au tour de l'autre."
           }
         }
       }
     },
-    "Raak! %@ mag nog een keer" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hit! %@ goes again"
+    "Raak? Nog een schot": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hit? Shoot again"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Touché ! %@ rejoue"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touché ? Encore un tir"
           }
         }
       }
     },
-    "Raak? Dan mag je meteen nog een keer. Mis? Dan mag de ander." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hit? Then you go again right away. Miss? Then it's the other player's turn."
+    "Rij %lld, kolom %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Row %lld, column %lld"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Touché ? Tu rejoues aussitôt. Raté ? C'est au tour de l'autre."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rangée %lld, colonne %lld"
           }
         }
       }
     },
-    "Raak? Nog een schot" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hit? Shoot again"
+    "Robbie": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Robbie"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Touché ? Encore un tir"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Robbie"
           }
         }
       }
     },
-    "Rij %lld, kolom %lld" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Row %lld, column %lld"
+    "Roze": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pink"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rangée %lld, colonne %lld"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rose"
           }
         }
       }
     },
-    "Robbie" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Robbie"
+    "SALVO": {},
+    "SLIMME TRUCJES": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CLEVER TRICKS"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Robbie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ASTUCES"
           }
         }
       }
     },
-    "Roze" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pink"
+    "SPELERS": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PLAYERS"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rose"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JOUEURS"
           }
         }
       }
     },
-    "Salvo" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salvo"
+    "SYMBOOL": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYMBOL"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salve"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYMBOLE"
           }
         }
       }
     },
-    "SALVO" : {
-
+    "Salvo": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salvo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salve"
+          }
+        }
+      }
     },
-    "Scherpschutter" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sharpshooter"
+    "Scherpschutter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sharpshooter"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tireur d'élite"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tireur d'élite"
           }
         }
       }
     },
-    "Schiet" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fire"
+    "Schiet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fire"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tirer"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tirer"
           }
         }
       }
     },
-    "Schiet 5 keer raak in één potje" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Score 5 hits in one game"
+    "Schiet 12 keer raak in één potje": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score 12 hits in one game"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Réussis 5 touches en une partie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réussis 12 touches en une partie"
           }
         }
       }
     },
-    "Schiet 9 keer raak in één potje" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Score 9 hits in one game"
+    "Schiet 5 keer raak in één potje": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score 5 hits in one game"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Réussis 9 touches en une partie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réussis 5 touches en une partie"
           }
         }
       }
     },
-    "Schiet 12 keer raak in één potje" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Score 12 hits in one game"
+    "Schiet 9 keer raak in één potje": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score 9 hits in one game"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Réussis 12 touches en une partie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réussis 9 touches en une partie"
           }
         }
       }
     },
-    "schiet vaak mis" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "misses a lot"
+    "Schildpad": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turtle"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "rate souvent"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tortue"
           }
         }
       }
     },
-    "Schildpad" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Turtle"
+    "Schot %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shot %lld"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tortue"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tir %lld"
           }
         }
       }
     },
-    "Schot %lld" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shot %lld"
+    "Schud": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shuffle"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tir %lld"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mélanger"
           }
         }
       }
     },
-    "Schud" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shuffle"
+    "Schud je vloot en leg hem geheim klaar — de ander mag niet kijken!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shuffle your fleet and set it up in secret — no peeking allowed!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mélanger"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mélange ta flotte et place-la en secret — interdit de regarder !"
           }
         }
       }
     },
-    "Schud je vloot en leg hem geheim klaar — de ander mag niet kijken!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shuffle your fleet and set it up in secret — no peeking allowed!"
+    "Schud tot je zee je bevalt — de ander mag niet kijken!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shuffle until you like your sea — no peeking allowed!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mélange ta flotte et place-la en secret — interdit de regarder !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mélange jusqu'à ce que ta mer te plaise — interdit de regarder !"
           }
         }
       }
     },
-    "Schud tot je zee je bevalt — de ander mag niet kijken!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shuffle until you like your sea — no peeking allowed!"
+    "Sloep": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dinghy"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mélange jusqu'à ce que ta mer te plaise — interdit de regarder !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canot"
           }
         }
       }
     },
-    "SLIMME TRUCJES" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CLEVER TRICKS"
+    "Sluiten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ASTUCES"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fermer"
           }
         }
       }
     },
-    "Sloep" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dinghy"
+    "Snoep": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Candy"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Canot"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonbon"
           }
         }
       }
     },
-    "Sluiten" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Close"
+    "Snoep, Oceaan en Nacht": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Candy, Ocean and Night"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fermer"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonbon, Océan et Nuit"
           }
         }
       }
     },
-    "Snoep" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Candy"
+    "Solo tegen een slimme tegenstander": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo against a clever opponent"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bonbon"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En solo contre un adversaire malin"
           }
         }
       }
     },
-    "Snoep, Oceaan en Nacht" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Candy, Ocean and Night"
+    "Solo uitdaging": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo challenge"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bonbon, Océan et Nuit"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Défi solo"
           }
         }
       }
     },
-    "Solo tegen een slimme tegenstander" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solo against a clever opponent"
+    "Speel 10 potjes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play 10 games"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "En solo contre un adversaire malin"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joue 10 parties"
           }
         }
       }
     },
-    "Solo uitdaging" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solo challenge"
+    "Speel 25 potjes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play 25 games"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Défi solo"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joue 25 parties"
           }
         }
       }
     },
-    "Speel 10 potjes" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Play 10 games"
+    "Speel 50 potjes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play 50 games"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Joue 10 parties"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joue 50 parties"
           }
         }
       }
     },
-    "Speel 25 potjes" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Play 25 games"
+    "Speel een potje en zie de grafiek hier groeien!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play a game and watch the chart grow!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Joue 25 parties"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joue une partie et regarde le graphique grandir !"
           }
         }
       }
     },
-    "Speel 50 potjes" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Play 50 games"
+    "Speel eerst een potje — daarna staan hier de records van het gezin.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play a game first — then the family records will appear here."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Joue 50 parties"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joue d'abord une partie — les records de la famille apparaîtront ici."
           }
         }
       }
     },
-    "Speel een potje en zie de grafiek hier groeien!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Play a game and watch the chart grow!"
+    "Speel je eerste potje": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play your first game"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Joue une partie et regarde le graphique grandir !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joue ta première partie"
           }
         }
       }
     },
-    "Speel één potje in dit thema. Daarna springt het terug naar Klassiek." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Play one game in this theme. After that it switches back to Classic."
+    "Speel één potje in dit thema. Daarna springt het terug naar Klassiek.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play one game in this theme. After that it switches back to Classic."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Joue une partie dans ce thème. Ensuite, il revient à Classique."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joue une partie dans ce thème. Ensuite, il revient à Classique."
           }
         }
       }
     },
-    "Speel eerst een potje — daarna staan hier de records van het gezin." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Play a game first — then the family records will appear here."
+    "Speelvogel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Game fan"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Joue d'abord une partie — les records de la famille apparaîtront ici."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fan de jeu"
           }
         }
       }
     },
-    "Speel je eerste potje" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Play your first game"
+    "Spel verlaten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leave game"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Joue ta première partie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quitter la partie"
           }
         }
       }
     },
-    "Speelvogel" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Game fan"
+    "Spel verlaten?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leave the game?"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fan de jeu"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quitter la partie ?"
           }
         }
       }
     },
-    "Spel verlaten" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Leave game"
+    "Spelvorm Salvo": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salvo mode"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Quitter la partie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Variante Salve"
           }
         }
       }
     },
-    "Spel verlaten?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Leave the game?"
+    "Start spel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start game"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Quitter la partie ?"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lancer la partie"
           }
         }
       }
     },
-    "SPELERS" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "PLAYERS"
+    "Statistieken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistics"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "JOUEURS"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistiques"
           }
         }
       }
     },
-    "Spelvorm Salvo" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salvo mode"
+    "Statistieken en trofeeën": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stats and trophies"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Variante Salve"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistiques et trophées"
           }
         }
       }
     },
-    "Start spel" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start game"
+    "Statistieken per speler, met trofeeën en gezinsrecords": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per-player statistics, with trophies and family records"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lancer la partie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistiques par joueur, avec trophées et records de famille"
           }
         }
       }
     },
-    "Statistieken" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Statistics"
+    "Ster": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Star"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Statistiques"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Étoile"
           }
         }
       }
     },
-    "Statistieken en trofeeën" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stats and trophies"
+    "Sterspeler": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Star player"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Statistiques et trophées"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Étoile du jeu"
           }
         }
       }
     },
-    "Statistieken per speler, met trofeeën en gezinsrecords" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Per-player statistics, with trophies and family records"
+    "Stoomboot": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steamboat"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Statistiques par joueur, avec trophées et records de famille"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bateau à vapeur"
           }
         }
       }
     },
-    "Ster" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Star"
+    "THEMA": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "THEME"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Étoile"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "THÈME"
           }
         }
       }
     },
-    "Sterspeler" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Star player"
+    "TROFEEËN": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TROPHIES"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Étoile du jeu"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TROPHÉES"
           }
         }
       }
     },
-    "Stoomboot" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Steamboat"
+    "Tegen de computer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Against the computer"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bateau à vapeur"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contre l’ordinateur"
           }
         }
       }
     },
-    "SYMBOOL" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SYMBOL"
+    "Tegen elkaar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Head to head"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SYMBOLE"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’un contre l’autre"
           }
         }
       }
     },
-    "Tegen de computer" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Against the computer"
+    "Terug naar menu": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back to menu"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Contre l’ordinateur"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retour au menu"
           }
         }
       }
     },
-    "Tegen elkaar" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Head to head"
+    "Terugzetten is niet gelukt. Controleer de internetverbinding en probeer het straks nog eens.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restoring didn't work. Check the internet connection and try again later."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "L’un contre l’autre"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La restauration a échoué. Vérifie la connexion Internet et réessaie plus tard."
           }
         }
       }
     },
-    "Terug naar menu" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Back to menu"
+    "Thema %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theme %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Retour au menu"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thème %@"
           }
         }
       }
     },
-    "Terugzetten is niet gelukt. Controleer de internetverbinding en probeer het straks nog eens." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restoring didn't work. Check the internet connection and try again later."
+    "Thema %@, Gezinsversie nodig": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theme %@, Family Version required"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La restauration a échoué. Vérifie la connexion Internet et réessaie plus tard."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thème %@, Version Famille requise"
           }
         }
       }
     },
-    "THEMA" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "THEME"
+    "Tik een vakje op de zee van de ander om te schieten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap a square on the other player's sea to shoot."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "THÈME"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touche une case de la mer de l'autre pour tirer."
           }
         }
       }
     },
-    "Thema %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Theme %@"
+    "Tik om een schot te lossen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to fire a shot"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Thème %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touche pour tirer"
           }
         }
       }
     },
-    "Thema %@, Gezinsversie nodig" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Theme %@, Family Version required"
+    "Toont de statistieken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows the statistics"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Thème %@, Version Famille requise"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affiche les statistiques"
           }
         }
       }
     },
-    "Tik een vakje op de zee van de ander om te schieten." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tap a square on the other player's sea to shoot."
+    "Trofee %@, behaald. %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trophy %@, earned. %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Touche une case de la mer de l'autre pour tirer."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trophée %@, obtenu. %@"
           }
         }
       }
     },
-    "Tik om een schot te lossen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tap to fire a shot"
+    "Trofee %@, nog te verdienen. %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trophy %@, still to earn. %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Touche pour tirer"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trophée %@, encore à gagner. %@"
           }
         }
       }
     },
-    "Toont de statistieken" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shows the statistics"
+    "Trofeeën en records": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trophies and records"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Affiche les statistiques"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trophées et records"
           }
         }
       }
     },
-    "treffers" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "hits"
+    "Trofeeën, het grafiekje en de gezinsrecords horen bij de Gezinsversie.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trophies, the chart and family records are part of the Family Version."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "touches"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les trophées, le graphique et les records de famille font partie de la Version Famille."
           }
         }
       }
     },
-    "Trofee %@, behaald. %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trophy %@, earned. %@"
+    "Twee spelers, één toestel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Two players, one device"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trophée %@, obtenu. %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deux joueurs, un seul appareil"
           }
         }
       }
     },
-    "Trofee %@, nog te verdienen. %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trophy %@, still to earn. %@"
+    "UITLEG": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HOW TO PLAY"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trophée %@, encore à gagner. %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EXPLICATIONS"
           }
         }
       }
     },
-    "TROFEEËN" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "TROPHIES"
+    "Uit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "TROPHÉES"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Désactivé"
           }
         }
       }
     },
-    "Trofeeën en records" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trophies and records"
+    "Verder spelen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue playing"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trophées et records"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reprendre la partie"
           }
         }
       }
     },
-    "Trofeeën, het grafiekje en de gezinsrecords horen bij de Gezinsversie." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trophies, the chart and family records are part of the Family Version."
+    "Verlaten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leave"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Les trophées, le graphique et les records de famille font partie de la Version Famille."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quitter"
           }
         }
       }
     },
-    "Twee spelers, één toestel" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Two players, one device"
+    "Verspreid je schoten over de hele zee, zo vind je elke boot.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spread your shots across the whole sea to find every boat."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deux joueurs, un seul appareil"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Répartis tes tirs sur toute la mer pour trouver chaque bateau."
           }
         }
       }
     },
-    "Uit" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Off"
+    "Verwijderen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Désactivé"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer"
           }
         }
       }
     },
-    "UITLEG" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "HOW TO PLAY"
+    "Vis": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fish"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "EXPLICATIONS"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poisson"
           }
         }
       }
     },
-    "Verder spelen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continue playing"
+    "Vissersboot": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fishing Boat"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reprendre la partie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bateau de pêche"
           }
         }
       }
     },
-    "Verlaten" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Leave"
+    "Vlam": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flame"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Quitter"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flamme"
           }
         }
       }
     },
-    "Verspreid je schoten over de hele zee, zo vind je elke boot." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Spread your shots across the whole sea to find every boat."
+    "Vloot klaarleggen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fleet setup"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Répartis tes tirs sur toute la mer pour trouver chaque bateau."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Préparer la flotte"
           }
         }
       }
     },
-    "Verwijderen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete"
+    "Vogel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bird"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Supprimer"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oiseau"
           }
         }
       }
     },
-    "Vis" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fish"
+    "Volgende keer win jij vast!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next time you’ll win for sure!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Poisson"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La prochaine fois, c’est toi qui gagnes !"
           }
         }
       }
     },
-    "Vissersboot" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fishing Boat"
+    "Voltreffer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Direct Hit"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bateau de pêche"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coup au but"
           }
         }
       }
     },
-    "Vlam" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Flame"
+    "Voor %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Flamme"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pour %@"
           }
         }
       }
     },
-    "Vloot klaarleggen" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fleet setup"
+    "Voor %@ en %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For %@ and %@"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Préparer la flotte"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pour %@ et %@"
           }
         }
       }
     },
-    "Vogel" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bird"
+    "Vraag even aan papa of mama": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask mom or dad first"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Oiseau"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demande d’abord à papa ou maman"
           }
         }
       }
     },
-    "Volgende keer win jij vast!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Next time you’ll win for sure!"
+    "Wie als eerste de hele vloot van de ander laat zinken, wint!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The first to sink the other player's whole fleet wins!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La prochaine fois, c’est toi qui gagnes !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le premier à couler toute la flotte de l'autre gagne !"
           }
         }
       }
     },
-    "Voltreffer" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Direct Hit"
+    "Wie heeft het record in huis?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Who holds the record?"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coup au but"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qui détient le record ?"
           }
         }
       }
     },
-    "Voor %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "For %@"
+    "Win 10 potjes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Win 10 games"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pour %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gagne 10 parties"
           }
         }
       }
     },
-    "Voor %@ en %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "For %@ and %@"
+    "Win 3 potjes op rij": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Win 3 games in a row"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pour %@ et %@"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gagne 3 parties d'affilée"
           }
         }
       }
     },
-    "Vraag even aan papa of mama" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ask mom or dad first"
+    "Win 5 potjes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Win 5 games"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Demande d’abord à papa ou maman"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gagne 5 parties"
           }
         }
       }
     },
-    "Wie als eerste de hele vloot van de ander laat zinken, wint!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The first to sink the other player's whole fleet wins!"
+    "Win 5 potjes op rij": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Win 5 games in a row"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Le premier à couler toute la flotte de l'autre gagne !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gagne 5 parties d'affilée"
           }
         }
       }
     },
-    "Wie heeft het record in huis?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Who holds the record?"
+    "Win een potje": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Win a game"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Qui détient le record ?"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gagne une partie"
           }
         }
       }
     },
-    "Win 3 potjes op rij" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Win 3 games in a row"
+    "Winmachine": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Winning machine"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gagne 3 parties d'affilée"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine à gagner"
           }
         }
       }
     },
-    "Win 5 potjes" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Win 5 games"
+    "Winnaar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Winner"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gagne 5 parties"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vainqueur"
           }
         }
       }
     },
-    "Win 5 potjes op rij" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Win 5 games in a row"
+    "Winreeks": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Win streak"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gagne 5 parties d'affilée"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Série de victoires"
           }
         }
       }
     },
-    "Win 10 potjes" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Win 10 games"
+    "ZO SPEEL JE": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HOW YOU PLAY"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gagne 10 parties"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "COMMENT JOUER"
           }
         }
       }
     },
-    "Win een potje" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Win a game"
+    "ZO WIN JE": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HOW YOU WIN"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gagne une partie"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "COMMENT GAGNER"
           }
         }
       }
     },
-    "Winmachine" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Winning machine"
+    "Zeeslaglegende": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sea Battle Legend"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Machine à gagner"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Légende des batailles navales"
           }
         }
       }
     },
-    "Winnaar" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Winner"
+    "Zeilboot": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sailboat"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vainqueur"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voilier"
           }
         }
       }
     },
-    "Winreeks" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Win streak"
+    "Zink de vloot en roep: Raak!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sink the fleet and shout: Hit!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Série de victoires"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coule la flotte et crie : Touché !"
           }
         }
       }
     },
-    "Zeeslaglegende" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sea Battle Legend"
+    "Zinkt er een boot van jou, dan wordt jouw salvo korter. Pas dus op je vloot!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When one of your ships sinks, your salvo gets shorter. So mind your fleet!"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Légende des batailles navales"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si un de tes bateaux coule, ta salve raccourcit. Fais attention à ta flotte !"
           }
         }
       }
     },
-    "Zeilboot" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sailboat"
+    "Zon": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sun"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Voilier"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soleil"
           }
         }
       }
     },
-    "Zink de vloot en roep: Raak!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sink the fleet and shout: Hit!"
+    "Zonder Gezinsversie blijven jullie gewoon samen spelen, met z'n tweeën.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Without the Family Version you can still play together, with two players."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coule la flotte et crie : Touché !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans la Version Famille, vous continuez à jouer ensemble, à deux."
           }
         }
       }
     },
-    "Zinkt er een boot van jou, dan wordt jouw salvo korter. Pas dus op je vloot!" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "When one of your ships sinks, your salvo gets shorter. So mind your fleet!"
+    "Zoveel schoten als je boten hebt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As many shots as you have ships"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si un de tes bateaux coule, ta salve raccourcit. Fais attention à ta flotte !"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autant de tirs que de bateaux"
           }
         }
       }
     },
-    "ZO SPEEL JE" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "HOW YOU PLAY"
+    "Zoveel schoten per beurt als je boten hebt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As many shots per turn as you have ships"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "COMMENT JOUER"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autant de tirs par tour que de bateaux"
           }
         }
       }
     },
-    "ZO WIN JE" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "HOW YOU WIN"
+    "beste %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "best %lld"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "COMMENT GAGNER"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "record %lld"
           }
         }
       }
     },
-    "Zon" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sun"
+    "mikt best goed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "aims pretty well"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Soleil"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "vise plutôt bien"
           }
         }
       }
     },
-    "Zonder Gezinsversie blijven jullie gewoon samen spelen, met z'n tweeën." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Without the Family Version you can still play together, with two players."
+    "mist bijna nooit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "almost never misses"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sans la Version Famille, vous continuez à jouer ensemble, à deux."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ne rate presque jamais"
           }
         }
       }
     },
-    "Zoveel schoten als je boten hebt" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "As many shots as you have ships"
+    "schiet vaak mis": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "misses a lot"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Autant de tirs que de bateaux"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "rate souvent"
           }
         }
       }
     },
-    "Zoveel schoten per beurt als je boten hebt" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "As many shots per turn as you have ships"
+    "treffers": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "hits"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Autant de tirs par tour que de bateaux"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "touches"
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }
