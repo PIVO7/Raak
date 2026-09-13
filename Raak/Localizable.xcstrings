@@ -3120,6 +3120,22 @@
         }
       }
     },
+    "Salvo, thema's en trofeeën": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salvo, themes and trophies"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salvo, thèmes et trophées"
+          }
+        }
+      }
+    },
     "Scherpschutter": {
       "localizations": {
         "en": {
