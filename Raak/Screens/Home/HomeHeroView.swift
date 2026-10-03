@@ -12,16 +12,15 @@ struct HomeHeroView: View {
 
     var body: some View {
         Button(action: fire) {
-            // Rustiger geordend dan de eerste versie: minder overlap en
-            // mildere kanteling, zodat de tegels netjes naast elkaar op de
-            // golfrand liggen in plaats van rommelig over elkaar te buitelen.
-            HStack(spacing: -m.discSize * 0.08) {
+            // Dezelfde schikking als de held van Dobbel en Memo: flinke
+            // overlap en een kanteling van -9° en 8°.
+            HStack(spacing: -m.discSize * 0.18) {
                 TileBadge(symbol: "sailboat.fill", colorIndex: 1, size: m.discSize * 1.15, depth: m.shallowDepth)
-                    .rotationEffect(.degrees(hit ? -11 : -6))
+                    .rotationEffect(.degrees(hit ? -12 : -9))
                     .zIndex(1)
                 TileBadge(symbol: hit ? "burst.fill" : "target", colorIndex: hit ? 2 : 0, size: m.discSize * 1.15, depth: m.shallowDepth)
-                    .rotationEffect(.degrees(5))
-                    .offset(y: m.discSize * 0.1)
+                    .rotationEffect(.degrees(8))
+                    .offset(y: m.discSize * 0.16)
             }
             .rotationEffect(.degrees(wiggle.isMultiple(of: 2) ? 0 : 3))
             .animation(.spring(response: 0.3, dampingFraction: 0.35), value: wiggle)

@@ -1,8 +1,9 @@
 import SwiftUI
 
 /// Een speelgoedtegeltje met een symbool: wit kaartje, dikke inktrand en
-/// een kleur uit het avatarpalet. De Raak!-tegenhanger van het memokaartje —
-/// het startscherm en de held gebruiken hem als blikvanger.
+/// een kleur uit het avatarpalet. Gedeeld door alle spellen: de winkel
+/// toont er zijn voordelen mee, en Raak! gebruikt hem ook op het
+/// startscherm als blikvanger.
 struct TileBadge: View {
     var symbol: String
     /// Index in `AvatarBadge.palette`.

@@ -231,7 +231,7 @@ struct ProfileStatsView: View {
                 .toyBlock(
                     fill: AppTheme.card,
                     radius: m.cardCorner,
-                    depth: badge.isEarned ? 3 : 0,
+                    depth: badge.isEarned ? m.shallowDepth : 0,
                     border: m.thinBorder + 0.5
                 )
                 .accessibilityElement(children: .ignore)

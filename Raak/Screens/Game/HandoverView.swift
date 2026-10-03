@@ -13,39 +13,48 @@ struct HandoverView: View {
 
     var body: some View {
         ZStack {
+            // Volledig dekkend: de zeeën zijn geheim tot de volgende speler
+            // klaar zit. De kaart erop is dezelfde als het doorgeefscherm
+            // van Dobbel.
             ThemedBackground()
+                .accessibilityHidden(true)
 
-            VStack(spacing: m.gutter * 1.2) {
-                AvatarBadge(player: player, size: m.avatarSize * 1.6)
+            VStack(spacing: m.gutter) {
+                AvatarBadge(player: player, size: m.avatarSize * 1.5)
+                    .padding(.top, m.gutter * 0.4)
 
-                Text("Geef het toestel aan \(player.name)")
-                    .font(AppTheme.rounded(m.titleSize * 0.55))
-                    .foregroundStyle(AppTheme.headline)
+                Text("Geef door aan \(player.name)")
+                    .font(AppTheme.rounded(m.titleSize * 0.6))
+                    .foregroundStyle(AppTheme.ink)
                     .multilineTextAlignment(.center)
                     .minimumScaleFactor(0.7)
 
                 Text(title)
-                    .font(AppTheme.rounded(m.bodySize, .bold))
-                    .foregroundStyle(AppTheme.soft)
+                    .font(AppTheme.rounded(m.captionSize + 2, .bold))
+                    .foregroundStyle(AppTheme.cardSoft)
                     .multilineTextAlignment(.center)
 
                 Button(action: onReady) {
                     Text(buttonTitle)
-                        .font(AppTheme.rounded(m.heroButton.textSize))
+                        .font(AppTheme.rounded(m.defaultButton.textSize))
                         .foregroundStyle(AppTheme.ink)
                         .frame(maxWidth: .infinity)
-                        .frame(height: m.heroButton.height)
+                        .frame(height: m.defaultButton.height)
                 }
                 .buttonStyle(ToyButtonStyle(
                     fill: AppTheme.mint,
                     radius: m.buttonCorner,
-                    depth: m.heroButton.depth,
+                    depth: m.defaultButton.depth,
                     border: m.border
                 ))
-                .padding(.top, m.gutter)
+                .padding(.top, 4)
             }
+            .padding(m.gutter * 1.4)
+            // De kaart in `card` en niet `cream`: in het nachtthema is cream
+            // donker en zou de inkt onleesbaar worden.
+            .toyBlock(fill: AppTheme.card, radius: m.dialogCorner, depth: m.heroDepth, border: m.border)
+            .frame(maxWidth: m.overlayMaxWidth * 0.82)
             .padding(m.gutter * 2)
-            .frame(maxWidth: m.overlayMaxWidth)
         }
         // Modaal voor VoiceOver: de borden eronder zijn nu geheim.
         .accessibilityAddTraits(.isModal)
