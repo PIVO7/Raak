@@ -12,6 +12,8 @@ struct PaywallView: View {
     @Environment(ProfileStore.self) private var profileStore: ProfileStore?
 
     @State private var gateQuestion: ParentalGateQuestion?
+    @State private var gateEntry = ""
+    @FocusState private var gateFieldFocused: Bool
     /// De poort staat vóór het hele scherm: ook de prijzen en de koopknoppen
     /// zijn oudergebied (kindercategorie).
     @State private var gatePassed = false
@@ -288,22 +290,39 @@ struct PaywallView: View {
                     .font(AppTheme.rounded(m.titleSize * 0.6))
                     .foregroundStyle(AppTheme.coral)
 
-                HStack(spacing: m.gutter * 0.7) {
-                    ForEach(question.options, id: \.self) { option in
-                        Button {
-                            answerGate(with: option, question: question)
-                        } label: {
-                            Text("\(option)")
-                                .font(AppTheme.rounded(m.bodySize + 2))
-                                .foregroundStyle(AppTheme.ink)
-                                .frame(maxWidth: .infinity)
-                                .frame(height: m.tapTarget)
-                        }
-                        .buttonStyle(ToyButtonStyle(fill: AppTheme.card, radius: m.cellCorner, depth: m.shallowDepth, border: m.thinBorder))
-                    }
+                // Het antwoord wordt ingetypt: uit drie knoppen valt te
+                // gokken, een leeg veld niet.
+                TextField(
+                    "",
+                    text: $gateEntry,
+                    prompt: Text(verbatim: "?").foregroundStyle(AppTheme.cardDim)
+                )
+                .keyboardType(.numberPad)
+                .focused($gateFieldFocused)
+                .font(AppTheme.rounded(m.bodySize + 4))
+                .foregroundStyle(AppTheme.ink)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: m.tapTarget * 2.2)
+                .frame(height: m.tapTarget)
+                .toyBlock(fill: AppTheme.sunk, radius: m.cellCorner, depth: 0, border: m.thinBorder)
+                .accessibilityLabel(String(localized: "Antwoord"))
+                .onAppear { gateFieldFocused = true }
+
+                Button {
+                    answerGate(question: question)
+                } label: {
+                    Text("Controleer")
+                        .font(AppTheme.rounded(m.bodySize + 2))
+                        .foregroundStyle(AppTheme.ink)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: m.tapTarget)
                 }
+                .buttonStyle(ToyButtonStyle(fill: AppTheme.mint, radius: m.cellCorner, depth: m.shallowDepth, border: m.thinBorder))
+                .disabled(Int(gateEntry) == nil)
             }
             .padding(m.gutter * 1.4)
+            // Kaartwit en niet cream: in het nachtthema is cream donker en
+            // zou de donkere inkt onleesbaar worden.
             .toyBlock(fill: AppTheme.card, radius: m.dialogCorner, depth: m.heroDepth, border: m.border)
             .frame(maxWidth: m.overlayMaxWidth * 0.82)
             .padding(m.gutter * 2)
@@ -312,12 +331,14 @@ struct PaywallView: View {
         .transition(.opacity)
     }
 
-    private func answerGate(with option: Int, question: ParentalGateQuestion) {
-        guard option == question.answer else {
-            // Fout: nieuwe vraag, zodat gokken niet loont.
+    private func answerGate(question: ParentalGateQuestion) {
+        guard Int(gateEntry) == question.answer else {
+            // Fout: nieuwe som en een leeg veld, zodat gokken niet loont.
+            gateEntry = ""
             gateQuestion = .make()
             return
         }
+        gateEntry = ""
         withAnimation(.easeOut(duration: 0.15)) {
             gateQuestion = nil
             gatePassed = true

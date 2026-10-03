@@ -18,6 +18,7 @@
 		1A69368B9D2DB3E7AE8C0284 /* ProfileStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00176BF12C1CE97B1FF6201 /* ProfileStoreTests.swift */; };
 		1AF7BCFB31F678530B519410 /* ComputerAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1BCBDF775BA97358363E31 /* ComputerAI.swift */; };
 		2198669D14C3A0606B5145EE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97289290F369F976DB0E24CE /* SettingsView.swift */; };
+		64813069AFEDEBE24944BD42 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA18DF4D323B4ECDC397841 /* PrivacyView.swift */; };
 		28E0734105FC9E298B5027E9 /* SplitMix64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278481B5686C0869C59246B /* SplitMix64.swift */; };
 		2F3C7DFEEEB5F3477EB96F4E /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ACA3B6668D3C98F08F3F11 /* GameStore.swift */; };
 		30F1F0DA0E260E60EB282D9B /* AppMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3CC7E5671B4AC6BD24F644 /* AppMetrics.swift */; };
@@ -142,6 +143,7 @@
 		936270AB7C66D48D18E1C74F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94704EC9BD89FF4AF7391488 /* EntitlementStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitlementStore.swift; sourceTree = "<group>"; };
 		97289290F369F976DB0E24CE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FDA18DF4D323B4ECDC397841 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 		97729781BE54389907B6A11C /* GameHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHeaderView.swift; sourceTree = "<group>"; };
 		983A41F408BA7665CCCF5ABF /* FamilyRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyRecordsView.swift; sourceTree = "<group>"; };
 		9BED0D45872532206F0D56CD /* TileBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileBadge.swift; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				97289290F369F976DB0E24CE /* SettingsView.swift */,
+				FDA18DF4D323B4ECDC397841 /* PrivacyView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				E35C81F2811BA5798F6037C1 /* SeaBoard.swift in Sources */,
 				E35FD54FA36306A8676E0417 /* SeaWaves.swift in Sources */,
 				2198669D14C3A0606B5145EE /* SettingsView.swift in Sources */,
+				64813069AFEDEBE24944BD42 /* PrivacyView.swift in Sources */,
 				DCF2F9B2D1E081A43357D7AA /* SoundPlayer.swift in Sources */,
 				28E0734105FC9E298B5027E9 /* SplitMix64.swift in Sources */,
 				12638CCE67D660E71575C5EC /* StatsOverviewView.swift in Sources */,

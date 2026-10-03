@@ -326,7 +326,7 @@ struct GameView: View {
         SoundPlayer.shared.play(.turn)
         if needsPrivacy {
             AccessibilityNotification.Announcement(
-                String(localized: "Geef het toestel aan \(handoverPlayer.name)")
+                String(localized: "Geef door aan \(handoverPlayer.name)")
             ).post()
             withAnimation(reduceMotion ? .easeOut(duration: 0.15) : .spring(response: 0.35, dampingFraction: 0.8)) {
                 showHandover = true

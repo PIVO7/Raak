@@ -46,7 +46,7 @@ struct GameSetupView: View {
                     Button {
                         showRules = true
                     } label: {
-                        Label("Hoe werkt Raak!?", systemImage: "book.fill")
+                        Label("Hoe werkt Raak?", systemImage: "book.fill")
                             .labelStyle(.iconOnly)
                             .font(.system(size: m.captionSize + 2, weight: .black))
                             .foregroundStyle(AppTheme.ink)
@@ -68,7 +68,12 @@ struct GameSetupView: View {
                         // Eigen kaartje in de speelgoedstijl in plaats van
                         // ContentUnavailableView met systeemtypografie.
                         VStack(spacing: m.gutter * 0.6) {
-                            TileBadge(symbol: "person.crop.circle.badge.plus", colorIndex: 4, size: m.avatarSize * 1.3)
+                            Image(systemName: "person.crop.circle.badge.plus")
+                                .font(.system(size: m.avatarSize * 0.62, weight: .black))
+                                .foregroundStyle(AppTheme.ink)
+                                .frame(width: m.avatarSize * 1.3, height: m.avatarSize * 1.3)
+                                .toyBlock(fill: AppTheme.tintCoral, radius: m.cellCorner, depth: 0, border: m.thinBorder + 0.5)
+                                .accessibilityHidden(true)
                             Text("Geen profielen")
                                 .font(AppTheme.rounded(m.bodySize + 4))
                                 .foregroundStyle(AppTheme.ink)
