@@ -808,18 +808,18 @@
         }
       }
     },
-    "Alles ontgrendelen": {
+    "Alles blijft op dit toestel": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Unlock everything"
+            "value": "Everything stays on this device"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tout débloquer"
+            "value": "Tout reste sur cet appareil"
           }
         }
       }
@@ -840,6 +840,22 @@
         }
       }
     },
+    "Antwoord": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Answer"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réponse"
+          }
+        }
+      }
+    },
     "Basketbal": {
       "localizations": {
         "en": {
@@ -856,18 +872,18 @@
         }
       }
     },
-    "Bekijk de Gezinsversie": {
+    "Bekijken of een aankoop terugzetten": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "See the Family Version"
+            "value": "View or restore a purchase"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Voir la Version Famille"
+            "value": "Voir ou restaurer un achat"
           }
         }
       }
@@ -936,6 +952,22 @@
         }
       }
     },
+    "Controleer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifier"
+          }
+        }
+      }
+    },
     "Dat lukte niet": {
       "localizations": {
         "en": {
@@ -1000,18 +1032,34 @@
         }
       }
     },
-    "De aankoop wacht nog op goedkeuring van een ouder.": {
+    "De aankoop van de Gezinsversie loopt volledig via Apple. De app zelf ziet geen betaalgegevens.": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The purchase is waiting for a parent’s approval."
+            "value": "The Family version purchase is handled entirely by Apple. The app itself never sees any payment details."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "L’achat attend l’accord d’un parent."
+            "value": "L'achat de la Version famille est entièrement géré par Apple. L'app ne voit jamais aucune donnée de paiement."
+          }
+        }
+      }
+    },
+    "De aankoop wacht op goedkeuring van een ouder. Zodra die er is, wordt alles vanzelf ontgrendeld.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The purchase is waiting for a parent's approval. Once approved, everything unlocks automatically."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'achat attend l'approbation d'un parent. Dès qu'elle arrive, tout se déverrouille automatiquement."
           }
         }
       }
@@ -1256,22 +1304,6 @@
         }
       }
     },
-    "GEZINSVERSIE": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "FAMILY VERSION"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "VERSION FAMILLE"
-          }
-        }
-      }
-    },
     "Gast": {
       "localizations": {
         "en": {
@@ -1364,6 +1396,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aucun profil"
+          }
+        }
+      }
+    },
+    "Geen reclame, geen volgcodes, geen analyse door derden. Wij sturen geen gegevens naar eigen servers — die hebben we niet.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No ads, no trackers, no third-party analytics. We send no data to servers of our own — we don't have any."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas de publicité, pas de traceurs, pas d'analyse par des tiers. Nous n'envoyons aucune donnée vers nos serveurs — nous n'en avons pas."
           }
         }
       }
@@ -1593,18 +1641,18 @@
         }
       }
     },
-    "Het thema staat weer op Klassiek. Met de Gezinsversie blijft %@ gewoon aan — en de andere thema's ook.": {
+    "Het thema staat weer op Klassiek. Papa of mama vindt de Gezinsversie in Instellingen.": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The theme is back to Classic. With the Family Version %@ simply stays on — and so do the other themes."
+            "value": "The theme is back to Classic. Mom or dad can find the Family version in Settings."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le thème est revenu à Classique. Avec la Version Famille, %@ reste activé — et les autres thèmes aussi."
+            "value": "Le thème est revenu à Classique. Papa ou maman trouvera la Version famille dans les Réglages."
           }
         }
       }
@@ -1625,7 +1673,7 @@
         }
       }
     },
-    "Hoe werkt Raak!?": {
+    "Hoe werkt Raak?": {
       "localizations": {
         "en": {
           "stringUnit": {
@@ -2111,6 +2159,22 @@
         }
       }
     },
+    "Kopen via de App Store": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Purchases go through the App Store"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les achats passent par l'App Store"
+          }
+        }
+      }
+    },
     "Koraal": {
       "localizations": {
         "en": {
@@ -2463,6 +2527,38 @@
         }
       }
     },
+    "Niets dat meekijkt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing watching along"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rien qui vous observe"
+          }
+        }
+      }
+    },
+    "Niets gevonden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing found"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun achat trouvé"
+          }
+        }
+      }
+    },
     "Nieuw profiel": {
       "localizations": {
         "en": {
@@ -2703,6 +2799,22 @@
         }
       }
     },
+    "Ontgrendelen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déverrouiller"
+          }
+        }
+      }
+    },
     "Onverslaanbaar": {
       "localizations": {
         "en": {
@@ -2811,6 +2923,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Partie %lld : %lld touches, gagnée"
+          }
+        }
+      }
+    },
+    "Privacy en contact": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy and contact"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confidentialité et contact"
           }
         }
       }
@@ -2971,6 +3099,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Touché ! %@ rejoue"
+          }
+        }
+      }
+    },
+    "Raak! werkt zonder account en zonder internet. Profielen, scores en instellingen worden alleen op dit toestel bewaard en verlaten het niet.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raak! works without an account and without internet. Profiles, scores and settings are stored on this device only and never leave it."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raak! fonctionne sans compte et sans internet. Les profils, scores et réglages sont enregistrés uniquement sur cet appareil et ne le quittent jamais."
           }
         }
       }
@@ -3969,6 +4113,22 @@
         }
       }
     },
+    "VOOR OUDERS": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FOR PARENTS"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "POUR LES PARENTS"
+          }
+        }
+      }
+    },
     "Verder spelen": {
       "localizations": {
         "en": {
@@ -4013,6 +4173,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Répartis tes tirs sur toute la mer pour trouver chaque bateau."
+          }
+        }
+      }
+    },
+    "Verwijder je de app, dan zijn ook alle spelersgegevens weg.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete the app and all player data is gone with it."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimez l'app et toutes les données des joueurs disparaissent avec elle."
           }
         }
       }
@@ -4193,6 +4369,38 @@
         }
       }
     },
+    "Vraag onderweg": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Request sent"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demande envoyée"
+          }
+        }
+      }
+    },
+    "Vragen?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questions?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Des questions ?"
+          }
+        }
+      }
+    },
     "Wie als eerste de hele vloot van de ander laat zinken, wint!": {
       "localizations": {
         "en": {
@@ -4349,6 +4557,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Série de victoires"
+          }
+        }
+      }
+    },
+    "Wissen is wissen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deleted is deleted"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimé, c'est supprimé"
           }
         }
       }
