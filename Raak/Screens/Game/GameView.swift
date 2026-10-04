@@ -36,8 +36,18 @@ struct GameView: View {
     /// De korte knal bij een gezonken boot; verdwijnt vanzelf weer.
     @State private var showSinkCallout = false
     @State private var sinkCallout: Task<Void, Never>?
+    /// De uitleg wordt aangeboden, niet opgedrongen: dit is de vraag vooraf.
+    @State private var showCoachOffer = false
+    @State private var coachStep: CoachStep = .none
+    @State private var coachVisible = false
 
     private enum ShotOutcome { case hit, miss, sunk }
+
+    /// De eerste-keer-uitleg: hints die elk op hun moment verschijnen. Eerst
+    /// de vloot, dan het eerste schot, en tot slot wat dat schot betekent.
+    private enum CoachStep {
+        case none, place, fire, miss, hit, salvo
+    }
 
     /// Wie er naar het scherm hoort te kijken: solo altijd de mens, aan één
     /// toestel wie er schikt of aan de beurt is.
@@ -79,6 +89,11 @@ struct GameView: View {
                     .zIndex(2)
             }
 
+            if coachBubbleShown {
+                coachOverlay
+                    .zIndex(2)
+            }
+
             if showHandover {
                 HandoverView(
                     player: handoverPlayer,
@@ -88,6 +103,9 @@ struct GameView: View {
                         withAnimation(.easeOut(duration: 0.2)) {
                             showHandover = false
                         }
+                        // Aan één toestel pas na het doorgeven: de vraag hoort
+                        // bij wie het toestel nu vasthoudt.
+                        startCoachingIfNeeded()
                     }
                 )
                 .transition(.opacity)
@@ -123,6 +141,18 @@ struct GameView: View {
                 )
                 .zIndex(5)
             }
+
+            if showCoachOffer {
+                ToyDialog(
+                    title: String(localized: "Eerste keer Raak?"),
+                    message: String(localized: "Wil je tijdens het spelen korte uitleg krijgen?"),
+                    confirmTitle: String(localized: "Ja, leg uit!"),
+                    cancelTitle: String(localized: "Nee, ik kan het al"),
+                    onConfirm: acceptCoaching,
+                    onCancel: declineCoaching
+                )
+                .zIndex(5)
+            }
         }
         .task(id: engine.currentPlayerIndex) {
             await engine.playComputerTurnIfNeeded()
@@ -135,6 +165,9 @@ struct GameView: View {
                 // Ook bij de start: zo komt het toestel gegarandeerd bij de
                 // juiste speler terecht, ook na een hervatting.
                 showHandover = true
+            } else {
+                // Aan één toestel wacht de vraag tot na het doorgeefscherm.
+                startCoachingIfNeeded()
             }
         }
         .onChange(of: engine.saveVersion) { _, _ in
@@ -145,12 +178,14 @@ struct GameView: View {
             winPulse += 1
             SoundPlayer.shared.play(.score)
             AccessibilityNotification.Announcement(String(localized: "Raak!")).post()
+            coachAfterShot(.hit)
         }
         .onChange(of: engine.missPulse) { _, _ in
             lastOutcome = .miss
             shotPulse += 1
             SoundPlayer.shared.play(.drop)
             AccessibilityNotification.Announcement(String(localized: "Mis, plons in het water")).post()
+            coachAfterShot(.miss)
         }
         .onChange(of: engine.sunkPulse) { _, _ in
             lastOutcome = .sunk
@@ -158,6 +193,7 @@ struct GameView: View {
             SoundPlayer.shared.play(.score)
             AccessibilityNotification.Announcement(engine.turnMessage).post()
             presentSinkCallout()
+            coachAfterShot(.sunk)
         }
         .onChange(of: engine.isResolving) { _, resolving in
             resolveDelay?.cancel()
@@ -176,6 +212,7 @@ struct GameView: View {
             guard changed else { return }
             lastOutcome = nil
             presentTurnChange()
+            coachAfterTurnChange()
             engine.acknowledgeTurnChange()
         }
         .sensoryFeedback(.impact(flexibility: .solid, intensity: 0.7), trigger: shotPulse)
@@ -299,6 +336,163 @@ struct GameView: View {
     private func leave() {
         persistProgress()
         onClose()
+    }
+
+    // MARK: - Eerste-keer-uitleg
+
+    /// Alleen bij een vers spel met een mens aan zet — en dan nog als vraag,
+    /// want ongevraagde uitleg is vervelend voor wie het spel al kent. Niet
+    /// tijdens de beurt van de computer; aan één toestel roept pas het
+    /// doorgeefscherm dit aan als het weggetikt is.
+    private func startCoachingIfNeeded() {
+        let humanAtTurn = engine.phase == .placement
+            ? engine.arrangingPlayerIndex != nil
+            : !engine.currentPlayer.isComputer
+        guard !CoachTour.seen,
+              coachStep == .none,
+              !showCoachOffer,
+              engine.attempts == 0,
+              !engine.isFinished,
+              humanAtTurn else { return }
+        withAnimation(.easeOut(duration: 0.15)) {
+            showCoachOffer = true
+        }
+    }
+
+    private func acceptCoaching() {
+        withAnimation(.easeOut(duration: 0.15)) {
+            showCoachOffer = false
+        }
+        advanceCoach(to: engine.phase == .placement ? .place : .fire)
+    }
+
+    private func declineCoaching() {
+        // Niet meer vragen: wie het al kan, kan het volgende potje ook al.
+        CoachTour.seen = true
+        withAnimation(.easeOut(duration: 0.15)) {
+            showCoachOffer = false
+        }
+    }
+
+    private func advanceCoach(to step: CoachStep) {
+        coachStep = step
+        withAnimation(reduceMotion ? .easeOut(duration: 0.15) : .spring(response: 0.35, dampingFraction: 0.8)) {
+            coachVisible = true
+        }
+    }
+
+    private func hideCoachBubble() {
+        withAnimation(.easeOut(duration: 0.15)) {
+            coachVisible = false
+        }
+    }
+
+    private func finishCoaching() {
+        CoachTour.seen = true
+        coachStep = .none
+        withAnimation(.easeOut(duration: 0.15)) {
+            coachVisible = false
+        }
+    }
+
+    /// De bubbel wijkt voor het doorgeefscherm en het eindscherm, en de
+    /// schiethint wacht tot er weer een mens aan zet is.
+    private var coachBubbleShown: Bool {
+        guard coachVisible, !showHandover, !showResult else { return false }
+        if coachStep == .fire {
+            return engine.phase == .playing && !engine.currentPlayer.isComputer
+        }
+        return true
+    }
+
+    /// Het eerste eigen schot zegt wat er nu gebeurt; daarmee is de
+    /// rondleiding rond. Het volgende schot ruimt de laatste bubbel op.
+    private func coachAfterShot(_ outcome: ShotOutcome) {
+        guard !engine.currentPlayer.isComputer else { return }
+        switch coachStep {
+        case .fire:
+            if engine.isFinished {
+                finishCoaching()
+                return
+            }
+            CoachTour.seen = true
+            if engine.variant == .salvo {
+                advanceCoach(to: .salvo)
+            } else {
+                advanceCoach(to: outcome == .miss ? .miss : .hit)
+            }
+        case .miss, .hit:
+            finishCoaching()
+        case .none, .place, .salvo:
+            break
+        }
+    }
+
+    /// Na het vlootleggen volgt de schiethint (ook voor de tweede speler
+    /// aan één toestel); na de eerste beurtwissel is de uitleg klaar.
+    private func coachAfterTurnChange() {
+        switch coachStep {
+        case .place:
+            advanceCoach(to: engine.phase == .placement ? .place : .fire)
+        case .miss, .hit, .salvo:
+            // Solo blijft "nu is de ander" staan zolang de computer schiet;
+            // is er weer een mens aan zet, dan is de rondleiding klaar.
+            if needsPrivacy || !engine.currentPlayer.isComputer {
+                finishCoaching()
+            }
+        case .none, .fire:
+            break
+        }
+    }
+
+    @ViewBuilder
+    private var coachOverlay: some View {
+        VStack(spacing: 0) {
+            Spacer(minLength: 0)
+            switch coachStep {
+            case .place:
+                // Boven de knoppen Schud en Klaar!.
+                CoachBubbleView(
+                    text: String(localized: "Tik op Schud tot je vloot goed ligt, en dan op Klaar!"),
+                    icon: "dice.fill",
+                    onDismiss: hideCoachBubble
+                )
+                .padding(.bottom, m.defaultButton.height + m.gutter * 2)
+            case .fire:
+                // Onderaan, over de eigen zee: zo blijft de zee van de ander
+                // vrij om op te mikken.
+                CoachBubbleView(
+                    text: String(localized: "Tik op een vakje in de zee van de ander om te schieten."),
+                    icon: "hand.tap.fill",
+                    onDismiss: hideCoachBubble
+                )
+                .padding(.bottom, m.gutter * 2)
+            case .miss:
+                CoachBubbleView(
+                    text: String(localized: "Mis! Nu is de ander aan de beurt."),
+                    icon: "drop.fill",
+                    onDismiss: hideCoachBubble
+                )
+                .padding(.bottom, m.gutter * 2)
+            case .hit:
+                CoachBubbleView(
+                    text: String(localized: "Raak! Je mag meteen nog een keer schieten."),
+                    icon: "flame.fill",
+                    onDismiss: hideCoachBubble
+                )
+                .padding(.bottom, m.gutter * 2)
+            case .salvo:
+                CoachBubbleView(
+                    text: String(localized: "Bij Salvo schiet je zo vaak als je nog boten hebt. Daarna is de ander aan de beurt."),
+                    icon: "burst.fill",
+                    onDismiss: hideCoachBubble
+                )
+                .padding(.bottom, m.gutter * 2)
+            case .none:
+                EmptyView()
+            }
+        }
+        .padding(.horizontal, 24)
     }
 
     // MARK: - Reacties op het spel

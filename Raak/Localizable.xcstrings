@@ -824,6 +824,22 @@
         }
       }
     },
+    "Als gast, zonder iets aan te maken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As a guest, nothing to set up"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En invité, rien à créer"
+          }
+        }
+      }
+    },
     "Annuleer": {
       "localizations": {
         "en": {
@@ -884,6 +900,38 @@
           "stringUnit": {
             "state": "translated",
             "value": "Voir ou restaurer un achat"
+          }
+        }
+      }
+    },
+    "Bij Salvo schiet je zo vaak als je nog boten hebt. Daarna is de ander aan de beurt.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Salvo you fire as many shots as you have boats left. Then it's the other player's turn."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En Salve, tu tires autant de fois qu'il te reste de bateaux. Ensuite, c'est au tour de l'autre."
+          }
+        }
+      }
+    },
+    "Bij het volgende potje bieden we de uitleg weer aan": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next game we'll offer the tips again"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À la prochaine partie, on te proposera à nouveau les explications"
           }
         }
       }
@@ -1208,6 +1256,22 @@
         }
       }
     },
+    "Eerste keer Raak?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First time playing Raak!?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Première partie de Raak! ?"
+          }
+        }
+      }
+    },
     "Eerste potje": {
       "localizations": {
         "en": {
@@ -1220,6 +1284,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Première partie"
+          }
+        }
+      }
+    },
+    "Eigen avatars, trofeeën en records": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your own avatars, trophies and records"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vos propres avatars, trophées et records"
           }
         }
       }
@@ -1380,22 +1460,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Jaune"
-          }
-        }
-      }
-    },
-    "Geen profielen": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "No profiles"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aucun profil"
           }
         }
       }
@@ -1839,6 +1903,22 @@
         }
       }
     },
+    "Ja, leg uit!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yes, show me!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oui, explique-moi !"
+          }
+        }
+      }
+    },
     "Je salvo is op": {
       "localizations": {
         "en": {
@@ -2271,6 +2351,22 @@
         }
       }
     },
+    "Liever eigen avatars?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prefer your own avatars?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envie de vos propres avatars ?"
+          }
+        }
+      }
+    },
     "Lopend spel": {
       "localizations": {
         "en": {
@@ -2303,34 +2399,18 @@
         }
       }
     },
-    "Maak eerst een profiel aan om te spelen.": {
+    "Maak spelers aan": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Create a profile first to play."
+            "value": "Create players"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Crée d’abord un profil pour jouer."
-          }
-        }
-      }
-    },
-    "Maak eerst een speler aan": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Create a player first"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crée d’abord un joueur"
+            "value": "Créer des joueurs"
           }
         }
       }
@@ -2383,6 +2463,54 @@
         }
       }
     },
+    "Met een profiel onthoudt Raak! wie er wint — met een eigen avatar, trofeeën en records.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With a profile, Raak! remembers who wins — with your own avatar, trophies and records."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avec un profil, Raak! retient qui gagne — avec son propre avatar, des trophées et des records."
+          }
+        }
+      }
+    },
+    "Met twee gasten, zonder iets aan te maken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With two guests, nothing to set up"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avec deux invités, rien à créer"
+          }
+        }
+      }
+    },
+    "Meteen spelen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play right away"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouer tout de suite"
+          }
+        }
+      }
+    },
     "Middel": {
       "localizations": {
         "en": {
@@ -2427,6 +2555,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Raté — plouf dans l'eau…"
+          }
+        }
+      }
+    },
+    "Mis! Nu is de ander aan de beurt.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Miss! Now it's the other player's turn."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raté ! C'est maintenant au tour de l'autre."
           }
         }
       }
@@ -2507,6 +2651,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nuit"
+          }
+        }
+      }
+    },
+    "Nee, ik kan het al": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No, I've got this"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non, je sais déjà jouer"
           }
         }
       }
@@ -2699,38 +2859,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Océan"
-          }
-        }
-      }
-    },
-    "Of speel als gast": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Or play as a guest"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ou joue en invité"
-          }
-        }
-      }
-    },
-    "Of speel met twee gasten": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Or play with two guests"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ou jouez avec deux invités"
           }
         }
       }
@@ -3099,6 +3227,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Touché ! %@ rejoue"
+          }
+        }
+      }
+    },
+    "Raak! Je mag meteen nog een keer schieten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hit! You get to fire again right away."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touché ! Tu peux tirer encore une fois tout de suite."
           }
         }
       }
@@ -3969,6 +4113,22 @@
         }
       }
     },
+    "Tik om de uitleg te sluiten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to close the tip"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touche pour fermer l'explication"
+          }
+        }
+      }
+    },
     "Tik om een schot te lossen": {
       "localizations": {
         "en": {
@@ -3981,6 +4141,38 @@
           "stringUnit": {
             "state": "translated",
             "value": "Touche pour tirer"
+          }
+        }
+      }
+    },
+    "Tik op Schud tot je vloot goed ligt, en dan op Klaar!": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap Shuffle until your fleet looks right, then tap Done!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touche « Mélanger » jusqu'à ce que ta flotte te plaise, puis « C’est fait ! »."
+          }
+        }
+      }
+    },
+    "Tik op een vakje in de zee van de ander om te schieten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap a square in the other player's sea to fire."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touche une case dans la mer de l'autre pour tirer."
           }
         }
       }
@@ -4109,6 +4301,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Désactivé"
+          }
+        }
+      }
+    },
+    "Uitleg opnieuw aanbieden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offer the tips again"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proposer à nouveau les explications"
           }
         }
       }
@@ -4429,6 +4637,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Qui détient le record ?"
+          }
+        }
+      }
+    },
+    "Wil je tijdens het spelen korte uitleg krijgen?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Would you like short tips while you play?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veux-tu quelques explications pendant la partie ?"
           }
         }
       }
