@@ -42,7 +42,7 @@ gelijk: Dommel, Robbie en Professor Punt, en de app heet overal **Raak!**.
 > Pas de publicité, pas de compte, pas besoin d'Internet. Tout reste sur votre appareil. Point.
 >
 > COMMENCEZ GRATUITEMENT, DÉBLOQUEZ UNE FOIS
-> Gratuitement, on joue à deux sur un appareil ou en solo contre Robbie, dans le thème classique. La Version Famille, achetée une seule fois, débloque les trois adversaires, les thèmes Bonbons, Océan et Nuit, et les statistiques par joueur — avec trophées, records et séries de victoires. Un seul achat pour toute la famille, via le partage familial. Le tout derrière un contrôle parental, pour que les petits doigts n'achètent rien par accident.
+> Gratuitement, on joue à deux sur un appareil ou en solo contre Robbie, dans le thème classique. La Version Famille, achetée une seule fois, débloque les trois adversaires, les thèmes Bonbon, Océan et Nuit, et les statistiques par joueur — avec trophées, records et séries de victoires. Un seul achat pour toute la famille, via le partage familial. Le tout derrière un contrôle parental, pour que les petits doigts n'achètent rien par accident.
 >
 > Parés à tirer ? Raak!
 
